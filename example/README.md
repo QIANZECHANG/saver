@@ -10,7 +10,7 @@ https://github.com/kupl/SAVER_public
   infer -g run --clang *.c
 ```
 
-#Run SAVER
+# Run SAVER
 
 ```
   infer saver --error-report (report).json
