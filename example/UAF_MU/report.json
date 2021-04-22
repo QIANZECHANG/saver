@@ -1,0 +1,5 @@
+{
+  "err_type": "USE_AFTER_FREE",
+  "source": { "node": { "filename": "src.c", "procedure": "main", "line": 13 }, "exp": null },
+    "sink": { "node": { "filename": "src.c", "procedure": "main", "line": 10 }, "exp": null }
+}
