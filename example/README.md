@@ -1,7 +1,7 @@
 # Download SAVER
 
 ```
-https://github.com/kupl/SAVER_public
+ https://github.com/kupl/SAVER_public
 ```
 
 # Run infer
@@ -17,11 +17,11 @@ https://github.com/kupl/SAVER_public
 ```
 
 # SAVER Fix Strategy
-* ML
+## ML
  * add free
  * move free
-* DF
+## DF
  * delete free
-* UAF 
+## UAF 
  * move free
  * move use
