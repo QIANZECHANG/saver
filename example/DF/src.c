@@ -3,7 +3,7 @@
 void *foo() {
   int *q = malloc(4);
 
-  free(q);
+  free(q);//delete
   return q;
 }
 

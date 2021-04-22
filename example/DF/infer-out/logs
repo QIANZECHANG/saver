@@ -1726,3 +1726,61 @@ Infer version v0.15.0-821a8db
 [25050][ intern err] get_proc_name: at node 0
 [25050][ intern err] 
 [25050][environment] Infer log identifier is 
+
+[27199][      phase] ============================================================
+[27199][      phase] = New infer execution begins
+[27199][      phase] ============================================================
+[27199][environment] CWD = /home/saver/saver/example/DF
+[27199][environment] No .inferconfig file found
+[27199][environment] Project root = /home/saver/saver/example/DF
+[27199][environment] INFER_ARGS =   @/tmp/args.tmp.879727
+[27199][environment]   ++Contents of '/tmp/args.tmp.879727':
+[27199][environment]     saver --error-report /home/saver/saver/example/DF/report.json
+[27199][environment]   
+[27199][environment] command line arguments:   infer saver --error-report report.json
+[27199][environment] Analyzer: checkers
+[27199][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), ownership (C/C++/ObjC), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC)
+[27199][   progress] - Found pre-computed preanalysis results!
+[27199][   progress] Size-of-analyzed-program: 10
+[27199][   progress] - Reading error report from /home/saver/saver/example/DF/report.json!
+[27199][   progress] - # of reachable locations : 8
+[27199][   progress] - # of reachable callees from the entry (main): 4
+[27199][   progress] - # of use-only function calls : 0
+[27199][   progress] - # of reachable callees in sliced callgraph (use-only calls): 4
+[27199][   progress] - # of irrelevant function calls : 0
+[27199][   progress] - # of reachable callees in sliced callgraph (irrelevant calls): 4
+[27199][   progress] - # of difficult procedures : 0
+[27199][   progress] - # of reachable callees in sliced callgraph (difficult procs): 4
+[27199][   progress] [+] Analyzing programs...  Done!
+[27199][   progress] [+] Recording results...  Done!
+[27199][   progress] ### Deleted objects by intersection: { }
+[27199][   progress] - Identifying V_src, V_sink, error nodes ...
+[27199][   progress] -- # V_src: 1
+[27199][   progress] -- # V_sink: 1
+[27199][   progress] -- # error nodes: 14
+[27199][   progress] 
+[27199][   progress] - Initializing search space ... 
+[27199][   progress] -- Initial opeartion space_0 size: 2
+[27199][ intern err] Invalid application of an operation: MoveFree at: (SRC: "<<(foo_4), Call, (main,
+5), { foo:q == foo:n$1 }>, (src.c:4:3, { foo:n$1, foo:q }, { }, freed)>", DST: "<<(foo_3), APPLY_ABSTRACTION; [line 7, column 3], (main,
+5), true>, (src.c:4:3, { foo:q, foo:return }, { }, freed)>")
+
+[27199][ intern err] 
+[27199][   progress] -- Initial opeartion space_1 size: 8
+[27199][   progress] 
+[27199][   progress] - Searching begins ... 
+[27199][   progress] -- Final Patches: 
+[27199][   progress] - [+] { Delete: if (true) free(n$1) at 4 (line 6, column 3) }
+[27199][   progress] 
+[27199][   progress] ##### Solution Statistics ... ##### 
+[27199][   progress] - # of the total solutions found : 1 
+[27199][   progress] - # of the the smallest ops.     : 1 
+[27199][   progress] - # of the the largest ops.      : 1 
+[27199][   progress] ################################### 
+[27199][   progress] 
+[27199][   progress] 
+[27199][   progress] PATCH SUCCEED
+[27199][ intern err] get_proc_name: at node 0
+[27199][ intern err] get_proc_name: at node 0
+[27199][ intern err] 
+[27199][environment] Infer log identifier is 

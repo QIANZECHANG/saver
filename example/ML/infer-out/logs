@@ -1797,3 +1797,109 @@ Infer version v0.15.0-821a8db
 [24947][ intern err] get_proc_name: at node 0
 [24947][ intern err] 
 [24947][environment] Infer log identifier is 
+
+[27146][      phase] ============================================================
+[27146][      phase] = New infer execution begins
+[27146][      phase] ============================================================
+[27146][environment] CWD = /home/saver/saver/example/ML
+[27146][environment] No .inferconfig file found
+[27146][environment] Project root = /home/saver/saver/example/ML
+[27146][environment] INFER_ARGS =   @/tmp/args.tmp.153421
+[27146][environment]   ++Contents of '/tmp/args.tmp.153421':
+[27146][environment]     saver --error-report /home/saver/saver/example/ML/report.json
+[27146][environment]   
+[27146][environment] command line arguments:   infer saver --error-report report.json
+[27146][environment] Analyzer: checkers
+[27146][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), ownership (C/C++/ObjC), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC)
+[27146][   progress] - Found pre-computed preanalysis results!
+[27146][   progress] Size-of-analyzed-program: 11
+[27146][   progress] - Reading error report from /home/saver/saver/example/ML/report.json!
+[27146][   progress] - # of reachable locations : 6
+[27146][   progress] - # of reachable callees from the entry (main): 3
+[27146][   progress] - # of use-only function calls : 0
+[27146][   progress] - # of reachable callees in sliced callgraph (use-only calls): 3
+[27146][   progress] - # of irrelevant function calls : 0
+[27146][   progress] - # of reachable callees in sliced callgraph (irrelevant calls): 3
+[27146][   progress] - # of difficult procedures : 0
+[27146][   progress] - # of reachable callees in sliced callgraph (difficult procs): 3
+[27146][   progress] [+] Analyzing programs...  Done!
+[27146][   progress] [+] Recording results...  Done!
+[27146][   progress] ### Deleted objects by intersection: { }
+[27146][   progress] - Identifying V_src, V_sink, error nodes ...
+[27146][   progress] -- # V_src: 1
+[27146][   progress] -- # V_sink: 1
+[27146][   progress] -- # error nodes: 24
+[27146][   progress] 
+[27146][   progress] - Initializing search space ... 
+[27146][   progress] -- Initial opeartion space_0 size: 7
+[27146][   progress] -- Initial opeartion space_1 size: 1
+[27146][   progress] 
+[27146][   progress] - Searching begins ... 
+[27146][   progress] -- Final Patches: 
+[27146][   progress] - [+] { Insert: if ({ main:i == { 0 } }) free(*(main:p)) at 3 (line 17, column 3) }
+[27146][   progress] 
+[27146][   progress] ##### Solution Statistics ... ##### 
+[27146][   progress] - # of the total solutions found : 1 
+[27146][   progress] - # of the the smallest ops.     : 1 
+[27146][   progress] - # of the the largest ops.      : 1 
+[27146][   progress] ################################### 
+[27146][   progress] 
+[27146][   progress] 
+[27146][   progress] PATCH SUCCEED
+[27146][ intern err] get_proc_name: at node 0
+[27146][ intern err] get_proc_name: at node 0
+[27146][ intern err] 
+[27146][environment] Infer log identifier is 
+
+[27185][      phase] ============================================================
+[27185][      phase] = New infer execution begins
+[27185][      phase] ============================================================
+[27185][environment] CWD = /home/saver/saver/example/ML
+[27185][environment] No .inferconfig file found
+[27185][environment] Project root = /home/saver/saver/example/ML
+[27185][environment] INFER_ARGS =   @/tmp/args.tmp.c460d5
+[27185][environment]   ++Contents of '/tmp/args.tmp.c460d5':
+[27185][environment]     saver --error-report /home/saver/saver/example/ML/report.json
+[27185][environment]   
+[27185][environment] command line arguments:   infer saver --error-report report.json
+[27185][environment] Analyzer: checkers
+[27185][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), ownership (C/C++/ObjC), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC)
+[27185][   progress] - Found pre-computed preanalysis results!
+[27185][   progress] Size-of-analyzed-program: 11
+[27185][   progress] - Reading error report from /home/saver/saver/example/ML/report.json!
+[27185][   progress] - # of reachable locations : 6
+[27185][   progress] - # of reachable callees from the entry (main): 3
+[27185][   progress] - # of use-only function calls : 0
+[27185][   progress] - # of reachable callees in sliced callgraph (use-only calls): 3
+[27185][   progress] - # of irrelevant function calls : 0
+[27185][   progress] - # of reachable callees in sliced callgraph (irrelevant calls): 3
+[27185][   progress] - # of difficult procedures : 0
+[27185][   progress] - # of reachable callees in sliced callgraph (difficult procs): 3
+[27185][   progress] [+] Analyzing programs...  Done!
+[27185][   progress] [+] Recording results...  Done!
+[27185][   progress] ### Deleted objects by intersection: { }
+[27185][   progress] - Identifying V_src, V_sink, error nodes ...
+[27185][   progress] -- # V_src: 1
+[27185][   progress] -- # V_sink: 1
+[27185][   progress] -- # error nodes: 24
+[27185][   progress] 
+[27185][   progress] - Initializing search space ... 
+[27185][   progress] -- Initial opeartion space_0 size: 7
+[27185][   progress] -- Initial opeartion space_1 size: 1
+[27185][   progress] 
+[27185][   progress] - Searching begins ... 
+[27185][   progress] -- Final Patches: 
+[27185][   progress] - [+] { Insert: if ({ main:i == { 0 } }) free(*(main:p)) at 3 (line 17, column 3) }
+[27185][   progress] 
+[27185][   progress] ##### Solution Statistics ... ##### 
+[27185][   progress] - # of the total solutions found : 1 
+[27185][   progress] - # of the the smallest ops.     : 1 
+[27185][   progress] - # of the the largest ops.      : 1 
+[27185][   progress] ################################### 
+[27185][   progress] 
+[27185][   progress] 
+[27185][   progress] PATCH SUCCEED
+[27185][ intern err] get_proc_name: at node 0
+[27185][ intern err] get_proc_name: at node 0
+[27185][ intern err] 
+[27185][environment] Infer log identifier is 

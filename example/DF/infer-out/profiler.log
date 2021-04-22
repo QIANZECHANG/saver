@@ -1,62 +1,62 @@
-{ Check fixpoint and update table --> (22 times, 0.004931 sec. (11.339200%))
+{ Check fixpoint and update table --> (22 times, 0.004429 sec. (4.362509%))
 ,
-Check-safe-insert: reachable free-vertices --> (2 times, 0.000071 sec. (0.163391%))
+Check-safe-insert: reachable free-vertices --> (2 times, 0.000112 sec. (0.110378%))
 ,
-Check-safe-insert: reachable use-vertices --> (2 times, 0.000000 sec. (0.000000%))
+Check-safe-insert: reachable use-vertices --> (2 times, 0.000002 sec. (0.001879%))
 ,
-Check-safe-insert: relavant vertices --> (2 times, 0.000031 sec. (0.070730%))
+Check-safe-insert: relavant vertices --> (2 times, 0.000019 sec. (0.018553%))
 ,
-CheckCorrect --> (1 times, 0.000087 sec. (0.199578%))
+CheckCorrect --> (1 times, 0.000182 sec. (0.179423%))
 ,
-Computing post and dump --> (24 times, 0.020025 sec. (46.051484%))
+Computing post and dump --> (24 times, 0.059508 sec. (58.616519%))
 ,
-Computing pre state --> (24 times, 0.000028 sec. (0.064150%))
+Computing pre state --> (24 times, 0.000071 sec. (0.069515%))
 ,
-Constructing Labeling Function --> (1 times, 0.000148 sec. (0.339940%))
+Constructing Labeling Function --> (1 times, 0.000284 sec. (0.279702%))
 ,
-Constructing Labeling Function: prepare --> (1 times, 0.000129 sec. (0.296625%))
+Constructing Labeling Function: prepare --> (1 times, 0.000247 sec. (0.243301%))
 ,
-Constructing Labeling Function: remove --> (1 times, 0.000002 sec. (0.004386%))
+Constructing Labeling Function: remove --> (1 times, 0.000004 sec. (0.003992%))
 ,
-Constructing Labeling Function: unreach --> (1 times, 0.000004 sec. (0.009321%))
+Constructing Labeling Function: unreach --> (1 times, 0.000009 sec. (0.008924%))
 ,
-Constructing OFG --> (1 times, 0.000657 sec. (1.511089%))
+Constructing OFG --> (1 times, 0.006989 sec. (6.884291%))
 ,
-Constructing invariants --> (1 times, 0.001549 sec. (3.562245%))
+Constructing invariants --> (1 times, 0.009047 sec. (8.911486%))
 ,
-Generate alias_vars --> (40 times, 0.000078 sec. (0.178743%))
+Generate alias_vars --> (40 times, 0.000147 sec. (0.145135%))
 ,
-Generate null_vars --> (40 times, 0.000042 sec. (0.096499%))
+Generate null_vars --> (40 times, 0.000090 sec. (0.088302%))
 ,
-Merge 1 --> (30 times, 0.000012 sec. (0.027415%))
+Merge 1 --> (30 times, 0.000038 sec. (0.037810%))
 ,
-Merge 2 --> (30 times, 0.000038 sec. (0.087178%))
+Merge 2 --> (30 times, 0.000087 sec. (0.086189%))
 ,
-PruneUnsafe --> (1 times, 0.000064 sec. (0.146942%))
+PruneUnsafe --> (1 times, 0.000105 sec. (0.103332%))
 ,
-Run call --> (10 times, 0.002887 sec. (6.638704%))
+Run call --> (10 times, 0.006951 sec. (6.846481%))
 ,
-Run instr --> (66 times, 0.019967 sec. (45.917702%))
+Run instr --> (66 times, 0.052102 sec. (51.321012%))
 ,
-doms --> (1 times, 0.000252 sec. (0.579543%))
+doms --> (1 times, 0.000521 sec. (0.513140%))
 ,
-doms_rev --> (1 times, 0.000295 sec. (0.678236%))
+doms_rev --> (1 times, 0.000613 sec. (0.603790%))
 ,
-exec_instr - Load --> (6 times, 0.005818 sec. (13.379390%))
+exec_instr - Load --> (6 times, 0.019372 sec. (19.081515%))
 ,
-exec_instr - Others --> (28 times, 0.002174 sec. (4.999315%))
+exec_instr - Others --> (28 times, 0.005613 sec. (5.528522%))
 ,
-exec_instr - Remove_temps --> (11 times, 0.000714 sec. (1.641582%))
+exec_instr - Remove_temps --> (11 times, 0.001484 sec. (1.461450%))
 ,
-exec_instr - Store --> (9 times, 0.001950 sec. (4.485018%))
+exec_instr - Store --> (9 times, 0.002158 sec. (2.125831%))
 ,
-find_unreachable --> (23 times, 0.000185 sec. (0.426022%))
+find_unreachable --> (23 times, 0.000440 sec. (0.433762%))
 ,
-rename --> (66 times, 0.006778 sec. (15.587356%))
+rename --> (66 times, 0.019732 sec. (19.436133%))
 ,
-to_pair --> (40 times, 0.002598 sec. (5.973627%))
+to_pair --> (40 times, 0.008671 sec. (8.540899%))
 ,
-update_dump_in_call --> (10 times, 0.000252 sec. (0.578447%))
+update_dump_in_call --> (10 times, 0.000591 sec. (0.582185%))
 ,
-update_post_in_call --> (10 times, 0.001772 sec. (4.075445%))
+update_post_in_call --> (10 times, 0.004149 sec. (4.087269%))
  }
