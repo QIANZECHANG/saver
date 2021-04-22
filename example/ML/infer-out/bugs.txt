@@ -1,0 +1,22 @@
+Found 2 issues
+
+src.c:12: error: MEMORY_LEAK (biabduction/Abs.ml:1082:18-25:)
+  memory dynamically allocated by call to `malloc()` at line 8, column 7 is not reachable after line 12, column 9.
+  10.       q = p;
+  11.     else
+  12. >     q = malloc(2); // o2
+  13.   
+  14.     *q = 1;
+
+src.c:14: error: NULL_DEREFERENCE (biabduction/Rearrange.ml:1643:57-64:)
+  [B1] pointer `q` last assigned on line 12 could be null and is dereferenced at line 14, column 3.
+  12.       q = malloc(2); // o2
+  13.   
+  14. >   *q = 1;
+  15.     free(q);
+  16.     //if (i == 0) free(p);
+
+Summary of the reports
+
+       MEMORY_LEAK: 1
+  NULL_DEREFERENCE: 1

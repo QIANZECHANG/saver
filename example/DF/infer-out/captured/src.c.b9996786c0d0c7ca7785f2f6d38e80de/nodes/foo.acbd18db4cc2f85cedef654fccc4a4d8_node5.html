@@ -1,0 +1,305 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>foo.acbd18db4cc2f85cedef654fccc4a4d8_node5</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable { padding: 5px; font-size:12pt; margin:20px; border-collapse: collapse; border-spacing: 0px; }
+td.rowname { text-align:right; font-weight:bold; color:#444444; padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE4">5</a></h1></center>PROC: <a href="./../foo.acbd18db4cc2f85cedef654fccc4a4d8.html">foo</a> LINE: <a href="./../../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE4">4</a>
+<br>PREDS:
+<a href="./../nodes/foo.acbd18db4cc2f85cedef654fccc4a4d8_node1.html"><span class='visited'>N_1<span class='expansion'>node1 preds: succs:5 exn: </span></span></a><br>SUCCS: 
+<a href="./../nodes/foo.acbd18db4cc2f85cedef654fccc4a4d8_node4.html"><span class='visited'>N_4<span class='expansion'>node4 preds:5 succs:3 exn: </span></span></a><br>EXN: 
+<br>
+<span class='color_green'><LISTING>n$3=_fun_malloc(4:unsigned long) [line 4, column 12];
+*&amp;q:int*=n$3 [line 4, column 3];
+</LISTING></span><hr width="100%">
+<a name="session1" href="./../nodes/foo.acbd18db4cc2f85cedef654fccc4a4d8_node5.html#session1">node5#session1</a>(<a href="./../../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE4">4</a>) uninit (5: 0)<LISTING><span class='color_black'>PRE: 
+ uninit_vars: { *(q) } 
+ aliased_vars: { } 
+ prepost: ({ }, { })
+INSTR: n$3 := malloc({ 4 }) [line 4, column 12]
+POST: 
+ uninit_vars: { *(q) } 
+ aliased_vars: { } 
+ prepost: ({ }, { })
+
+</LISTING></span><hr width="100%">
+<a name="session2" href="./../nodes/foo.acbd18db4cc2f85cedef654fccc4a4d8_node5.html#session2">node5#session2</a>(<a href="./../../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE4">4</a>) uninit (5: 1)<LISTING><span class='color_black'>PRE: 
+ uninit_vars: { *(q) } 
+ aliased_vars: { } 
+ prepost: ({ }, { })
+INSTR: q := n$3 [line 4, column 3]
+POST: 
+ uninit_vars: { } 
+ aliased_vars: { } 
+ prepost: ({ }, { })
+
+</LISTING></span><hr width="100%">
+<a name="session6" href="./../nodes/foo.acbd18db4cc2f85cedef654fccc4a4d8_node5.html#session6">node5#session6</a>(<a href="./../../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE4">4</a>) siof<LISTING><span class='color_black'>PRE: (_|_, { })
+INSTRS: n$3=_fun_malloc(4:unsigned long) [line 4, column 12];
+*&amp;q:int*=n$3 [line 4, column 3];
+POST: ({ }, { })
+
+</LISTING></span><hr width="100%">
+<a name="session11" href="./../nodes/foo.acbd18db4cc2f85cedef654fccc4a4d8_node5.html#session11">node5#session11</a>(<a href="./../../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE4">4</a>) address taken<LISTING><span class='color_black'>PRE: { }
+INSTRS: n$3=_fun_malloc(4:unsigned long) [line 4, column 12];
+*&amp;q:int*=n$3 [line 4, column 3];
+POST: { }
+
+</LISTING></span><hr width="100%">
+<a name="session15" href="./../nodes/foo.acbd18db4cc2f85cedef654fccc4a4d8_node5.html#session15">node5#session15</a>(<a href="./../../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE4">4</a>) racerd<LISTING><span class='color_black'>PRE: Threads: NoThread, Locks: { } 
+Accesses { } 
+ Ownership: { q -> Owned } 
+Attributes: { } 
+Non-stable Paths: { }
+
+INSTR: n$3 := malloc({ 4 }) [line 4, column 12]
+POST: Threads: NoThread, Locks: { } 
+Accesses { } 
+ Ownership: { q -> Owned } 
+Attributes: { } 
+Non-stable Paths: { n$3 }
+
+
+</LISTING></span><hr width="100%">
+<a name="session16" href="./../nodes/foo.acbd18db4cc2f85cedef654fccc4a4d8_node5.html#session16">node5#session16</a>(<a href="./../../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE4">4</a>) racerd<LISTING><span class='color_black'>PRE: Threads: NoThread, Locks: { } 
+Accesses { } 
+ Ownership: { q -> Owned } 
+Attributes: { } 
+Non-stable Paths: { n$3 }
+
+INSTR: q := n$3 [line 4, column 3]
+POST: Threads: NoThread, Locks: { } 
+Accesses { } 
+ Ownership: { q -> Unowned } 
+Attributes: { } 
+Non-stable Paths: { q, n$3 }
+
+
+</LISTING></span><hr width="100%">
+<a name="session19" href="./../nodes/foo.acbd18db4cc2f85cedef654fccc4a4d8_node5.html#session19">node5#session19</a>(<a href="./../../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE4">4</a>) ownership<LISTING><span class='color_black'>PRE: { }
+INSTR: n$3 := malloc({ 4 }) [line 4, column 12]
+POST: { }
+
+</LISTING></span><hr width="100%">
+<a name="session20" href="./../nodes/foo.acbd18db4cc2f85cedef654fccc4a4d8_node5.html#session20">node5#session20</a>(<a href="./../../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE4">4</a>) ownership<LISTING><span class='color_black'>PRE: { }
+INSTR: q := n$3 [line 4, column 3]
+POST: { q -> Owned }
+
+</LISTING></span><hr width="100%">
+<a name="session24" href="./../nodes/foo.acbd18db4cc2f85cedef654fccc4a4d8_node5.html#session24">node5#session24</a>(<a href="./../../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE4">4</a>) interproc<LISTING><span class='color_black'>**** [FP:Pending] foo Node: 5, Procedure: foo, Session: 24, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>q = _t$1 <span class='color_orange'>initial</span>:int*</span>; <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:void*</span></span>
+  .... Instructions: .... 
+  <span class='color_green'>n$3=_fun_malloc(4:unsigned long) [line 4, column 12];
+  *&amp;q:int*=n$3 [line 4, column 3];
+  REMOVE_TEMPS(n$3); [line 4, column 3];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$3=_fun_malloc(4:unsigned long) [line 4, column 12]</span>
+    Instruction Returns
+    PROP 1 of 2:
+    <span class='color_blue'><span class='color_red'>MEMma &lt; malloc:4 &gt;  <span class='color_orange'>{vpath: }</span>(n$3)</span> ;
+    <span class='color_blue'>q = _t$1 <span class='color_orange'>initial</span>:int*</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void*</span> ;
+    <span class='color_red'>n$3|->[4|] <span class='color_orange'>alloc</span>:char[_*1][4]</span></span>
+    PROP 2 of 2:
+    <span class='color_blue'><span class='color_red'>n$3 = 0</span> ;
+    <span class='color_blue'>q = _t$1 <span class='color_orange'>initial</span>:int*</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void*</span></span>
+    
+    Instruction <span class='color_green'>*&amp;q:int*=n$3 [line 4, column 3]</span>
+    in vpath_find exp:n$3
+    vpath_find: cannot find n$3
+    .... Rearrangement Start ....
+    Exp: &amp;q
+    Prop: 
+    <span class='color_blue'>MEMma &lt; malloc:4 &gt;  <span class='color_orange'>{vpath: }</span>(n$3) ;
+    q = n$6 <span class='color_orange'>initial</span>:int*; return = n$7 <span class='color_orange'>initial</span>:void* ;
+    n$3|->[4|] <span class='color_orange'>alloc</span>:char[_*1][4]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;q
+    prop before:
+    <span class='color_blue'>MEMma &lt; malloc:4 &gt;  <span class='color_orange'>{vpath: }</span>(n$3) ;
+    q = n$6 <span class='color_orange'>initial</span>:int*; return = n$7 <span class='color_orange'>initial</span>:void* ;
+    n$3|->[4|] <span class='color_orange'>alloc</span>:char[_*1][4]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMma &lt; malloc:4 &gt;  <span class='color_orange'>{vpath: }</span>(n$3)</span> ;
+    <span class='color_blue'>q = n$6 <span class='color_orange'>initial</span>:int*</span>; <span class='color_blue'>return = n$7 <span class='color_orange'>initial</span>:void*</span> ;
+    <span class='color_blue'>n$3|->[4|] <span class='color_orange'>alloc</span>:char[_*1][4]</span></span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMma &lt; malloc:4 &gt;  <span class='color_orange'>{vpath: }</span>(q)</span> ;
+    <span class='color_blue'>q = <span class='color_red'>n$3 <span class='color_orange'>update:4</span></span>:int*</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void*</span> ;
+    <span class='color_blue'>q|->[4|] <span class='color_orange'>alloc</span>:char[_*1][4]</span></span>
+    
+    Instruction <span class='color_green'>*&amp;q:int*=n$3 [line 4, column 3]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;q
+    Prop: 
+    <span class='color_blue'>n$3 = 0 ;
+    q = n$8 <span class='color_orange'>initial</span>:int*; return = n$9 <span class='color_orange'>initial</span>:void*</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;q
+    prop before:
+    <span class='color_blue'>n$3 = 0 ;
+    q = n$8 <span class='color_orange'>initial</span>:int*; return = n$9 <span class='color_orange'>initial</span>:void*</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$3 = 0</span> ;
+    <span class='color_blue'>q = n$8 <span class='color_orange'>initial</span>:int*</span>; <span class='color_blue'>return = n$9 <span class='color_orange'>initial</span>:void*</span></span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$3 = 0</span> ;
+    <span class='color_blue'>q = <span class='color_red'>0 <span class='color_orange'>update:4</span></span>:int*</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void*</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$3); [line 4, column 3]</span>
+    in vpath_find exp:n$3
+    vpath_find: found q : int*
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>MEMma &lt; malloc:4 &gt;  <span class='color_orange'>{vpath: }</span>(q)</span> ;
+    <span class='color_blue'>q = <span class='color_red'>_t$1 <span class='color_orange'>update:4</span></span>:int*</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void*</span> ;
+    <span class='color_red'>q|->[4|] <span class='color_orange'>alloc</span>:char[_*1][4]</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$3); [line 4, column 3]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>q = 0 <span class='color_orange'>update:4</span>:int*</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void*</span></span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 2:
+    <span class='color_blue'><span class='color_red'>MEMma &lt; malloc:4 &gt;  <span class='color_orange'>{vpath: }</span>(q)</span> ;
+    <span class='color_blue'>q = _t$1 <span class='color_orange'>update:4</span>:int*</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void*</span> ;
+    <span class='color_red'>q|->[4|] <span class='color_orange'>alloc</span>:char[_*1][4]</span></span>
+    PROP 2 of 2:
+    <span class='color_blue'><span class='color_blue'>q = <span class='color_red'>0 <span class='color_orange'>update:4</span></span>:int*</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void*</span></span>
+    
+    
+    
+  </LISTING></span><hr width="100%">
+<a name="session29" href="./../nodes/foo.acbd18db4cc2f85cedef654fccc4a4d8_node5.html#session29">node5#session29</a>(<a href="./../../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE4">4</a>) interproc<LISTING><span class='color_black'>**** [RE:Pending] foo Node: 5, Procedure: foo, Session: 29, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>q = _t$1 <span class='color_orange'>initial</span>:int*</span>; <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:void*</span></span>
+  .... Instructions: .... 
+  <span class='color_green'>n$3=_fun_malloc(4:unsigned long) [line 4, column 12];
+  *&amp;q:int*=n$3 [line 4, column 3];
+  REMOVE_TEMPS(n$3); [line 4, column 3];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$3=_fun_malloc(4:unsigned long) [line 4, column 12]</span>
+    Instruction Returns
+    PROP 1 of 2:
+    <span class='color_blue'><span class='color_red'>MEMma &lt; malloc:4 &gt;  <span class='color_orange'>{vpath: }</span>(n$3)</span> ;
+    <span class='color_blue'>q = _t$1 <span class='color_orange'>initial</span>:int*</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void*</span> ;
+    <span class='color_red'>n$3|->[4|] <span class='color_orange'>alloc</span>:char[_*1][4]</span></span>
+    PROP 2 of 2:
+    <span class='color_blue'><span class='color_red'>n$3 = 0</span> ;
+    <span class='color_blue'>q = _t$1 <span class='color_orange'>initial</span>:int*</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void*</span></span>
+    
+    Instruction <span class='color_green'>*&amp;q:int*=n$3 [line 4, column 3]</span>
+    in vpath_find exp:n$3
+    vpath_find: cannot find n$3
+    .... Rearrangement Start ....
+    Exp: &amp;q
+    Prop: 
+    <span class='color_blue'>MEMma &lt; malloc:4 &gt;  <span class='color_orange'>{vpath: }</span>(n$3) ;
+    q = n$6 <span class='color_orange'>initial</span>:int*; return = n$7 <span class='color_orange'>initial</span>:void* ;
+    n$3|->[4|] <span class='color_orange'>alloc</span>:char[_*1][4]</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMma &lt; malloc:4 &gt;  <span class='color_orange'>{vpath: }</span>(q)</span> ;
+    <span class='color_blue'>q = <span class='color_red'>n$3 <span class='color_orange'>update:4</span></span>:int*</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void*</span> ;
+    <span class='color_blue'>q|->[4|] <span class='color_orange'>alloc</span>:char[_*1][4]</span></span>
+    
+    Instruction <span class='color_green'>*&amp;q:int*=n$3 [line 4, column 3]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;q
+    Prop: 
+    <span class='color_blue'>n$3 = 0 ;
+    q = n$8 <span class='color_orange'>initial</span>:int*; return = n$9 <span class='color_orange'>initial</span>:void*</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$3 = 0</span> ;
+    <span class='color_blue'>q = <span class='color_red'>0 <span class='color_orange'>update:4</span></span>:int*</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void*</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$3); [line 4, column 3]</span>
+    in vpath_find exp:n$3
+    vpath_find: found q : int*
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>MEMma &lt; malloc:4 &gt;  <span class='color_orange'>{vpath: }</span>(q)</span> ;
+    <span class='color_blue'>q = <span class='color_red'>_t$1 <span class='color_orange'>update:4</span></span>:int*</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void*</span> ;
+    <span class='color_red'>q|->[4|] <span class='color_orange'>alloc</span>:char[_*1][4]</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$3); [line 4, column 3]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>q = 0 <span class='color_orange'>update:4</span>:int*</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void*</span></span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 2:
+    <span class='color_blue'><span class='color_red'>MEMma &lt; malloc:4 &gt;  <span class='color_orange'>{vpath: }</span>(q)</span> ;
+    <span class='color_blue'>q = _t$1 <span class='color_orange'>update:4</span>:int*</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void*</span> ;
+    <span class='color_red'>q|->[4|] <span class='color_orange'>alloc</span>:char[_*1][4]</span></span>
+    PROP 2 of 2:
+    <span class='color_blue'><span class='color_blue'>q = <span class='color_red'>0 <span class='color_orange'>update:4</span></span>:int*</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void*</span></span>
+    
+    
+    
+  </LISTING></span>

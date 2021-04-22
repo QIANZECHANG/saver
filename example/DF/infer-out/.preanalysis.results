@@ -1,0 +1,9 @@
+REG: { _n$0_foo -> ({ (main,5)_src.c:4:3:int }, { }),
+       _n$0_main -> ({ (main,5)_src.c:4:3:int }, { }),
+       _n$1_foo -> ({ (main,5)_src.c:4:3:int }, { }),
+       _n$2_main -> ({ (main,5)_src.c:4:3:int }, { }),
+       _n$3_foo -> ({ (main,5)_src.c:4:3:int }, { }) }
+ MEM: { _q_foo:int* -> ({ (main,5)_src.c:4:3:int }, { }),
+        _p_main:int* -> ({ (main,5)_src.c:4:3:int }, { }),
+        _return_foo:void* -> ({ (main,5)_src.c:4:3:int }, { }) }
+

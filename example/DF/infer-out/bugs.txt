@@ -1,0 +1,13 @@
+Found 1 issue
+
+src.c:14: error: USE_AFTER_FREE (biabduction/Rearrange.ml:1654:50-57:)
+  [B1] pointer `p` last assigned on line 12 was freed by call to `foo()` at line 12, column 7 and is dereferenced or freed at line 14, column 3.
+  12.     p = foo();
+  13.   
+  14. >   free(p);
+  15.   
+  16.     return 0;
+
+Summary of the reports
+
+  USE_AFTER_FREE: 1

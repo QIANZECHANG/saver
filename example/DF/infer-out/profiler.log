@@ -1,0 +1,62 @@
+{ Check fixpoint and update table --> (22 times, 0.004931 sec. (11.339200%))
+,
+Check-safe-insert: reachable free-vertices --> (2 times, 0.000071 sec. (0.163391%))
+,
+Check-safe-insert: reachable use-vertices --> (2 times, 0.000000 sec. (0.000000%))
+,
+Check-safe-insert: relavant vertices --> (2 times, 0.000031 sec. (0.070730%))
+,
+CheckCorrect --> (1 times, 0.000087 sec. (0.199578%))
+,
+Computing post and dump --> (24 times, 0.020025 sec. (46.051484%))
+,
+Computing pre state --> (24 times, 0.000028 sec. (0.064150%))
+,
+Constructing Labeling Function --> (1 times, 0.000148 sec. (0.339940%))
+,
+Constructing Labeling Function: prepare --> (1 times, 0.000129 sec. (0.296625%))
+,
+Constructing Labeling Function: remove --> (1 times, 0.000002 sec. (0.004386%))
+,
+Constructing Labeling Function: unreach --> (1 times, 0.000004 sec. (0.009321%))
+,
+Constructing OFG --> (1 times, 0.000657 sec. (1.511089%))
+,
+Constructing invariants --> (1 times, 0.001549 sec. (3.562245%))
+,
+Generate alias_vars --> (40 times, 0.000078 sec. (0.178743%))
+,
+Generate null_vars --> (40 times, 0.000042 sec. (0.096499%))
+,
+Merge 1 --> (30 times, 0.000012 sec. (0.027415%))
+,
+Merge 2 --> (30 times, 0.000038 sec. (0.087178%))
+,
+PruneUnsafe --> (1 times, 0.000064 sec. (0.146942%))
+,
+Run call --> (10 times, 0.002887 sec. (6.638704%))
+,
+Run instr --> (66 times, 0.019967 sec. (45.917702%))
+,
+doms --> (1 times, 0.000252 sec. (0.579543%))
+,
+doms_rev --> (1 times, 0.000295 sec. (0.678236%))
+,
+exec_instr - Load --> (6 times, 0.005818 sec. (13.379390%))
+,
+exec_instr - Others --> (28 times, 0.002174 sec. (4.999315%))
+,
+exec_instr - Remove_temps --> (11 times, 0.000714 sec. (1.641582%))
+,
+exec_instr - Store --> (9 times, 0.001950 sec. (4.485018%))
+,
+find_unreachable --> (23 times, 0.000185 sec. (0.426022%))
+,
+rename --> (66 times, 0.006778 sec. (15.587356%))
+,
+to_pair --> (40 times, 0.002598 sec. (5.973627%))
+,
+update_dump_in_call --> (10 times, 0.000252 sec. (0.578447%))
+,
+update_post_in_call --> (10 times, 0.001772 sec. (4.075445%))
+ }
