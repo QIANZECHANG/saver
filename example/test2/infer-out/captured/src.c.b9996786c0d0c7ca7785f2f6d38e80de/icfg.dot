@@ -1,0 +1,234 @@
+/* @generated */
+digraph cfg {
+"add.34ec78fcc91ffb1e54cd85e4a0924332_1" [label="1: Start add\nFormals:  n:node*\nLocals:  x:node* \n   DECLARE_LOCALS(&return,&x); [line 22, column 1]\n " color=yellow style=filled]
+	
+
+	 "add.34ec78fcc91ffb1e54cd85e4a0924332_1" -> "add.34ec78fcc91ffb1e54cd85e4a0924332_9" ;
+"add.34ec78fcc91ffb1e54cd85e4a0924332_2" [label="2: Exit add \n  " color=yellow style=filled]
+	
+
+"add.34ec78fcc91ffb1e54cd85e4a0924332_3" [label="3:  BinaryOperatorStmt: Assign \n   n$0=*&x:node* [line 27, column 3]\n  n$1=*&n:node* [line 27, column 11]\n  *n$0.next:node*=n$1 [line 27, column 3]\n " shape="box"]
+	
+
+	 "add.34ec78fcc91ffb1e54cd85e4a0924332_3" -> "add.34ec78fcc91ffb1e54cd85e4a0924332_2" ;
+"add.34ec78fcc91ffb1e54cd85e4a0924332_4" [label="4: + \n  " ]
+	
+
+	 "add.34ec78fcc91ffb1e54cd85e4a0924332_4" -> "add.34ec78fcc91ffb1e54cd85e4a0924332_5" ;
+"add.34ec78fcc91ffb1e54cd85e4a0924332_5" [label="5:  BinaryOperatorStmt: NE \n   n$2=*&x:node* [line 24, column 9]\n  n$3=*n$2.next:node* [line 24, column 9]\n " shape="box"]
+	
+
+	 "add.34ec78fcc91ffb1e54cd85e4a0924332_5" -> "add.34ec78fcc91ffb1e54cd85e4a0924332_6" ;
+	 "add.34ec78fcc91ffb1e54cd85e4a0924332_5" -> "add.34ec78fcc91ffb1e54cd85e4a0924332_7" ;
+"add.34ec78fcc91ffb1e54cd85e4a0924332_6" [label="6: Prune (true branch, while) \n   PRUNE((n$3 != null), true); [line 24, column 9]\n " shape="invhouse"]
+	
+
+	 "add.34ec78fcc91ffb1e54cd85e4a0924332_6" -> "add.34ec78fcc91ffb1e54cd85e4a0924332_8" ;
+"add.34ec78fcc91ffb1e54cd85e4a0924332_7" [label="7: Prune (false branch, while) \n   PRUNE(!(n$3 != null), false); [line 24, column 9]\n " shape="invhouse"]
+	
+
+	 "add.34ec78fcc91ffb1e54cd85e4a0924332_7" -> "add.34ec78fcc91ffb1e54cd85e4a0924332_3" ;
+"add.34ec78fcc91ffb1e54cd85e4a0924332_8" [label="8:  BinaryOperatorStmt: Assign \n   n$4=*&x:node* [line 25, column 7]\n  n$5=*n$4.next:node* [line 25, column 7]\n  *&x:node*=n$5 [line 25, column 5]\n " shape="box"]
+	
+
+	 "add.34ec78fcc91ffb1e54cd85e4a0924332_8" -> "add.34ec78fcc91ffb1e54cd85e4a0924332_4" ;
+"add.34ec78fcc91ffb1e54cd85e4a0924332_9" [label="9:  DeclStmt \n   n$7=*&#GB<src.c>$head:node* [line 23, column 18]\n  *&x:node*=n$7 [line 23, column 3]\n " shape="box"]
+	
+
+	 "add.34ec78fcc91ffb1e54cd85e4a0924332_9" -> "add.34ec78fcc91ffb1e54cd85e4a0924332_4" ;
+"clean.123402c04dcfb6625f688f771a5fc05d_1" [label="1: Start clean\nFormals:  l:node*\nLocals:  \n   DECLARE_LOCALS(&return); [line 30, column 1]\n " color=yellow style=filled]
+	
+
+	 "clean.123402c04dcfb6625f688f771a5fc05d_1" -> "clean.123402c04dcfb6625f688f771a5fc05d_6" ;
+"clean.123402c04dcfb6625f688f771a5fc05d_2" [label="2: Exit clean \n  " color=yellow style=filled]
+	
+
+"clean.123402c04dcfb6625f688f771a5fc05d_3" [label="3:  BinaryOperatorStmt: Assign \n   n$0=*&l:node* [line 34, column 5]\n  *n$0.next:node*=null [line 34, column 5]\n " shape="box"]
+	
+
+	 "clean.123402c04dcfb6625f688f771a5fc05d_3" -> "clean.123402c04dcfb6625f688f771a5fc05d_2" ;
+"clean.123402c04dcfb6625f688f771a5fc05d_4" [label="4:  Call _fun_free \n   n$1=*&l:node* [line 33, column 10]\n  n$2=*n$1.next:node* [line 33, column 10]\n  n$3=_fun_free(n$2:node*) [line 33, column 5]\n " shape="box"]
+	
+
+	 "clean.123402c04dcfb6625f688f771a5fc05d_4" -> "clean.123402c04dcfb6625f688f771a5fc05d_3" ;
+"clean.123402c04dcfb6625f688f771a5fc05d_5" [label="5: + \n  " ]
+	
+
+	 "clean.123402c04dcfb6625f688f771a5fc05d_5" -> "clean.123402c04dcfb6625f688f771a5fc05d_4" ;
+"clean.123402c04dcfb6625f688f771a5fc05d_6" [label="6:  BinaryOperatorStmt: NE \n   n$4=*&l:node* [line 31, column 7]\n  n$5=*n$4.next:node* [line 31, column 7]\n " shape="box"]
+	
+
+	 "clean.123402c04dcfb6625f688f771a5fc05d_6" -> "clean.123402c04dcfb6625f688f771a5fc05d_7" ;
+	 "clean.123402c04dcfb6625f688f771a5fc05d_6" -> "clean.123402c04dcfb6625f688f771a5fc05d_8" ;
+"clean.123402c04dcfb6625f688f771a5fc05d_7" [label="7: Prune (true branch, if) \n   PRUNE((n$5 != null), true); [line 31, column 7]\n " shape="invhouse"]
+	
+
+	 "clean.123402c04dcfb6625f688f771a5fc05d_7" -> "clean.123402c04dcfb6625f688f771a5fc05d_9" ;
+"clean.123402c04dcfb6625f688f771a5fc05d_8" [label="8: Prune (false branch, if) \n   PRUNE(!(n$5 != null), false); [line 31, column 7]\n " shape="invhouse"]
+	
+
+	 "clean.123402c04dcfb6625f688f771a5fc05d_8" -> "clean.123402c04dcfb6625f688f771a5fc05d_5" ;
+"clean.123402c04dcfb6625f688f771a5fc05d_9" [label="9:  Call _fun_clean \n   n$6=*&l:node* [line 32, column 11]\n  n$7=*n$6.next:node* [line 32, column 11]\n  n$8=_fun_clean(n$7:node*) [line 32, column 5]\n " shape="box"]
+	
+
+	 "clean.123402c04dcfb6625f688f771a5fc05d_9" -> "clean.123402c04dcfb6625f688f771a5fc05d_5" ;
+"main.fad58de7366495db4650cfefac2fcd61_1" [label="1: Start main\nFormals: \nLocals:  i:int t:node* x:node* n:node* \n   DECLARE_LOCALS(&return,&i,&t,&x,&n); [line 37, column 1]\n " color=yellow style=filled]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_1" -> "main.fad58de7366495db4650cfefac2fcd61_33" ;
+"main.fad58de7366495db4650cfefac2fcd61_2" [label="2: Exit main \n  " color=yellow style=filled]
+	
+
+"main.fad58de7366495db4650cfefac2fcd61_3" [label="3:  Return Stmt \n   *&return:int=0 [line 74, column 3]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_3" -> "main.fad58de7366495db4650cfefac2fcd61_2" ;
+"main.fad58de7366495db4650cfefac2fcd61_4" [label="4: + \n  " ]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_4" -> "main.fad58de7366495db4650cfefac2fcd61_7" ;
+"main.fad58de7366495db4650cfefac2fcd61_5" [label="5:  DeclStmt \n   *&i:int=0 [line 43, column 8]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_5" -> "main.fad58de7366495db4650cfefac2fcd61_4" ;
+"main.fad58de7366495db4650cfefac2fcd61_6" [label="6:  UnaryOperator \n   n$0=*&i:int [line 43, column 21]\n  *&i:int=(n$0 + 1) [line 43, column 21]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_6" -> "main.fad58de7366495db4650cfefac2fcd61_4" ;
+"main.fad58de7366495db4650cfefac2fcd61_7" [label="7:  BinaryOperatorStmt: LT \n   n$1=*&i:int [line 43, column 16]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_7" -> "main.fad58de7366495db4650cfefac2fcd61_8" ;
+	 "main.fad58de7366495db4650cfefac2fcd61_7" -> "main.fad58de7366495db4650cfefac2fcd61_9" ;
+"main.fad58de7366495db4650cfefac2fcd61_8" [label="8: Prune (true branch, for loop) \n   PRUNE((n$1 < 10), true); [line 43, column 16]\n " shape="invhouse"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_8" -> "main.fad58de7366495db4650cfefac2fcd61_30" ;
+"main.fad58de7366495db4650cfefac2fcd61_9" [label="9: Prune (false branch, for loop) \n   PRUNE(!(n$1 < 10), false); [line 43, column 16]\n " shape="invhouse"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_9" -> "main.fad58de7366495db4650cfefac2fcd61_3" ;
+"main.fad58de7366495db4650cfefac2fcd61_10" [label="10: + \n  " ]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_10" -> "main.fad58de7366495db4650cfefac2fcd61_6" ;
+"main.fad58de7366495db4650cfefac2fcd61_11" [label="11:  BinaryOperatorStmt: EQ \n   n$2=*&n:node* [line 64, column 8]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_11" -> "main.fad58de7366495db4650cfefac2fcd61_12" ;
+	 "main.fad58de7366495db4650cfefac2fcd61_11" -> "main.fad58de7366495db4650cfefac2fcd61_13" ;
+"main.fad58de7366495db4650cfefac2fcd61_12" [label="12: Prune (true branch, if) \n   PRUNE((n$2 == null), true); [line 64, column 8]\n " shape="invhouse"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_12" -> "main.fad58de7366495db4650cfefac2fcd61_6" ;
+"main.fad58de7366495db4650cfefac2fcd61_13" [label="13: Prune (false branch, if) \n   PRUNE(!(n$2 == null), false); [line 64, column 8]\n " shape="invhouse"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_13" -> "main.fad58de7366495db4650cfefac2fcd61_14" ;
+	 "main.fad58de7366495db4650cfefac2fcd61_13" -> "main.fad58de7366495db4650cfefac2fcd61_15" ;
+"main.fad58de7366495db4650cfefac2fcd61_14" [label="14: Prune (true branch, if) \n   n$3=*&n:node* [line 64, column 17]\n  n$4=*n$3.v:int [line 64, column 17]\n  PRUNE(n$4, true); [line 64, column 17]\n " shape="invhouse"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_14" -> "main.fad58de7366495db4650cfefac2fcd61_6" ;
+"main.fad58de7366495db4650cfefac2fcd61_15" [label="15: Prune (false branch, if) \n   n$3=*&n:node* [line 64, column 17]\n  n$4=*n$3.v:int [line 64, column 17]\n  PRUNE(!n$4, false); [line 64, column 17]\n " shape="invhouse"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_15" -> "main.fad58de7366495db4650cfefac2fcd61_10" ;
+"main.fad58de7366495db4650cfefac2fcd61_16" [label="16: + \n  " ]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_16" -> "main.fad58de7366495db4650cfefac2fcd61_11" ;
+"main.fad58de7366495db4650cfefac2fcd61_17" [label="17:  BinaryOperatorStmt: EQ \n   n$8=*&i:int [line 57, column 8]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_17" -> "main.fad58de7366495db4650cfefac2fcd61_18" ;
+	 "main.fad58de7366495db4650cfefac2fcd61_17" -> "main.fad58de7366495db4650cfefac2fcd61_19" ;
+"main.fad58de7366495db4650cfefac2fcd61_18" [label="18: Prune (true branch, if) \n   PRUNE((n$8 == 3), true); [line 57, column 8]\n " shape="invhouse"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_18" -> "main.fad58de7366495db4650cfefac2fcd61_20" ;
+"main.fad58de7366495db4650cfefac2fcd61_19" [label="19: Prune (false branch, if) \n   PRUNE(!(n$8 == 3), false); [line 57, column 8]\n " shape="invhouse"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_19" -> "main.fad58de7366495db4650cfefac2fcd61_16" ;
+"main.fad58de7366495db4650cfefac2fcd61_20" [label="20:  BinaryOperatorStmt: Assign \n   n$10=*&x:node* [line 58, column 9]\n  *&n:node*=n$10 [line 58, column 7]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_20" -> "main.fad58de7366495db4650cfefac2fcd61_6" ;
+"main.fad58de7366495db4650cfefac2fcd61_21" [label="21:  BinaryOperatorStmt: Assign \n   n$13=*&t:node* [line 56, column 5]\n  n$14=*&x:node* [line 56, column 13]\n  *n$13.next:node*=n$14 [line 56, column 5]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_21" -> "main.fad58de7366495db4650cfefac2fcd61_17" ;
+"main.fad58de7366495db4650cfefac2fcd61_22" [label="22: + \n  " ]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_22" -> "main.fad58de7366495db4650cfefac2fcd61_23" ;
+	 "main.fad58de7366495db4650cfefac2fcd61_22" -> "main.fad58de7366495db4650cfefac2fcd61_24" ;
+"main.fad58de7366495db4650cfefac2fcd61_23" [label="23: Prune (true branch, while) \n   n$15=*&t:node* [line 52, column 11]\n  n$16=*n$15.next:node* [line 52, column 11]\n  PRUNE(n$16, true); [line 52, column 11]\n " shape="invhouse"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_23" -> "main.fad58de7366495db4650cfefac2fcd61_26" ;
+"main.fad58de7366495db4650cfefac2fcd61_24" [label="24: Prune (false branch, while) \n   n$15=*&t:node* [line 52, column 11]\n  n$16=*n$15.next:node* [line 52, column 11]\n  PRUNE(!n$16, false); [line 52, column 11]\n " shape="invhouse"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_24" -> "main.fad58de7366495db4650cfefac2fcd61_21" ;
+"main.fad58de7366495db4650cfefac2fcd61_25" [label="25:  Call _fun_printf \n   n$17=*&t:node* [line 54, column 21]\n  n$18=*n$17.v:int [line 54, column 21]\n  n$19=_fun_printf(\"%d\\n\":char const *,n$18:int) [line 54, column 7]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_25" -> "main.fad58de7366495db4650cfefac2fcd61_22" ;
+"main.fad58de7366495db4650cfefac2fcd61_26" [label="26:  BinaryOperatorStmt: Assign \n   n$20=*&t:node* [line 53, column 9]\n  n$21=*n$20.next:node* [line 53, column 9]\n  *&t:node*=n$21 [line 53, column 7]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_26" -> "main.fad58de7366495db4650cfefac2fcd61_25" ;
+"main.fad58de7366495db4650cfefac2fcd61_27" [label="27:  BinaryOperatorStmt: Assign \n   n$23=*&#GB<src.c>$head:node* [line 51, column 7]\n  *&t:node*=n$23 [line 51, column 5]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_27" -> "main.fad58de7366495db4650cfefac2fcd61_22" ;
+"main.fad58de7366495db4650cfefac2fcd61_28" [label="28:  BinaryOperatorStmt: Assign \n   n$24=*&x:node* [line 47, column 5]\n  n$25=*&i:int [line 47, column 10]\n  *n$24.v:int=n$25 [line 47, column 5]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_28" -> "main.fad58de7366495db4650cfefac2fcd61_27" ;
+"main.fad58de7366495db4650cfefac2fcd61_29" [label="29:  BinaryOperatorStmt: Assign \n   n$26=*&x:node* [line 46, column 5]\n  *n$26.next:node*=null [line 46, column 5]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_29" -> "main.fad58de7366495db4650cfefac2fcd61_28" ;
+"main.fad58de7366495db4650cfefac2fcd61_30" [label="30:  BinaryOperatorStmt: Assign \n   n$27=_fun_malloc(sizeof(t=node;nbytes=16):node) [line 45, column 7]\n  *&x:node*=n$27 [line 45, column 5]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_30" -> "main.fad58de7366495db4650cfefac2fcd61_29" ;
+"main.fad58de7366495db4650cfefac2fcd61_31" [label="31:  DeclStmt \n   *&n:node*=null [line 40, column 3]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_31" -> "main.fad58de7366495db4650cfefac2fcd61_5" ;
+"main.fad58de7366495db4650cfefac2fcd61_32" [label="32:  BinaryOperatorStmt: Assign \n   n$29=*&#GB<src.c>$head:node* [line 39, column 3]\n  *n$29.next:node*=null [line 39, column 3]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_32" -> "main.fad58de7366495db4650cfefac2fcd61_31" ;
+"main.fad58de7366495db4650cfefac2fcd61_33" [label="33:  BinaryOperatorStmt: Assign \n   n$30=_fun_malloc(sizeof(t=node;nbytes=16):node) [line 38, column 8]\n  *&#GB<src.c>$head:node*=n$30 [line 38, column 3]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_33" -> "main.fad58de7366495db4650cfefac2fcd61_32" ;
+"new.22af645d1859cb5ca6da0c484f1f37ea_1" [label="1: Start new\nFormals:  k:int n:node*\nLocals:  x:node* \n   DECLARE_LOCALS(&return,&x); [line 13, column 1]\n " color=yellow style=filled]
+	
+
+	 "new.22af645d1859cb5ca6da0c484f1f37ea_1" -> "new.22af645d1859cb5ca6da0c484f1f37ea_6" ;
+"new.22af645d1859cb5ca6da0c484f1f37ea_2" [label="2: Exit new \n  " color=yellow style=filled]
+	
+
+"new.22af645d1859cb5ca6da0c484f1f37ea_3" [label="3:  Return Stmt \n   n$0=*&x:node* [line 17, column 10]\n  *&return:node*=n$0 [line 17, column 3]\n " shape="box"]
+	
+
+	 "new.22af645d1859cb5ca6da0c484f1f37ea_3" -> "new.22af645d1859cb5ca6da0c484f1f37ea_2" ;
+"new.22af645d1859cb5ca6da0c484f1f37ea_4" [label="4:  BinaryOperatorStmt: Assign \n   n$1=*&x:node* [line 16, column 3]\n  n$2=*&k:int [line 16, column 8]\n  *n$1.v:int=n$2 [line 16, column 3]\n " shape="box"]
+	
+
+	 "new.22af645d1859cb5ca6da0c484f1f37ea_4" -> "new.22af645d1859cb5ca6da0c484f1f37ea_3" ;
+"new.22af645d1859cb5ca6da0c484f1f37ea_5" [label="5:  BinaryOperatorStmt: Assign \n   n$3=*&x:node* [line 15, column 3]\n  n$4=*&n:node* [line 15, column 11]\n  *n$3.next:node*=n$4 [line 15, column 3]\n " shape="box"]
+	
+
+	 "new.22af645d1859cb5ca6da0c484f1f37ea_5" -> "new.22af645d1859cb5ca6da0c484f1f37ea_4" ;
+"new.22af645d1859cb5ca6da0c484f1f37ea_6" [label="6:  DeclStmt \n   n$5=_fun_malloc(sizeof(t=node;nbytes=16):node) [line 14, column 18]\n  *&x:node*=n$5 [line 14, column 3]\n " shape="box"]
+	
+
+	 "new.22af645d1859cb5ca6da0c484f1f37ea_6" -> "new.22af645d1859cb5ca6da0c484f1f37ea_5" ;
+}

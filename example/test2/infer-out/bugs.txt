@@ -1,0 +1,29 @@
+Found 3 issues
+
+src.c:15: error: NULL_DEREFERENCE (biabduction/Rearrange.ml:1643:57-64:)
+  [B1] pointer `x` last assigned on line 14 could be null and is dereferenced at line 15, column 3.
+  13.   struct node* new(int k, struct node* n){
+  14.     struct node* x=malloc(sizeof(*x));
+  15. >   x->next=n;
+  16.     x->v=k;
+  17.     return x;
+
+src.c:39: error: NULL_DEREFERENCE (biabduction/Rearrange.ml:1643:57-64:)
+  [B1] pointer `head` last assigned on line 38 could be null and is dereferenced at line 39, column 3.
+  37.   int main() { 
+  38.     head=malloc(sizeof(*head));
+  39. >   head->next=NULL;
+  40.     struct node* n=NULL;
+  41.     struct node* x;
+
+src.c:46: error: NULL_DEREFERENCE (biabduction/Rearrange.ml:1643:57-64:)
+  [B1] pointer `x` last assigned on line 45 could be null and is dereferenced at line 46, column 5.
+  44.       //x=new(i,NULL);
+  45.       x=malloc(sizeof(*x));
+  46. >     x->next=NULL;
+  47.       x->v=i;
+  48.       //printf("new %p\n",x);
+
+Summary of the reports
+
+  NULL_DEREFERENCE: 3

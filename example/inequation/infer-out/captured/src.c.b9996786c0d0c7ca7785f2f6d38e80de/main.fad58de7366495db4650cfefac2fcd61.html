@@ -60,9 +60,10 @@ n$1=_fun_free(n$0:void*) [line 15, column 3];
 REMOVE_TEMPS(n$0,n$1); [line 15, column 3];
 NULLIFY(&amp;q); [line 15, column 3];
 </span></span></a> <a href="./nodes/main.fad58de7366495db4650cfefac2fcd61_node5.html"><span class='visited'>I_5<span class='expansion'>node5 preds:6 succs:4 exn: Instructions
-n$2=*&amp;q:int* [line 14, column 4];
+n$2=*&amp;p:int* [line 14, column 4];
 *n$2:int=1 [line 14, column 3];
 REMOVE_TEMPS(n$2); [line 14, column 3];
+NULLIFY(&amp;p); [line 14, column 3];
 </span></span></a> <a href="./nodes/main.fad58de7366495db4650cfefac2fcd61_node6.html"><span class='visited'>J_6<span class='expansion'>node6 preds:11 10 succs:5 exn: Join
 </span></span></a> <a href="./nodes/main.fad58de7366495db4650cfefac2fcd61_node7.html"><span class='visited'>I_7<span class='expansion'>node7 preds:12 succs:8 9 exn: Instructions
 n$3=*&amp;i:int [line 9, column 7];
@@ -73,12 +74,10 @@ REMOVE_TEMPS(n$3); [line 9, column 7];
 </span></span></a> <a href="./nodes/main.fad58de7366495db4650cfefac2fcd61_node9.html"><span class='visited'>C_9<span class='expansion'>node9 preds:7 succs:11 exn: Conditional false Branch
 PRUNE(!(n$3  &gt;  1), false); [line 9, column 7];
 REMOVE_TEMPS(n$3); [line 9, column 7];
-NULLIFY(&amp;p); [line 9, column 7];
 </span></span></a> <a href="./nodes/main.fad58de7366495db4650cfefac2fcd61_node10.html"><span class='visited'>I_10<span class='expansion'>node10 preds:8 succs:6 exn: Instructions
 n$4=*&amp;p:int* [line 10, column 9];
 *&amp;q:int*=n$4 [line 10, column 5];
 REMOVE_TEMPS(n$4); [line 10, column 5];
-NULLIFY(&amp;p); [line 10, column 5];
 APPLY_ABSTRACTION; [line 10, column 5];
 </span></span></a> <a href="./nodes/main.fad58de7366495db4650cfefac2fcd61_node11.html"><span class='visited'>I_11<span class='expansion'>node11 preds:9 succs:6 exn: Instructions
 n$5=_fun_malloc(2:unsigned long) [line 12, column 9];
@@ -92,13 +91,13 @@ REMOVE_TEMPS(n$7); [line 8, column 3];
 </span></span></a><span class='color_black'>
 int main()
 Analyzed
-</span><br />FAILURE:NONE SYMOPS:99
+</span><br />FAILURE:NONE SYMOPS:194
 <br />
 <hr width="100%">
 ERRORS DURING FOOTPRINT
-<br>NULL_DEREFERENCE [B1] pointer `q` last assigned on line 12 could be null and is dereferenced at line 14, column 3 <a href="./nodes/node5.html#session63">node5#session63</a>(<a href="./../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE14">14</a>)<br>MEMORY_LEAK  memory dynamically allocated by call to `malloc()` at line 8, column 7 is not reachable after line 12, column 9 <a href="./nodes/node11.html#session59">node11#session59</a>(<a href="./../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE12">12</a>)<hr width="100%">
+<br>MEMORY_LEAK  memory dynamically allocated by call to `malloc()` at line 8, column 7 is not reachable after line 14, column 3 <a href="./nodes/node5.html#session63">node5#session63</a>(<a href="./../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE14">14</a>)<br>NULL_DEREFERENCE [B1] pointer `p` last assigned on line 8 could be null and is dereferenced at line 14, column 3 <a href="./nodes/node5.html#session63">node5#session63</a>(<a href="./../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE14">14</a>)<hr width="100%">
 ERRORS DURING RE-EXECUTION
-<br>MEMORY_LEAK  memory dynamically allocated by call to `malloc()` at line 8, column 7 is not reachable after line 12, column 9 <a href="./nodes/node11.html#session71">node11#session71</a>(<a href="./../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE12">12</a>)<hr width="100%">
+<br>MEMORY_LEAK  memory dynamically allocated by call to `malloc()` at line 8, column 7 is not reachable after line 14, column 3 <a href="./nodes/node5.html#session75">node5#session75</a>(<a href="./../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE14">14</a>)<hr width="100%">
 WARNINGS DURING FOOTPRINT
 <hr width="100%">
 WARNINGS DURING RE-EXECUTION

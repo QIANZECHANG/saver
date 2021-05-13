@@ -108,7 +108,6 @@ POST: { p -> Owned }
   .... Instructions: .... 
   <span class='color_green'>PRUNE(!(n$3  &gt;  1), false); [line 9, column 7];
   REMOVE_TEMPS(n$3); [line 9, column 7];
-  NULLIFY(&amp;p); [line 9, column 7];
   </span>
   
   Processing prop 1/2
@@ -136,23 +135,11 @@ POST: { p -> Owned }
        <span class='color_red'>(@f$0  &lt;=  1)</span> *
          ]</span>
     
-    Instruction <span class='color_green'>NULLIFY(&amp;p); [line 9, column 7]</span>
-    in vpath_find exp:_t$2
-    vpath_find: found p : int*
-    Instruction Returns
-    PROP 1 of 1:
-    <span class='color_blue'><span class='color_blue'>(_t$3  &lt;=  1)</span>; <span class='color_red'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(_t$0)</span>; <span class='color_blue'>DANGL &lt; UNINIT &gt; (_t$3)</span> ;
-    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = <span class='color_red'>_t$2 <span class='color_orange'>initial</span></span>:int*</span> ;
-    <span class='color_red'>_t$0|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span>
-    [footprint
-       <span class='color_blue'>(@f$0  &lt;=  1)</span> *
-         ]</span>
-    
     .... After Symbolic Execution ....
     PROP 1 of 1:
-    <span class='color_blue'><span class='color_red'>(_t$3  &lt;=  1)</span>; <span class='color_red'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(_t$0)</span>; <span class='color_red'>DANGL &lt; UNINIT &gt; (_t$3)</span> ;
-    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = <span class='color_red'>_t$2 <span class='color_orange'>initial</span></span>:int*</span> ;
-    <span class='color_red'>_t$0|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span>
+    <span class='color_blue'><span class='color_red'>(_t$3  &lt;=  1)</span>; <span class='color_blue'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p)</span>; <span class='color_red'>DANGL &lt; UNINIT &gt; (_t$3)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = _t$2 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = _t$0 <span class='color_orange'>initial</span>:int*</span> ;
+    <span class='color_blue'>p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span>
     [footprint
        <span class='color_red'>(@f$0  &lt;=  1)</span> *
          ]</span>
@@ -178,19 +165,10 @@ POST: { p -> Owned }
        <span class='color_red'>(@f$0  &lt;=  1)</span> *
          ]</span>
     
-    Instruction <span class='color_green'>NULLIFY(&amp;p); [line 9, column 7]</span>
-    Instruction Returns
-    PROP 1 of 1:
-    <span class='color_blue'><span class='color_blue'>(_t$2  &lt;=  1)</span>; <span class='color_blue'>DANGL &lt; UNINIT &gt; (_t$2)</span> ;
-    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = _t$0 <span class='color_orange'>initial</span>:int*</span>
-    [footprint
-       <span class='color_blue'>(@f$0  &lt;=  1)</span> *
-         ]</span>
-    
     .... After Symbolic Execution ....
     PROP 1 of 1:
     <span class='color_blue'><span class='color_red'>(_t$2  &lt;=  1)</span>; <span class='color_red'>DANGL &lt; UNINIT &gt; (_t$2)</span> ;
-    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = _t$0 <span class='color_orange'>initial</span>:int*</span>
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = _t$0 <span class='color_orange'>initial</span>:int*</span>
     [footprint
        <span class='color_red'>(@f$0  &lt;=  1)</span> *
          ]</span>
@@ -209,7 +187,6 @@ POST: { p -> Owned }
   .... Instructions: .... 
   <span class='color_green'>PRUNE(!(n$3  &gt;  1), false); [line 9, column 7];
   REMOVE_TEMPS(n$3); [line 9, column 7];
-  NULLIFY(&amp;p); [line 9, column 7];
   </span>
   
   Processing prop 1/2
@@ -231,20 +208,11 @@ POST: { p -> Owned }
     <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = _t$2 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = _t$0 <span class='color_orange'>initial</span>:int*</span> ;
     <span class='color_blue'>p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span></span>
     
-    Instruction <span class='color_green'>NULLIFY(&amp;p); [line 9, column 7]</span>
-    in vpath_find exp:_t$2
-    vpath_find: found p : int*
-    Instruction Returns
-    PROP 1 of 1:
-    <span class='color_blue'><span class='color_blue'>(_t$3  &lt;=  1)</span>; <span class='color_red'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(_t$0)</span>; <span class='color_blue'>DANGL &lt; UNINIT &gt; (_t$3)</span> ;
-    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = <span class='color_red'>_t$2 <span class='color_orange'>initial</span></span>:int*</span> ;
-    <span class='color_red'>_t$0|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span></span>
-    
     .... After Symbolic Execution ....
     PROP 1 of 1:
-    <span class='color_blue'><span class='color_red'>(_t$3  &lt;=  1)</span>; <span class='color_red'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(_t$0)</span>; <span class='color_red'>DANGL &lt; UNINIT &gt; (_t$3)</span> ;
-    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = <span class='color_red'>_t$2 <span class='color_orange'>initial</span></span>:int*</span> ;
-    <span class='color_red'>_t$0|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span></span>
+    <span class='color_blue'><span class='color_red'>(_t$3  &lt;=  1)</span>; <span class='color_blue'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p)</span>; <span class='color_red'>DANGL &lt; UNINIT &gt; (_t$3)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = _t$2 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = _t$0 <span class='color_orange'>initial</span>:int*</span> ;
+    <span class='color_blue'>p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span></span>
     
     
     
@@ -261,16 +229,10 @@ POST: { p -> Owned }
     <span class='color_blue'><span class='color_red'>(_t$2  &lt;=  1)</span>; <span class='color_red'>DANGL &lt; UNINIT &gt; (_t$2)</span> ;
     <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = _t$0 <span class='color_orange'>initial</span>:int*</span></span>
     
-    Instruction <span class='color_green'>NULLIFY(&amp;p); [line 9, column 7]</span>
-    Instruction Returns
-    PROP 1 of 1:
-    <span class='color_blue'><span class='color_blue'>(_t$2  &lt;=  1)</span>; <span class='color_blue'>DANGL &lt; UNINIT &gt; (_t$2)</span> ;
-    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = _t$0 <span class='color_orange'>initial</span>:int*</span></span>
-    
     .... After Symbolic Execution ....
     PROP 1 of 1:
     <span class='color_blue'><span class='color_red'>(_t$2  &lt;=  1)</span>; <span class='color_red'>DANGL &lt; UNINIT &gt; (_t$2)</span> ;
-    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = _t$0 <span class='color_orange'>initial</span>:int*</span></span>
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = _t$0 <span class='color_orange'>initial</span>:int*</span></span>
     
     
     

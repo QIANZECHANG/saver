@@ -11,7 +11,7 @@ int main() {
   else
     q = malloc(2); // o2
 
-  *q = 1;
+  *p = 1;
   free(q);
   //if (i > 1) free(p);
   return 0; // o1 leaks here

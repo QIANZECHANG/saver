@@ -1,66 +1,66 @@
-{ Check fixpoint and update table --> (22 times, 0.001264 sec. (0.998694%))
+{ Check fixpoint and update table --> (22 times, 0.000550 sec. (0.785395%))
 ,
-Check-safe-insert: reachable free-vertices --> (3 times, 0.000170 sec. (0.134353%))
+Check-safe-insert: reachable free-vertices --> (3 times, 0.000070 sec. (0.100046%))
 ,
-Check-safe-insert: reachable use-vertices --> (3 times, 0.000087 sec. (0.068778%))
+Check-safe-insert: reachable use-vertices --> (3 times, 0.000036 sec. (0.051044%))
 ,
-Check-safe-insert: relavant vertices --> (3 times, 0.000050 sec. (0.039194%))
+Check-safe-insert: relavant vertices --> (3 times, 0.000021 sec. (0.029946%))
 ,
-CheckCorrect --> (1 times, 0.000290 sec. (0.229134%))
+CheckCorrect --> (1 times, 0.000096 sec. (0.137138%))
 ,
-Computing post and dump --> (22 times, 0.073907 sec. (58.411737%))
+Computing post and dump --> (22 times, 0.042141 sec. (60.148027%))
 ,
-Computing pre state --> (22 times, 0.000078 sec. (0.061806%))
+Computing pre state --> (22 times, 0.000034 sec. (0.049002%))
 ,
-Constructing Labeling Function --> (1 times, 0.000261 sec. (0.206334%))
+Constructing Labeling Function --> (1 times, 0.004387 sec. (6.261719%))
 ,
-Constructing Labeling Function: prepare --> (1 times, 0.000146 sec. (0.115509%))
+Constructing Labeling Function: prepare --> (1 times, 0.004350 sec. (6.208974%))
 ,
-Constructing Labeling Function: remove --> (1 times, 0.000006 sec. (0.004711%))
+Constructing Labeling Function: remove --> (1 times, 0.000003 sec. (0.004424%))
 ,
-Constructing Labeling Function: unreach --> (1 times, 0.000020 sec. (0.015828%))
+Constructing Labeling Function: unreach --> (1 times, 0.000009 sec. (0.012931%))
 ,
-Constructing OFG --> (1 times, 0.003173 sec. (2.507665%))
+Constructing OFG --> (1 times, 0.001233 sec. (1.759992%))
 ,
-Constructing invariants --> (1 times, 0.024489 sec. (19.354693%))
+Constructing invariants --> (1 times, 0.006938 sec. (9.902506%))
 ,
-Convert: find exp, pi --> (1 times, 0.000449 sec. (0.354819%))
+Convert: find exp, pi --> (1 times, 0.000096 sec. (0.136798%))
 ,
-Generate alias_vars --> (59 times, 0.000255 sec. (0.201246%))
+Generate alias_vars --> (59 times, 0.000120 sec. (0.171848%))
 ,
-Generate null_vars --> (59 times, 0.004134 sec. (3.267426%))
+Generate null_vars --> (59 times, 0.000047 sec. (0.067038%))
 ,
-Merge 1 --> (26 times, 0.000044 sec. (0.035049%))
+Merge 1 --> (26 times, 0.000023 sec. (0.033008%))
 ,
-Merge 2 --> (26 times, 0.000124 sec. (0.098174%))
+Merge 2 --> (26 times, 0.000062 sec. (0.089157%))
 ,
-PruneUnsafe --> (1 times, 0.000171 sec. (0.135106%))
+PruneUnsafe --> (1 times, 0.000070 sec. (0.100046%))
 ,
-Run call --> (6 times, 0.008596 sec. (6.793758%))
+Run call --> (6 times, 0.002225 sec. (3.175608%))
 ,
-Run instr --> (72 times, 0.073762 sec. (58.297735%))
+Run instr --> (72 times, 0.042076 sec. (60.055127%))
 ,
-doms --> (1 times, 0.007256 sec. (5.734766%))
+doms --> (1 times, 0.000519 sec. (0.740816%))
 ,
-doms_rev --> (1 times, 0.001206 sec. (0.953282%))
+doms_rev --> (1 times, 0.000527 sec. (0.752386%))
 ,
-exec_instr - Load --> (14 times, 0.024994 sec. (19.753605%))
+exec_instr - Load --> (14 times, 0.014414 sec. (20.572712%))
 ,
-exec_instr - Others --> (38 times, 0.004451 sec. (3.517665%))
+exec_instr - Others --> (38 times, 0.005143 sec. (7.340105%))
 ,
-exec_instr - Prune --> (4 times, 0.000367 sec. (0.289998%))
+exec_instr - Prune --> (4 times, 0.000202 sec. (0.288228%))
 ,
-exec_instr - Remove_temps --> (18 times, 0.008109 sec. (6.408790%))
+exec_instr - Remove_temps --> (18 times, 0.001016 sec. (1.450666%))
 ,
-exec_instr - Store --> (14 times, 0.012627 sec. (9.979970%))
+exec_instr - Store --> (14 times, 0.009698 sec. (13.842070%))
 ,
-find_unreachable --> (36 times, 0.000712 sec. (0.562849%))
+find_unreachable --> (36 times, 0.000301 sec. (0.430129%))
 ,
-rename --> (96 times, 0.041304 sec. (32.644109%))
+rename --> (96 times, 0.026186 sec. (37.374645%))
 ,
-to_pair --> (59 times, 0.003767 sec. (2.977239%))
+to_pair --> (59 times, 0.003996 sec. (5.703299%))
 ,
-update_dump_in_call --> (6 times, 0.000182 sec. (0.143963%))
+update_dump_in_call --> (6 times, 0.000071 sec. (0.101407%))
 ,
-update_post_in_call --> (6 times, 0.006092 sec. (4.815025%))
+update_post_in_call --> (6 times, 0.001385 sec. (1.976758%))
  }

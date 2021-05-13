@@ -7,6 +7,6 @@ int main() {
   free(p); 
 
   *p+=1;
- 
+  printf("%d\n",*p);
   return 0;
 }

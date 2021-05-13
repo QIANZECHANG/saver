@@ -132,15 +132,15 @@ POST: { p -> Owned, q -> Owned }
 </LISTING></span><hr width="100%">
 <a name="session59" href="./../nodes/main.fad58de7366495db4650cfefac2fcd61_node11.html#session59">node11#session59</a>(<a href="./../../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE12">12</a>) interproc<LISTING><span class='color_black'>**** [FP:Pending] main Node: 11, Procedure: main, Session: 59, Todo: 2 ****
   PROP 1 of 2:
-  <span class='color_blue'><span class='color_red'>(_t$3  &lt;=  1)</span>; <span class='color_red'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(_t$0)</span>; <span class='color_red'>DANGL &lt; UNINIT &gt; (_t$3)</span> ;
-  <span class='color_red'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_red'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_red'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_red'>q = _t$2 <span class='color_orange'>initial</span>:int*</span> ;
-  <span class='color_red'>_t$0|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span>
+  <span class='color_blue'><span class='color_red'>(_t$3  &lt;=  1)</span>; <span class='color_red'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p)</span>; <span class='color_red'>DANGL &lt; UNINIT &gt; (_t$3)</span> ;
+  <span class='color_red'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_red'>p = _t$2 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_red'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_red'>q = _t$0 <span class='color_orange'>initial</span>:int*</span> ;
+  <span class='color_red'>p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span>
   [footprint
      <span class='color_red'>(@f$0  &lt;=  1)</span> *
        ]</span>
   PROP 2 of 2:
   <span class='color_blue'><span class='color_red'>(_t$2  &lt;=  1)</span>; <span class='color_red'>DANGL &lt; UNINIT &gt; (_t$2)</span> ;
-  <span class='color_red'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_red'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_red'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_red'>q = _t$0 <span class='color_orange'>initial</span>:int*</span>
+  <span class='color_red'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_red'>p = 0 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_red'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_red'>q = _t$0 <span class='color_orange'>initial</span>:int*</span>
   [footprint
      <span class='color_red'>(@f$0  &lt;=  1)</span> *
        ]</span>
@@ -154,68 +154,44 @@ POST: { p -> Owned, q -> Owned }
   Processing prop 1/2
     Instruction <span class='color_green'>n$5=_fun_malloc(2:unsigned long) [line 12, column 9]</span>
     in vpath_find exp:n$32
-    vpath_find: cannot find n$32
-    .... Prop with garbage in normal part ....
-      PROP:
-      <span class='color_blue'>(_t$44  &lt;=  1); MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(_t$41); MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(n$5); DANGL &lt; UNINIT &gt; (_t$44) ;
-      i = 0 <span class='color_orange'>nullify</span>:int; p = 0 <span class='color_orange'>nullify</span>:int*; return = _t$42 <span class='color_orange'>initial</span>:int; q = _t$43 <span class='color_orange'>initial</span>:int* ;
-      _t$41|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]; n$5|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]
-      [footprint
-         (@f$0  &lt;=  1) *
-           ]</span>
-      PREDICATE:
-      _t$41|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]
-      ATTRIBUTE: MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>
-      explain_leak: case not matched in instr <span class='color_green'>n$5=_fun_malloc(2:unsigned long) [line 12, column 9]</span>
-    .... Prop with garbage in normal part ....
-      PROP:
-      <span class='color_blue'>n$5 = 0 ;
-      (_t$48  &lt;=  1); MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(_t$45); DANGL &lt; UNINIT &gt; (_t$48) ;
-      i = 0 <span class='color_orange'>nullify</span>:int; p = 0 <span class='color_orange'>nullify</span>:int*; return = _t$46 <span class='color_orange'>initial</span>:int; q = _t$47 <span class='color_orange'>initial</span>:int* ;
-      _t$45|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]
-      [footprint
-         (@f$0  &lt;=  1) *
-           ]</span>
-      PREDICATE:
-      _t$45|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]
-      ATTRIBUTE: MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>
-      explain_leak: case not matched in instr <span class='color_green'>n$5=_fun_malloc(2:unsigned long) [line 12, column 9]</span>
+    vpath_find: found p : int*
     Instruction Returns
     PROP 1 of 2:
-    <span class='color_blue'><span class='color_red'>(_t$2  &lt;=  1)</span>; <span class='color_blue'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(_t$3)</span>; <span class='color_red'>MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(n$5)</span>; <span class='color_red'>DANGL &lt; UNINIT &gt; (_t$2)</span> ;
-    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = <span class='color_red'>_t$0 <span class='color_orange'>initial</span></span>:int*</span> ;
-    <span class='color_red'>n$5|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span>
+    <span class='color_blue'><span class='color_blue'>(_t$3  &lt;=  1)</span>; <span class='color_blue'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p)</span>; <span class='color_red'>MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(n$5)</span>; <span class='color_blue'>DANGL &lt; UNINIT &gt; (_t$3)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = _t$2 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = _t$0 <span class='color_orange'>initial</span>:int*</span> ;
+    <span class='color_blue'>p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span>; <span class='color_red'>n$5|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span>
     [footprint
        <span class='color_blue'>(@f$0  &lt;=  1)</span> *
          ]</span>
     PROP 2 of 2:
     <span class='color_blue'><span class='color_red'>n$5 = 0</span> ;
-    <span class='color_red'>(_t$2  &lt;=  1)</span>; <span class='color_blue'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(_t$3)</span>; <span class='color_red'>DANGL &lt; UNINIT &gt; (_t$2)</span> ;
-    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = <span class='color_red'>_t$0 <span class='color_orange'>initial</span></span>:int*</span>
+    <span class='color_blue'>(_t$3  &lt;=  1)</span>; <span class='color_blue'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p)</span>; <span class='color_blue'>DANGL &lt; UNINIT &gt; (_t$3)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = _t$2 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = _t$0 <span class='color_orange'>initial</span>:int*</span> ;
+    <span class='color_blue'>p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span>
     [footprint
        <span class='color_blue'>(@f$0  &lt;=  1)</span> *
          ]</span>
     
     Instruction <span class='color_green'>*&amp;q:int*=n$5 [line 12, column 5]</span>
-    in vpath_find exp:n$39
-    vpath_find: cannot find n$39
+    in vpath_find exp:n$36
+    vpath_find: found p : int*
     in vpath_find exp:n$5
     vpath_find: cannot find n$5
     .... Rearrangement Start ....
     Exp: &amp;q
     Prop: 
-    <span class='color_blue'>(n$38  &lt;=  1); MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(n$39); MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(n$5); DANGL &lt; UNINIT &gt; (n$38) ;
-    i = 0 <span class='color_orange'>nullify</span>:int; p = 0 <span class='color_orange'>nullify</span>:int*; return = n$36 <span class='color_orange'>initial</span>:int; q = n$37 <span class='color_orange'>initial</span>:int* ;
-    n$5|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]
+    <span class='color_blue'>(n$39  &lt;=  1); MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p); MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(n$5); DANGL &lt; UNINIT &gt; (n$39) ;
+    i = 0 <span class='color_orange'>nullify</span>:int; p = n$36 <span class='color_orange'>update:8</span>:int*; return = n$37 <span class='color_orange'>initial</span>:int; q = n$38 <span class='color_orange'>initial</span>:int* ;
+    p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]; n$5|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]
     [footprint
        (@f$0  &lt;=  1) *
          ]</span>
     
     in prop_iter_extend_ptsto lexp: &amp;q
     prop before:
-    <span class='color_blue'>(n$38  &lt;=  1); MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(n$39); MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(n$5); DANGL &lt; UNINIT &gt; (n$38) ;
-    i = 0 <span class='color_orange'>nullify</span>:int; p = 0 <span class='color_orange'>nullify</span>:int*; return = n$36 <span class='color_orange'>initial</span>:int; q = n$37 <span class='color_orange'>initial</span>:int* ;
-    n$5|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]
+    <span class='color_blue'>(n$39  &lt;=  1); MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p); MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(n$5); DANGL &lt; UNINIT &gt; (n$39) ;
+    i = 0 <span class='color_orange'>nullify</span>:int; p = n$36 <span class='color_orange'>update:8</span>:int*; return = n$37 <span class='color_orange'>initial</span>:int; q = n$38 <span class='color_orange'>initial</span>:int* ;
+    p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]; n$5|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]
     [footprint
        (@f$0  &lt;=  1) *
          ]</span>
@@ -223,9 +199,9 @@ POST: { p -> Owned, q -> Owned }
     
     prop list after:
     PROP 1 of 1:
-    <span class='color_blue'><span class='color_blue'>(n$38  &lt;=  1)</span>; <span class='color_blue'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(n$39)</span>; <span class='color_blue'>MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(n$5)</span>; <span class='color_blue'>DANGL &lt; UNINIT &gt; (n$38)</span> ;
-    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_blue'>return = n$36 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = n$37 <span class='color_orange'>initial</span>:int*</span> ;
-    <span class='color_blue'>n$5|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span>
+    <span class='color_blue'><span class='color_blue'>(n$39  &lt;=  1)</span>; <span class='color_blue'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p)</span>; <span class='color_blue'>MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(n$5)</span>; <span class='color_blue'>DANGL &lt; UNINIT &gt; (n$39)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = n$36 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = n$37 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = n$38 <span class='color_orange'>initial</span>:int*</span> ;
+    <span class='color_blue'>p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span>; <span class='color_blue'>n$5|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span>
     [footprint
        <span class='color_blue'>(@f$0  &lt;=  1)</span> *
          ]</span>
@@ -234,22 +210,23 @@ POST: { p -> Owned, q -> Owned }
     
     Instruction Returns
     PROP 1 of 1:
-    <span class='color_blue'><span class='color_red'>(_t$1  &lt;=  1)</span>; <span class='color_blue'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span>; <span class='color_blue'>MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(q)</span>; <span class='color_red'>DANGL &lt; UNINIT &gt; (_t$1)</span> ;
-    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_blue'>return = <span class='color_red'>_t$0 <span class='color_orange'>initial</span></span>:int</span>; <span class='color_blue'>q = <span class='color_red'>n$5 <span class='color_orange'>update:12</span></span>:int*</span> ;
-    <span class='color_blue'>q|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span>
+    <span class='color_blue'><span class='color_red'>(_t$2  &lt;=  1)</span>; <span class='color_red'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p)</span>; <span class='color_blue'>MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(q)</span>; <span class='color_blue'>DANGL &lt; UNINIT &gt; (_t$2)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = <span class='color_red'>_t$1 <span class='color_orange'>update:8</span></span>:int*</span>; <span class='color_blue'>return = <span class='color_red'>_t$0 <span class='color_orange'>initial</span></span>:int</span>; <span class='color_blue'>q = <span class='color_red'>n$5 <span class='color_orange'>update:12</span></span>:int*</span> ;
+    <span class='color_red'>p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span>; <span class='color_blue'>q|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span>
     [footprint
        <span class='color_blue'>(@f$0  &lt;=  1)</span> *
          ]</span>
     
     Instruction <span class='color_green'>*&amp;q:int*=n$5 [line 12, column 5]</span>
-    in vpath_find exp:n$43
-    vpath_find: cannot find n$43
+    in vpath_find exp:n$40
+    vpath_find: found p : int*
     .... Rearrangement Start ....
     Exp: &amp;q
     Prop: 
     <span class='color_blue'>n$5 = 0 ;
-    (n$42  &lt;=  1); MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(n$43); DANGL &lt; UNINIT &gt; (n$42) ;
-    i = 0 <span class='color_orange'>nullify</span>:int; p = 0 <span class='color_orange'>nullify</span>:int*; return = n$40 <span class='color_orange'>initial</span>:int; q = n$41 <span class='color_orange'>initial</span>:int*
+    (n$43  &lt;=  1); MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p); DANGL &lt; UNINIT &gt; (n$43) ;
+    i = 0 <span class='color_orange'>nullify</span>:int; p = n$40 <span class='color_orange'>update:8</span>:int*; return = n$41 <span class='color_orange'>initial</span>:int; q = n$42 <span class='color_orange'>initial</span>:int* ;
+    p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]
     [footprint
        (@f$0  &lt;=  1) *
          ]</span>
@@ -257,8 +234,9 @@ POST: { p -> Owned, q -> Owned }
     in prop_iter_extend_ptsto lexp: &amp;q
     prop before:
     <span class='color_blue'>n$5 = 0 ;
-    (n$42  &lt;=  1); MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(n$43); DANGL &lt; UNINIT &gt; (n$42) ;
-    i = 0 <span class='color_orange'>nullify</span>:int; p = 0 <span class='color_orange'>nullify</span>:int*; return = n$40 <span class='color_orange'>initial</span>:int; q = n$41 <span class='color_orange'>initial</span>:int*
+    (n$43  &lt;=  1); MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p); DANGL &lt; UNINIT &gt; (n$43) ;
+    i = 0 <span class='color_orange'>nullify</span>:int; p = n$40 <span class='color_orange'>update:8</span>:int*; return = n$41 <span class='color_orange'>initial</span>:int; q = n$42 <span class='color_orange'>initial</span>:int* ;
+    p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]
     [footprint
        (@f$0  &lt;=  1) *
          ]</span>
@@ -267,8 +245,9 @@ POST: { p -> Owned, q -> Owned }
     prop list after:
     PROP 1 of 1:
     <span class='color_blue'><span class='color_blue'>n$5 = 0</span> ;
-    <span class='color_blue'>(n$42  &lt;=  1)</span>; <span class='color_blue'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(n$43)</span>; <span class='color_blue'>DANGL &lt; UNINIT &gt; (n$42)</span> ;
-    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_blue'>return = n$40 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = n$41 <span class='color_orange'>initial</span>:int*</span>
+    <span class='color_blue'>(n$43  &lt;=  1)</span>; <span class='color_blue'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p)</span>; <span class='color_blue'>DANGL &lt; UNINIT &gt; (n$43)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = n$40 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = n$41 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = n$42 <span class='color_orange'>initial</span>:int*</span> ;
+    <span class='color_blue'>p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span>
     [footprint
        <span class='color_blue'>(@f$0  &lt;=  1)</span> *
          ]</span>
@@ -278,66 +257,74 @@ POST: { p -> Owned, q -> Owned }
     Instruction Returns
     PROP 1 of 1:
     <span class='color_blue'><span class='color_blue'>n$5 = 0</span> ;
-    <span class='color_red'>(_t$1  &lt;=  1)</span>; <span class='color_blue'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span>; <span class='color_red'>DANGL &lt; UNINIT &gt; (_t$1)</span> ;
-    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_blue'>return = <span class='color_red'>_t$0 <span class='color_orange'>initial</span></span>:int</span>; <span class='color_blue'>q = <span class='color_red'>0 <span class='color_orange'>update:12</span></span>:int*</span>
+    <span class='color_red'>(_t$2  &lt;=  1)</span>; <span class='color_red'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p)</span>; <span class='color_blue'>DANGL &lt; UNINIT &gt; (_t$2)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = <span class='color_red'>_t$1 <span class='color_orange'>update:8</span></span>:int*</span>; <span class='color_blue'>return = <span class='color_red'>_t$0 <span class='color_orange'>initial</span></span>:int</span>; <span class='color_blue'>q = <span class='color_red'>0 <span class='color_orange'>update:12</span></span>:int*</span> ;
+    <span class='color_red'>p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span>
     [footprint
        <span class='color_blue'>(@f$0  &lt;=  1)</span> *
          ]</span>
     
     Instruction <span class='color_green'>REMOVE_TEMPS(n$5); [line 12, column 5]</span>
-    in vpath_find exp:_t$2
-    vpath_find: cannot find _t$2
+    in vpath_find exp:_t$1
+    vpath_find: found p : int*
     in vpath_find exp:n$5
     vpath_find: found q : int*
     Instruction Returns
     PROP 1 of 1:
-    <span class='color_blue'><span class='color_red'>(_t$2  &lt;=  1)</span>; <span class='color_red'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(_t$3)</span>; <span class='color_red'>MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(q)</span>; <span class='color_blue'>DANGL &lt; UNINIT &gt; (_t$2)</span> ;
-    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_blue'>return = <span class='color_red'>_t$1 <span class='color_orange'>initial</span></span>:int</span>; <span class='color_blue'>q = <span class='color_red'>_t$0 <span class='color_orange'>update:12</span></span>:int*</span> ;
-    <span class='color_red'>q|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span>
+    <span class='color_blue'><span class='color_red'>(_t$3  &lt;=  1)</span>; <span class='color_blue'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p)</span>; <span class='color_red'>MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(q)</span>; <span class='color_red'>DANGL &lt; UNINIT &gt; (_t$3)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = <span class='color_red'>_t$2 <span class='color_orange'>update:8</span></span>:int*</span>; <span class='color_blue'>return = <span class='color_red'>_t$1 <span class='color_orange'>initial</span></span>:int</span>; <span class='color_blue'>q = <span class='color_red'>_t$0 <span class='color_orange'>update:12</span></span>:int*</span> ;
+    <span class='color_red'>p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span>; <span class='color_red'>q|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span>
     [footprint
        <span class='color_blue'>(@f$0  &lt;=  1)</span> *
          ]</span>
     
     Instruction <span class='color_green'>REMOVE_TEMPS(n$5); [line 12, column 5]</span>
-    in vpath_find exp:_t$2
-    vpath_find: cannot find _t$2
+    in vpath_find exp:_t$1
+    vpath_find: found p : int*
     Instruction Returns
     PROP 1 of 1:
-    <span class='color_blue'><span class='color_blue'>(_t$1  &lt;=  1)</span>; <span class='color_blue'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span>; <span class='color_blue'>DANGL &lt; UNINIT &gt; (_t$1)</span> ;
-    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = 0 <span class='color_orange'>update:12</span>:int*</span>
+    <span class='color_blue'><span class='color_blue'>(_t$2  &lt;=  1)</span>; <span class='color_blue'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p)</span>; <span class='color_blue'>DANGL &lt; UNINIT &gt; (_t$2)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = _t$1 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = 0 <span class='color_orange'>update:12</span>:int*</span> ;
+    <span class='color_blue'>p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span>
     [footprint
        <span class='color_blue'>(@f$0  &lt;=  1)</span> *
          ]</span>
     
     Instruction <span class='color_green'>APPLY_ABSTRACTION; [line 12, column 5]</span>
-    in vpath_find exp:_t$3
-    vpath_find: cannot find _t$3
+    in vpath_find exp:_t$2
+    vpath_find: found p : int*
     in vpath_find exp:_t$0
     vpath_find: found q : int*
-    <span class='color_blue'>MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(q) ;
-    i = 0 <span class='color_orange'>nullify</span>:int; p = 0 <span class='color_orange'>nullify</span>:int*; return = _t$1 <span class='color_orange'>initial</span>:int; q = _t$0 <span class='color_orange'>update:12</span>:int* ;
-    q|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span>
+    <span class='color_blue'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p); MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(q) ;
+    i = 0 <span class='color_orange'>nullify</span>:int; p = _t$2 <span class='color_orange'>update:8</span>:int*; return = _t$1 <span class='color_orange'>initial</span>:int; q = _t$0 <span class='color_orange'>update:12</span>:int* ;
+    p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]; q|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span>
     Instruction Returns
     PROP 1 of 1:
-    <span class='color_blue'><span class='color_blue'>MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(q)</span> ;
-    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = _t$0 <span class='color_orange'>update:12</span>:int*</span> ;
-    <span class='color_blue'>q|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span></span>
+    <span class='color_blue'><span class='color_blue'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p)</span>; <span class='color_blue'>MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(q)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = _t$2 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = _t$0 <span class='color_orange'>update:12</span>:int*</span> ;
+    <span class='color_blue'>p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span>; <span class='color_blue'>q|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span></span>
     
     Instruction <span class='color_green'>APPLY_ABSTRACTION; [line 12, column 5]</span>
-    in vpath_find exp:_t$2
-    vpath_find: cannot find _t$2
-    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int; p = 0 <span class='color_orange'>nullify</span>:int*; return = _t$0 <span class='color_orange'>initial</span>:int; q = 0 <span class='color_orange'>update:12</span>:int*</span>
+    in vpath_find exp:_t$1
+    vpath_find: found p : int*
+    <span class='color_blue'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p) ;
+    i = 0 <span class='color_orange'>nullify</span>:int; p = _t$1 <span class='color_orange'>update:8</span>:int*; return = _t$0 <span class='color_orange'>initial</span>:int; q = 0 <span class='color_orange'>update:12</span>:int* ;
+    p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span>
     Instruction Returns
     PROP 1 of 1:
-    <span class='color_blue'><span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = 0 <span class='color_orange'>update:12</span>:int*</span></span>
+    <span class='color_blue'><span class='color_blue'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = _t$1 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = 0 <span class='color_orange'>update:12</span>:int*</span> ;
+    <span class='color_blue'>p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span></span>
     
     .... After Symbolic Execution ....
     PROP 1 of 2:
-    <span class='color_blue'><span class='color_blue'>MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(q)</span> ;
-    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = <span class='color_red'>_t$0 <span class='color_orange'>update:12</span></span>:int*</span> ;
-    <span class='color_blue'>q|->[<span class='color_red'>2</span>|] <span class='color_orange'>alloc</span>:char[_*1][<span class='color_red'>2</span>]</span></span>
+    <span class='color_blue'><span class='color_blue'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p)</span>; <span class='color_red'>MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(q)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = _t$2 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = _t$0 <span class='color_orange'>update:12</span>:int*</span> ;
+    <span class='color_blue'>p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span>; <span class='color_red'>q|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span></span>
     PROP 2 of 2:
-    <span class='color_blue'><span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_blue'>return = <span class='color_red'>_t$0 <span class='color_orange'>initial</span></span>:int</span>; <span class='color_blue'>q = <span class='color_red'>0 <span class='color_orange'>update:12</span></span>:int*</span></span>
+    <span class='color_blue'><span class='color_red'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = <span class='color_red'>_t$1 <span class='color_orange'>update:8</span></span>:int*</span>; <span class='color_blue'>return = <span class='color_red'>_t$0 <span class='color_orange'>initial</span></span>:int</span>; <span class='color_blue'>q = <span class='color_red'>0 <span class='color_orange'>update:12</span></span>:int*</span> ;
+    <span class='color_red'>p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span></span>
     
     
     
@@ -346,7 +333,7 @@ POST: { p -> Owned, q -> Owned }
     Instruction Returns
     PROP 1 of 2:
     <span class='color_blue'><span class='color_blue'>(_t$2  &lt;=  1)</span>; <span class='color_red'>MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(n$5)</span>; <span class='color_blue'>DANGL &lt; UNINIT &gt; (_t$2)</span> ;
-    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = _t$0 <span class='color_orange'>initial</span>:int*</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = _t$0 <span class='color_orange'>initial</span>:int*</span> ;
     <span class='color_red'>n$5|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span>
     [footprint
        <span class='color_blue'>(@f$0  &lt;=  1)</span> *
@@ -354,7 +341,7 @@ POST: { p -> Owned, q -> Owned }
     PROP 2 of 2:
     <span class='color_blue'><span class='color_red'>n$5 = 0</span> ;
     <span class='color_blue'>(_t$2  &lt;=  1)</span>; <span class='color_blue'>DANGL &lt; UNINIT &gt; (_t$2)</span> ;
-    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = _t$0 <span class='color_orange'>initial</span>:int*</span>
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = _t$0 <span class='color_orange'>initial</span>:int*</span>
     [footprint
        <span class='color_blue'>(@f$0  &lt;=  1)</span> *
          ]</span>
@@ -366,7 +353,7 @@ POST: { p -> Owned, q -> Owned }
     Exp: &amp;q
     Prop: 
     <span class='color_blue'>(n$49  &lt;=  1); MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(n$5); DANGL &lt; UNINIT &gt; (n$49) ;
-    i = 0 <span class='color_orange'>nullify</span>:int; p = 0 <span class='color_orange'>nullify</span>:int*; return = n$47 <span class='color_orange'>initial</span>:int; q = n$48 <span class='color_orange'>initial</span>:int* ;
+    i = 0 <span class='color_orange'>nullify</span>:int; p = 0 <span class='color_orange'>update:8</span>:int*; return = n$47 <span class='color_orange'>initial</span>:int; q = n$48 <span class='color_orange'>initial</span>:int* ;
     n$5|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]
     [footprint
        (@f$0  &lt;=  1) *
@@ -375,7 +362,7 @@ POST: { p -> Owned, q -> Owned }
     in prop_iter_extend_ptsto lexp: &amp;q
     prop before:
     <span class='color_blue'>(n$49  &lt;=  1); MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(n$5); DANGL &lt; UNINIT &gt; (n$49) ;
-    i = 0 <span class='color_orange'>nullify</span>:int; p = 0 <span class='color_orange'>nullify</span>:int*; return = n$47 <span class='color_orange'>initial</span>:int; q = n$48 <span class='color_orange'>initial</span>:int* ;
+    i = 0 <span class='color_orange'>nullify</span>:int; p = 0 <span class='color_orange'>update:8</span>:int*; return = n$47 <span class='color_orange'>initial</span>:int; q = n$48 <span class='color_orange'>initial</span>:int* ;
     n$5|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]
     [footprint
        (@f$0  &lt;=  1) *
@@ -385,7 +372,7 @@ POST: { p -> Owned, q -> Owned }
     prop list after:
     PROP 1 of 1:
     <span class='color_blue'><span class='color_blue'>(n$49  &lt;=  1)</span>; <span class='color_blue'>MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(n$5)</span>; <span class='color_blue'>DANGL &lt; UNINIT &gt; (n$49)</span> ;
-    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_blue'>return = n$47 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = n$48 <span class='color_orange'>initial</span>:int*</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = n$47 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = n$48 <span class='color_orange'>initial</span>:int*</span> ;
     <span class='color_blue'>n$5|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span>
     [footprint
        <span class='color_blue'>(@f$0  &lt;=  1)</span> *
@@ -396,7 +383,7 @@ POST: { p -> Owned, q -> Owned }
     Instruction Returns
     PROP 1 of 1:
     <span class='color_blue'><span class='color_red'>(_t$1  &lt;=  1)</span>; <span class='color_blue'>MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(q)</span>; <span class='color_red'>DANGL &lt; UNINIT &gt; (_t$1)</span> ;
-    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_blue'>return = <span class='color_red'>_t$0 <span class='color_orange'>initial</span></span>:int</span>; <span class='color_blue'>q = <span class='color_red'>n$5 <span class='color_orange'>update:12</span></span>:int*</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = <span class='color_red'>_t$0 <span class='color_orange'>initial</span></span>:int</span>; <span class='color_blue'>q = <span class='color_red'>n$5 <span class='color_orange'>update:12</span></span>:int*</span> ;
     <span class='color_blue'>q|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span>
     [footprint
        <span class='color_blue'>(@f$0  &lt;=  1)</span> *
@@ -408,7 +395,7 @@ POST: { p -> Owned, q -> Owned }
     Prop: 
     <span class='color_blue'>n$5 = 0 ;
     (n$52  &lt;=  1); DANGL &lt; UNINIT &gt; (n$52) ;
-    i = 0 <span class='color_orange'>nullify</span>:int; p = 0 <span class='color_orange'>nullify</span>:int*; return = n$50 <span class='color_orange'>initial</span>:int; q = n$51 <span class='color_orange'>initial</span>:int*
+    i = 0 <span class='color_orange'>nullify</span>:int; p = 0 <span class='color_orange'>update:8</span>:int*; return = n$50 <span class='color_orange'>initial</span>:int; q = n$51 <span class='color_orange'>initial</span>:int*
     [footprint
        (@f$0  &lt;=  1) *
          ]</span>
@@ -417,7 +404,7 @@ POST: { p -> Owned, q -> Owned }
     prop before:
     <span class='color_blue'>n$5 = 0 ;
     (n$52  &lt;=  1); DANGL &lt; UNINIT &gt; (n$52) ;
-    i = 0 <span class='color_orange'>nullify</span>:int; p = 0 <span class='color_orange'>nullify</span>:int*; return = n$50 <span class='color_orange'>initial</span>:int; q = n$51 <span class='color_orange'>initial</span>:int*
+    i = 0 <span class='color_orange'>nullify</span>:int; p = 0 <span class='color_orange'>update:8</span>:int*; return = n$50 <span class='color_orange'>initial</span>:int; q = n$51 <span class='color_orange'>initial</span>:int*
     [footprint
        (@f$0  &lt;=  1) *
          ]</span>
@@ -427,7 +414,7 @@ POST: { p -> Owned, q -> Owned }
     PROP 1 of 1:
     <span class='color_blue'><span class='color_blue'>n$5 = 0</span> ;
     <span class='color_blue'>(n$52  &lt;=  1)</span>; <span class='color_blue'>DANGL &lt; UNINIT &gt; (n$52)</span> ;
-    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_blue'>return = n$50 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = n$51 <span class='color_orange'>initial</span>:int*</span>
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = n$50 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = n$51 <span class='color_orange'>initial</span>:int*</span>
     [footprint
        <span class='color_blue'>(@f$0  &lt;=  1)</span> *
          ]</span>
@@ -438,7 +425,7 @@ POST: { p -> Owned, q -> Owned }
     PROP 1 of 1:
     <span class='color_blue'><span class='color_blue'>n$5 = 0</span> ;
     <span class='color_red'>(_t$1  &lt;=  1)</span>; <span class='color_red'>DANGL &lt; UNINIT &gt; (_t$1)</span> ;
-    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_blue'>return = <span class='color_red'>_t$0 <span class='color_orange'>initial</span></span>:int</span>; <span class='color_blue'>q = <span class='color_red'>0 <span class='color_orange'>update:12</span></span>:int*</span>
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = <span class='color_red'>_t$0 <span class='color_orange'>initial</span></span>:int</span>; <span class='color_blue'>q = <span class='color_red'>0 <span class='color_orange'>update:12</span></span>:int*</span>
     [footprint
        <span class='color_blue'>(@f$0  &lt;=  1)</span> *
          ]</span>
@@ -449,7 +436,7 @@ POST: { p -> Owned, q -> Owned }
     Instruction Returns
     PROP 1 of 1:
     <span class='color_blue'><span class='color_red'>(_t$2  &lt;=  1)</span>; <span class='color_red'>MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(q)</span>; <span class='color_red'>DANGL &lt; UNINIT &gt; (_t$2)</span> ;
-    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_blue'>return = <span class='color_red'>_t$1 <span class='color_orange'>initial</span></span>:int</span>; <span class='color_blue'>q = <span class='color_red'>_t$0 <span class='color_orange'>update:12</span></span>:int*</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = <span class='color_red'>_t$1 <span class='color_orange'>initial</span></span>:int</span>; <span class='color_blue'>q = <span class='color_red'>_t$0 <span class='color_orange'>update:12</span></span>:int*</span> ;
     <span class='color_red'>q|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span>
     [footprint
        <span class='color_blue'>(@f$0  &lt;=  1)</span> *
@@ -459,7 +446,7 @@ POST: { p -> Owned, q -> Owned }
     Instruction Returns
     PROP 1 of 1:
     <span class='color_blue'><span class='color_blue'>(_t$1  &lt;=  1)</span>; <span class='color_blue'>DANGL &lt; UNINIT &gt; (_t$1)</span> ;
-    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = 0 <span class='color_orange'>update:12</span>:int*</span>
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = 0 <span class='color_orange'>update:12</span>:int*</span>
     [footprint
        <span class='color_blue'>(@f$0  &lt;=  1)</span> *
          ]</span>
@@ -468,39 +455,39 @@ POST: { p -> Owned, q -> Owned }
     in vpath_find exp:_t$0
     vpath_find: found q : int*
     <span class='color_blue'>MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(q) ;
-    i = 0 <span class='color_orange'>nullify</span>:int; p = 0 <span class='color_orange'>nullify</span>:int*; return = _t$1 <span class='color_orange'>initial</span>:int; q = _t$0 <span class='color_orange'>update:12</span>:int* ;
+    i = 0 <span class='color_orange'>nullify</span>:int; p = 0 <span class='color_orange'>update:8</span>:int*; return = _t$1 <span class='color_orange'>initial</span>:int; q = _t$0 <span class='color_orange'>update:12</span>:int* ;
     q|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span>
     Instruction Returns
     PROP 1 of 1:
     <span class='color_blue'><span class='color_blue'>MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(q)</span> ;
-    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = _t$0 <span class='color_orange'>update:12</span>:int*</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = _t$0 <span class='color_orange'>update:12</span>:int*</span> ;
     <span class='color_blue'>q|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span></span>
     
     Instruction <span class='color_green'>APPLY_ABSTRACTION; [line 12, column 5]</span>
-    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int; p = 0 <span class='color_orange'>nullify</span>:int*; return = _t$0 <span class='color_orange'>initial</span>:int; q = 0 <span class='color_orange'>update:12</span>:int*</span>
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int; p = 0 <span class='color_orange'>update:8</span>:int*; return = _t$0 <span class='color_orange'>initial</span>:int; q = 0 <span class='color_orange'>update:12</span>:int*</span>
     Instruction Returns
     PROP 1 of 1:
-    <span class='color_blue'><span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = 0 <span class='color_orange'>update:12</span>:int*</span></span>
+    <span class='color_blue'><span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = 0 <span class='color_orange'>update:12</span>:int*</span></span>
     
     .... After Symbolic Execution ....
     PROP 1 of 2:
     <span class='color_blue'><span class='color_red'>MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(q)</span> ;
-    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = _t$0 <span class='color_orange'>update:12</span>:int*</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = _t$0 <span class='color_orange'>update:12</span>:int*</span> ;
     <span class='color_red'>q|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span></span>
     PROP 2 of 2:
-    <span class='color_blue'><span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_blue'>return = <span class='color_red'>_t$0 <span class='color_orange'>initial</span></span>:int</span>; <span class='color_blue'>q = <span class='color_red'>0 <span class='color_orange'>update:12</span></span>:int*</span></span>
+    <span class='color_blue'><span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = <span class='color_red'>_t$0 <span class='color_orange'>initial</span></span>:int</span>; <span class='color_blue'>q = <span class='color_red'>0 <span class='color_orange'>update:12</span></span>:int*</span></span>
     
     
     
   </LISTING></span><hr width="100%">
 <a name="session71" href="./../nodes/main.fad58de7366495db4650cfefac2fcd61_node11.html#session71">node11#session71</a>(<a href="./../../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE12">12</a>) interproc<LISTING><span class='color_black'>**** [RE:Pending] main Node: 11, Procedure: main, Session: 71, Todo: 2 ****
   PROP 1 of 2:
-  <span class='color_blue'><span class='color_red'>(_t$3  &lt;=  1)</span>; <span class='color_red'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(_t$0)</span>; <span class='color_red'>DANGL &lt; UNINIT &gt; (_t$3)</span> ;
-  <span class='color_red'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_red'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_red'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_red'>q = _t$2 <span class='color_orange'>initial</span>:int*</span> ;
-  <span class='color_red'>_t$0|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span></span>
+  <span class='color_blue'><span class='color_red'>(_t$3  &lt;=  1)</span>; <span class='color_red'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p)</span>; <span class='color_red'>DANGL &lt; UNINIT &gt; (_t$3)</span> ;
+  <span class='color_red'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_red'>p = _t$2 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_red'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_red'>q = _t$0 <span class='color_orange'>initial</span>:int*</span> ;
+  <span class='color_red'>p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span></span>
   PROP 2 of 2:
   <span class='color_blue'><span class='color_red'>(_t$2  &lt;=  1)</span>; <span class='color_red'>DANGL &lt; UNINIT &gt; (_t$2)</span> ;
-  <span class='color_red'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_red'>p = 0 <span class='color_orange'>nullify</span>:int*</span>; <span class='color_red'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_red'>q = _t$0 <span class='color_orange'>initial</span>:int*</span></span>
+  <span class='color_red'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_red'>p = 0 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_red'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_red'>q = _t$0 <span class='color_orange'>initial</span>:int*</span></span>
   .... Instructions: .... 
   <span class='color_green'>n$5=_fun_malloc(2:unsigned long) [line 12, column 9];
   *&amp;q:int*=n$5 [line 12, column 5];
@@ -511,23 +498,195 @@ POST: { p -> Owned, q -> Owned }
   Processing prop 1/2
     Instruction <span class='color_green'>n$5=_fun_malloc(2:unsigned long) [line 12, column 9]</span>
     in vpath_find exp:n$32
-    vpath_find: cannot find n$32
-    .... Prop with garbage in normal part ....
-      PROP:
-      <span class='color_blue'>(_t$44  &lt;=  1); MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(_t$41); MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(n$5); DANGL &lt; UNINIT &gt; (_t$44) ;
-      i = 0 <span class='color_orange'>nullify</span>:int; p = 0 <span class='color_orange'>nullify</span>:int*; return = _t$42 <span class='color_orange'>initial</span>:int; q = _t$43 <span class='color_orange'>initial</span>:int* ;
-      _t$41|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]; n$5|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span>
-      PREDICATE:
-      _t$41|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]
-      ATTRIBUTE: MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>
-      explain_leak: case not matched in instr <span class='color_green'>n$5=_fun_malloc(2:unsigned long) [line 12, column 9]</span>
-    <span class='color_red'>Failure of symbolic execution: MEMORY_LEAK  memory dynamically allocated by call to `malloc()` at line 8, column 7 is not reachable after line 12, column 9 biabduction/Abs.ml:1082:18-25:</span>
-    Precondition:
-    <span class='color_blue'></span>
-    SIL INSTR:
-    <span class='color_green'><span class='color_red'>n$5=_fun_malloc(2:unsigned long) [line 12, column 9]</span>;
-    *&amp;q:int*=n$5 [line 12, column 5];
-    REMOVE_TEMPS(n$5); [line 12, column 5];
-    APPLY_ABSTRACTION; [line 12, column 5];
-    </span>
-    </LISTING></span>
+    vpath_find: found p : int*
+    Instruction Returns
+    PROP 1 of 2:
+    <span class='color_blue'><span class='color_blue'>(_t$3  &lt;=  1)</span>; <span class='color_blue'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p)</span>; <span class='color_red'>MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(n$5)</span>; <span class='color_blue'>DANGL &lt; UNINIT &gt; (_t$3)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = _t$2 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = _t$0 <span class='color_orange'>initial</span>:int*</span> ;
+    <span class='color_blue'>p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span>; <span class='color_red'>n$5|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span></span>
+    PROP 2 of 2:
+    <span class='color_blue'><span class='color_red'>n$5 = 0</span> ;
+    <span class='color_blue'>(_t$3  &lt;=  1)</span>; <span class='color_blue'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p)</span>; <span class='color_blue'>DANGL &lt; UNINIT &gt; (_t$3)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = _t$2 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = _t$0 <span class='color_orange'>initial</span>:int*</span> ;
+    <span class='color_blue'>p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span></span>
+    
+    Instruction <span class='color_green'>*&amp;q:int*=n$5 [line 12, column 5]</span>
+    in vpath_find exp:n$36
+    vpath_find: found p : int*
+    in vpath_find exp:n$5
+    vpath_find: cannot find n$5
+    .... Rearrangement Start ....
+    Exp: &amp;q
+    Prop: 
+    <span class='color_blue'>(n$39  &lt;=  1); MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p); MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(n$5); DANGL &lt; UNINIT &gt; (n$39) ;
+    i = 0 <span class='color_orange'>nullify</span>:int; p = n$36 <span class='color_orange'>update:8</span>:int*; return = n$37 <span class='color_orange'>initial</span>:int; q = n$38 <span class='color_orange'>initial</span>:int* ;
+    p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]; n$5|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>(_t$2  &lt;=  1)</span>; <span class='color_red'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p)</span>; <span class='color_blue'>MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(q)</span>; <span class='color_blue'>DANGL &lt; UNINIT &gt; (_t$2)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = <span class='color_red'>_t$1 <span class='color_orange'>update:8</span></span>:int*</span>; <span class='color_blue'>return = <span class='color_red'>_t$0 <span class='color_orange'>initial</span></span>:int</span>; <span class='color_blue'>q = <span class='color_red'>n$5 <span class='color_orange'>update:12</span></span>:int*</span> ;
+    <span class='color_red'>p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span>; <span class='color_blue'>q|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span></span>
+    
+    Instruction <span class='color_green'>*&amp;q:int*=n$5 [line 12, column 5]</span>
+    in vpath_find exp:n$40
+    vpath_find: found p : int*
+    .... Rearrangement Start ....
+    Exp: &amp;q
+    Prop: 
+    <span class='color_blue'>n$5 = 0 ;
+    (n$43  &lt;=  1); MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p); DANGL &lt; UNINIT &gt; (n$43) ;
+    i = 0 <span class='color_orange'>nullify</span>:int; p = n$40 <span class='color_orange'>update:8</span>:int*; return = n$41 <span class='color_orange'>initial</span>:int; q = n$42 <span class='color_orange'>initial</span>:int* ;
+    p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$5 = 0</span> ;
+    <span class='color_red'>(_t$2  &lt;=  1)</span>; <span class='color_red'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p)</span>; <span class='color_blue'>DANGL &lt; UNINIT &gt; (_t$2)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = <span class='color_red'>_t$1 <span class='color_orange'>update:8</span></span>:int*</span>; <span class='color_blue'>return = <span class='color_red'>_t$0 <span class='color_orange'>initial</span></span>:int</span>; <span class='color_blue'>q = <span class='color_red'>0 <span class='color_orange'>update:12</span></span>:int*</span> ;
+    <span class='color_red'>p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$5); [line 12, column 5]</span>
+    in vpath_find exp:_t$1
+    vpath_find: found p : int*
+    in vpath_find exp:n$5
+    vpath_find: found q : int*
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>(_t$3  &lt;=  1)</span>; <span class='color_blue'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p)</span>; <span class='color_red'>MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(q)</span>; <span class='color_red'>DANGL &lt; UNINIT &gt; (_t$3)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = <span class='color_red'>_t$2 <span class='color_orange'>update:8</span></span>:int*</span>; <span class='color_blue'>return = <span class='color_red'>_t$1 <span class='color_orange'>initial</span></span>:int</span>; <span class='color_blue'>q = <span class='color_red'>_t$0 <span class='color_orange'>update:12</span></span>:int*</span> ;
+    <span class='color_red'>p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span>; <span class='color_red'>q|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$5); [line 12, column 5]</span>
+    in vpath_find exp:_t$1
+    vpath_find: found p : int*
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>(_t$2  &lt;=  1)</span>; <span class='color_blue'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p)</span>; <span class='color_blue'>DANGL &lt; UNINIT &gt; (_t$2)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = _t$1 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = 0 <span class='color_orange'>update:12</span>:int*</span> ;
+    <span class='color_blue'>p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span></span>
+    
+    Instruction <span class='color_green'>APPLY_ABSTRACTION; [line 12, column 5]</span>
+    in vpath_find exp:_t$2
+    vpath_find: found p : int*
+    in vpath_find exp:_t$0
+    vpath_find: found q : int*
+    <span class='color_blue'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p); MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(q) ;
+    i = 0 <span class='color_orange'>nullify</span>:int; p = _t$2 <span class='color_orange'>update:8</span>:int*; return = _t$1 <span class='color_orange'>initial</span>:int; q = _t$0 <span class='color_orange'>update:12</span>:int* ;
+    p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]; q|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p)</span>; <span class='color_blue'>MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(q)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = _t$2 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = _t$0 <span class='color_orange'>update:12</span>:int*</span> ;
+    <span class='color_blue'>p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span>; <span class='color_blue'>q|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span></span>
+    
+    Instruction <span class='color_green'>APPLY_ABSTRACTION; [line 12, column 5]</span>
+    in vpath_find exp:_t$1
+    vpath_find: found p : int*
+    <span class='color_blue'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p) ;
+    i = 0 <span class='color_orange'>nullify</span>:int; p = _t$1 <span class='color_orange'>update:8</span>:int*; return = _t$0 <span class='color_orange'>initial</span>:int; q = 0 <span class='color_orange'>update:12</span>:int* ;
+    p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = _t$1 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = 0 <span class='color_orange'>update:12</span>:int*</span> ;
+    <span class='color_blue'>p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span></span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 2:
+    <span class='color_blue'><span class='color_blue'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p)</span>; <span class='color_red'>MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(q)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = _t$2 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = _t$0 <span class='color_orange'>update:12</span>:int*</span> ;
+    <span class='color_blue'>p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span>; <span class='color_red'>q|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span></span>
+    PROP 2 of 2:
+    <span class='color_blue'><span class='color_red'>MEMma &lt; malloc:8 &gt;  <span class='color_orange'>{vpath: }</span>(p)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = <span class='color_red'>_t$1 <span class='color_orange'>update:8</span></span>:int*</span>; <span class='color_blue'>return = <span class='color_red'>_t$0 <span class='color_orange'>initial</span></span>:int</span>; <span class='color_blue'>q = <span class='color_red'>0 <span class='color_orange'>update:12</span></span>:int*</span> ;
+    <span class='color_red'>p|->[1|] <span class='color_orange'>alloc</span>:char[_*1][1]</span></span>
+    
+    
+    
+  Processing prop 2/2
+    Instruction <span class='color_green'>n$5=_fun_malloc(2:unsigned long) [line 12, column 9]</span>
+    Instruction Returns
+    PROP 1 of 2:
+    <span class='color_blue'><span class='color_blue'>(_t$2  &lt;=  1)</span>; <span class='color_red'>MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(n$5)</span>; <span class='color_blue'>DANGL &lt; UNINIT &gt; (_t$2)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = _t$0 <span class='color_orange'>initial</span>:int*</span> ;
+    <span class='color_red'>n$5|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span></span>
+    PROP 2 of 2:
+    <span class='color_blue'><span class='color_red'>n$5 = 0</span> ;
+    <span class='color_blue'>(_t$2  &lt;=  1)</span>; <span class='color_blue'>DANGL &lt; UNINIT &gt; (_t$2)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = _t$0 <span class='color_orange'>initial</span>:int*</span></span>
+    
+    Instruction <span class='color_green'>*&amp;q:int*=n$5 [line 12, column 5]</span>
+    in vpath_find exp:n$5
+    vpath_find: cannot find n$5
+    .... Rearrangement Start ....
+    Exp: &amp;q
+    Prop: 
+    <span class='color_blue'>(n$49  &lt;=  1); MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(n$5); DANGL &lt; UNINIT &gt; (n$49) ;
+    i = 0 <span class='color_orange'>nullify</span>:int; p = 0 <span class='color_orange'>update:8</span>:int*; return = n$47 <span class='color_orange'>initial</span>:int; q = n$48 <span class='color_orange'>initial</span>:int* ;
+    n$5|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>(_t$1  &lt;=  1)</span>; <span class='color_blue'>MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(q)</span>; <span class='color_red'>DANGL &lt; UNINIT &gt; (_t$1)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = <span class='color_red'>_t$0 <span class='color_orange'>initial</span></span>:int</span>; <span class='color_blue'>q = <span class='color_red'>n$5 <span class='color_orange'>update:12</span></span>:int*</span> ;
+    <span class='color_blue'>q|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span></span>
+    
+    Instruction <span class='color_green'>*&amp;q:int*=n$5 [line 12, column 5]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;q
+    Prop: 
+    <span class='color_blue'>n$5 = 0 ;
+    (n$52  &lt;=  1); DANGL &lt; UNINIT &gt; (n$52) ;
+    i = 0 <span class='color_orange'>nullify</span>:int; p = 0 <span class='color_orange'>update:8</span>:int*; return = n$50 <span class='color_orange'>initial</span>:int; q = n$51 <span class='color_orange'>initial</span>:int*</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$5 = 0</span> ;
+    <span class='color_red'>(_t$1  &lt;=  1)</span>; <span class='color_red'>DANGL &lt; UNINIT &gt; (_t$1)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = <span class='color_red'>_t$0 <span class='color_orange'>initial</span></span>:int</span>; <span class='color_blue'>q = <span class='color_red'>0 <span class='color_orange'>update:12</span></span>:int*</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$5); [line 12, column 5]</span>
+    in vpath_find exp:n$5
+    vpath_find: found q : int*
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>(_t$2  &lt;=  1)</span>; <span class='color_red'>MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(q)</span>; <span class='color_red'>DANGL &lt; UNINIT &gt; (_t$2)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = <span class='color_red'>_t$1 <span class='color_orange'>initial</span></span>:int</span>; <span class='color_blue'>q = <span class='color_red'>_t$0 <span class='color_orange'>update:12</span></span>:int*</span> ;
+    <span class='color_red'>q|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$5); [line 12, column 5]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>(_t$1  &lt;=  1)</span>; <span class='color_blue'>DANGL &lt; UNINIT &gt; (_t$1)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = 0 <span class='color_orange'>update:12</span>:int*</span></span>
+    
+    Instruction <span class='color_green'>APPLY_ABSTRACTION; [line 12, column 5]</span>
+    in vpath_find exp:_t$0
+    vpath_find: found q : int*
+    <span class='color_blue'>MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(q) ;
+    i = 0 <span class='color_orange'>nullify</span>:int; p = 0 <span class='color_orange'>update:8</span>:int*; return = _t$1 <span class='color_orange'>initial</span>:int; q = _t$0 <span class='color_orange'>update:12</span>:int* ;
+    q|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(q)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = _t$0 <span class='color_orange'>update:12</span>:int*</span> ;
+    <span class='color_blue'>q|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span></span>
+    
+    Instruction <span class='color_green'>APPLY_ABSTRACTION; [line 12, column 5]</span>
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int; p = 0 <span class='color_orange'>update:8</span>:int*; return = _t$0 <span class='color_orange'>initial</span>:int; q = 0 <span class='color_orange'>update:12</span>:int*</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = 0 <span class='color_orange'>update:12</span>:int*</span></span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 2:
+    <span class='color_blue'><span class='color_red'>MEMma &lt; malloc:12 &gt;  <span class='color_orange'>{vpath: }</span>(q)</span> ;
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = _t$1 <span class='color_orange'>initial</span>:int</span>; <span class='color_blue'>q = _t$0 <span class='color_orange'>update:12</span>:int*</span> ;
+    <span class='color_red'>q|->[2|] <span class='color_orange'>alloc</span>:char[_*1][2]</span></span>
+    PROP 2 of 2:
+    <span class='color_blue'><span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:int</span>; <span class='color_blue'>p = 0 <span class='color_orange'>update:8</span>:int*</span>; <span class='color_blue'>return = <span class='color_red'>_t$0 <span class='color_orange'>initial</span></span>:int</span>; <span class='color_blue'>q = <span class='color_red'>0 <span class='color_orange'>update:12</span></span>:int*</span></span>
+    
+    
+    
+  </LISTING></span>

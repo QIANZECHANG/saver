@@ -47,31 +47,134 @@ td.rowname { text-align:right; font-weight:bold; color:#444444; padding-right:2e
 </style>
 </head>
 <body>
-<center><h1>Cfg Node <a href="./../../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE10">10</a></h1></center>PROC: <a href="./../main.fad58de7366495db4650cfefac2fcd61.html">main</a> LINE: <a href="./../../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE10">10</a>
+<center><h1>Cfg Node <a href="./../../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE14">10</a></h1></center>PROC: <a href="./../main.fad58de7366495db4650cfefac2fcd61.html">main</a> LINE: <a href="./../../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE14">14</a>
 <br>PREDS:
-<a href="./../nodes/main.fad58de7366495db4650cfefac2fcd61_node14.html"><span class='visited'>N_14<span class='expansion'>node14 preds:13 succs:10 exn: </span></span></a><br>SUCCS: 
-<a href="./../nodes/main.fad58de7366495db4650cfefac2fcd61_node6.html"><span class='visited'>N_6<span class='expansion'>node6 preds:12 10 succs:4 exn: </span></span></a><br>EXN: 
+<a href="./../nodes/main.fad58de7366495db4650cfefac2fcd61_node13.html"><span class='visited'>N_13<span class='expansion'>node13 preds:11 succs:10 exn: </span></span></a> <a href="./../nodes/main.fad58de7366495db4650cfefac2fcd61_node14.html"><span class='visited'>N_14<span class='expansion'>node14 preds:12 succs:10 exn: </span></span></a><br>SUCCS: 
+<a href="./../nodes/main.fad58de7366495db4650cfefac2fcd61_node6.html"><span class='visited'>N_6<span class='expansion'>node6 preds:10 succs:4 exn: </span></span></a><br>EXN: 
 <br>
 <span class='color_green'><LISTING></LISTING></span><hr width="100%">
-<a name="session32" href="./../nodes/main.fad58de7366495db4650cfefac2fcd61_node10.html#session32">node10#session32</a>(<a href="./../../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE10">10</a>) siof<LISTING><span class='color_black'>PRE: ({ }, { })
+<a name="session32" href="./../nodes/main.fad58de7366495db4650cfefac2fcd61_node10.html#session32">node10#session32</a>(<a href="./../../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE14">14</a>) siof<LISTING><span class='color_black'>PRE: ({ }, { })
 INSTRS: REMOVE_TEMPS(); [line -1];
 POST: ({ }, { })
 
 </LISTING></span><hr width="100%">
-<a name="session48" href="./../nodes/main.fad58de7366495db4650cfefac2fcd61_node10.html#session48">node10#session48</a>(<a href="./../../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE10">10</a>) address taken<LISTING><span class='color_black'>PRE: { }
+<a name="session48" href="./../nodes/main.fad58de7366495db4650cfefac2fcd61_node10.html#session48">node10#session48</a>(<a href="./../../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE14">14</a>) address taken<LISTING><span class='color_black'>PRE: { }
 INSTRS: REMOVE_TEMPS(); [line -1];
 POST: { }
 
 </LISTING></span><hr width="100%">
-<a name="session114" href="./../nodes/main.fad58de7366495db4650cfefac2fcd61_node10.html#session114">node10#session114</a>(<a href="./../../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE10">10</a>) interproc<LISTING><span class='color_black'>**** [FP:Pending] main Node: 10, Procedure: main, Session: 114, Todo: 1 ****
+<a name="session89" href="./../nodes/main.fad58de7366495db4650cfefac2fcd61_node10.html#session89">node10#session89</a>(<a href="./../../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE14">14</a>) interproc<LISTING><span class='color_black'>**** [FP:Pending] main Node: 10, Procedure: main, Session: 89, Todo: 1 ****
   PROP 1 of 1:
-  <span class='color_blue'><span class='color_red'>@f$0 = 5</span> ;
-  <span class='color_red'>p != 0</span>; <span class='color_red'>FREEDma &lt; free:13 &gt;  <span class='color_orange'>{vpath: }</span>(p)</span> ;
-  <span class='color_red'>v = _t$3 <span class='color_orange'>initial</span>:int</span>; <span class='color_red'>i = 5 <span class='color_orange'>update:8</span>:int</span>; <span class='color_red'>c = _t$2 <span class='color_orange'>initial</span>:int</span>; <span class='color_red'>p = _t$1 <span class='color_orange'>update:5</span>:int*</span>; <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:int</span>
+  <span class='color_blue'><span class='color_red'>MEMma &lt; malloc:5 &gt;  <span class='color_orange'>{vpath: }</span>(p)</span> ;
+  <span class='color_red'>i = 0 <span class='color_orange'>update:8</span>:int</span>; <span class='color_red'>p = _t$1 <span class='color_orange'>update:5</span>:int*</span>; <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:int</span> ;
+  <span class='color_red'>p|->[4|0:5 <span class='color_orange'>update:6</span>] <span class='color_orange'>alloc</span>:char[_*_][4]</span></span>
+  .... Instructions: .... 
+  <span class='color_green'></span>
+  
+  </LISTING></span><hr width="100%">
+<a name="session99" href="./../nodes/main.fad58de7366495db4650cfefac2fcd61_node10.html#session99">node10#session99</a>(<a href="./../../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE14">14</a>) interproc<LISTING><span class='color_black'>**** [FP:Pending] main Node: 10, Procedure: main, Session: 99, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>p != 0</span>; <span class='color_red'>FREEDma &lt; free:14 &gt;  <span class='color_orange'>{vpath: }</span>(p)</span> ;
+  <span class='color_red'>i = 1 <span class='color_orange'>update:8</span>:int</span>; <span class='color_red'>p = _t$1 <span class='color_orange'>update:5</span>:int*</span>; <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:int</span></span>
+  .... Instructions: .... 
+  <span class='color_green'></span>
+  
+  .... JOIN ....
+  JOIN SYM HEAP1: 
+  <span class='color_blue'>p != 0; FREEDma &lt; free:14 &gt;  <span class='color_orange'>{vpath: }</span>(p) ;
+  i = 1 <span class='color_orange'>update:8</span>:int; p = _t$1 <span class='color_orange'>update:5</span>:int*; return = _t$0 <span class='color_orange'>initial</span>:int</span>
+  JOIN SYM HEAP2: 
+  <span class='color_blue'>MEMma &lt; malloc:5 &gt;  <span class='color_orange'>{vpath: }</span>(p) ;
+  i = 0 <span class='color_orange'>update:8</span>:int; p = _t$1 <span class='color_orange'>update:5</span>:int*; return = _t$0 <span class='color_orange'>initial</span>:int ;
+  p|->[4|0:5 <span class='color_orange'>update:6</span>] <span class='color_orange'>alloc</span>:char[_*_][4]</span>
+  
+  sigma_partial_join succeeded
+  pi_partial_join succeeded
+  inst_partial_join failed on update:8 update:8
+  <span class='color_red'>.... JOIN FAILED ....</span>
+  
+  </LISTING></span><hr width="100%">
+<a name="session108" href="./../nodes/main.fad58de7366495db4650cfefac2fcd61_node10.html#session108">node10#session108</a>(<a href="./../../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE14">14</a>) interproc<LISTING><span class='color_black'>**** [FP:Pending] main Node: 10, Procedure: main, Session: 108, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>p != 0</span>; <span class='color_red'>FREEDma &lt; free:14 &gt;  <span class='color_orange'>{vpath: }</span>(p)</span> ;
+  <span class='color_red'>i = 2 <span class='color_orange'>update:8</span>:int</span>; <span class='color_red'>p = _t$1 <span class='color_orange'>update:5</span>:int*</span>; <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:int</span></span>
+  .... Instructions: .... 
+  <span class='color_green'></span>
+  
+  .... JOIN ....
+  JOIN SYM HEAP1: 
+  <span class='color_blue'>p != 0; FREEDma &lt; free:14 &gt;  <span class='color_orange'>{vpath: }</span>(p) ;
+  i = 2 <span class='color_orange'>update:8</span>:int; p = _t$1 <span class='color_orange'>update:5</span>:int*; return = _t$0 <span class='color_orange'>initial</span>:int</span>
+  JOIN SYM HEAP2: 
+  <span class='color_blue'>p != 0; FREEDma &lt; free:14 &gt;  <span class='color_orange'>{vpath: }</span>(p) ;
+  i = 1 <span class='color_orange'>update:8</span>:int; p = _t$1 <span class='color_orange'>update:5</span>:int*; return = _t$0 <span class='color_orange'>initial</span>:int</span>
+  
+  sigma_partial_join succeeded
+  pi_partial_join succeeded
+  sigma_partial_join succeeded
+  pi_partial_join succeeded
+  <span class='color_green'>.... JOIN SUCCEEDED ....</span>
+  RESULT SYM HEAP:
+  <span class='color_blue'>(0  &lt;  @f$3); (@f$3  &lt;=  2); p != 0; FREEDma &lt; free:14 &gt;  <span class='color_orange'>{vpath: }</span>(p) ;
+  i = @f$3 <span class='color_orange'>update:8</span>:int; p = _t$91 <span class='color_orange'>update:5</span>:int*; return = _t$92 <span class='color_orange'>initial</span>:int</span>
+  
+  .... JOIN ....
+  JOIN SYM HEAP1: 
+  <span class='color_blue'>(0  &lt;  @f$3); (@f$3  &lt;=  2); p != 0; FREEDma &lt; free:14 &gt;  <span class='color_orange'>{vpath: }</span>(p) ;
+  i = @f$3 <span class='color_orange'>update:8</span>:int; p = _t$91 <span class='color_orange'>update:5</span>:int*; return = _t$92 <span class='color_orange'>initial</span>:int</span>
+  JOIN SYM HEAP2: 
+  <span class='color_blue'>MEMma &lt; malloc:5 &gt;  <span class='color_orange'>{vpath: }</span>(p) ;
+  i = 0 <span class='color_orange'>update:8</span>:int; p = _t$1 <span class='color_orange'>update:5</span>:int*; return = _t$0 <span class='color_orange'>initial</span>:int ;
+  p|->[4|0:5 <span class='color_orange'>update:6</span>] <span class='color_orange'>alloc</span>:char[_*_][4]</span>
+  
+  sigma_partial_join succeeded
+  pi_partial_join succeeded
+  inst_partial_join failed on update:8 update:8
+  <span class='color_red'>.... JOIN FAILED ....</span>
+  
+  </LISTING></span><hr width="100%">
+<a name="session118" href="./../nodes/main.fad58de7366495db4650cfefac2fcd61_node10.html#session118">node10#session118</a>(<a href="./../../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE14">14</a>) interproc<LISTING><span class='color_black'>**** [FP:Pending] main Node: 10, Procedure: main, Session: 118, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>(@f$0  &lt;=  8)</span>; <span class='color_red'>p != 0</span>; <span class='color_red'>@f$0 != 0</span>; <span class='color_red'>FREEDma &lt; free:14 &gt;  <span class='color_orange'>{vpath: }</span>(p)</span> ;
+  <span class='color_red'>i = (@f$0 + 1) <span class='color_orange'>update:8</span>:int</span>; <span class='color_red'>p = _t$1 <span class='color_orange'>update:5</span>:int*</span>; <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:int</span>
   [footprint
-     <span class='color_red'>@f$0 = 5</span>; <span class='color_red'>@f$1 != 0</span> *
+     <span class='color_red'>(@f$0  &lt;=  8)</span>; <span class='color_red'>@f$0 != 0</span> *
        ]</span>
   .... Instructions: .... 
   <span class='color_green'></span>
+  
+  .... JOIN ....
+  JOIN SYM HEAP1: 
+  <span class='color_blue'>(@f$0  &lt;=  8); p != 0; @f$0 != 0; FREEDma &lt; free:14 &gt;  <span class='color_orange'>{vpath: }</span>(p) ;
+  i = (@f$0 + 1) <span class='color_orange'>update:8</span>:int; p = _t$1 <span class='color_orange'>update:5</span>:int*; return = _t$0 <span class='color_orange'>initial</span>:int
+  [footprint
+     (@f$0  &lt;=  8); @f$0 != 0 *
+       ]</span>
+  JOIN SYM HEAP2: 
+  <span class='color_blue'>(0  &lt;  @f$0); (@f$0  &lt;=  2); p != 0; FREEDma &lt; free:14 &gt;  <span class='color_orange'>{vpath: }</span>(p) ;
+  i = @f$0 <span class='color_orange'>update:8</span>:int; p = _t$1 <span class='color_orange'>update:5</span>:int*; return = _t$0 <span class='color_orange'>initial</span>:int</span>
+  
+  sigma_partial_join succeeded
+  pi_partial_join succeeded
+  sigma_partial_join succeeded
+  pi_partial_join succeeded
+  <span class='color_green'>.... JOIN SUCCEEDED ....</span>
+  RESULT SYM HEAP:
+  <span class='color_blue'>(@f$6  &lt;=  9223372036854774807); p != 0; FREEDma &lt; free:14 &gt;  <span class='color_orange'>{vpath: }</span>(p) ;
+  i = @f$6 <span class='color_orange'>update:8</span>:int; p = _t$125 <span class='color_orange'>update:5</span>:int*; return = _t$126 <span class='color_orange'>initial</span>:int</span>
+  
+  .... JOIN ....
+  JOIN SYM HEAP1: 
+  <span class='color_blue'>(@f$6  &lt;=  9223372036854774807); p != 0; FREEDma &lt; free:14 &gt;  <span class='color_orange'>{vpath: }</span>(p) ;
+  i = @f$6 <span class='color_orange'>update:8</span>:int; p = _t$125 <span class='color_orange'>update:5</span>:int*; return = _t$126 <span class='color_orange'>initial</span>:int</span>
+  JOIN SYM HEAP2: 
+  <span class='color_blue'>MEMma &lt; malloc:5 &gt;  <span class='color_orange'>{vpath: }</span>(p) ;
+  i = 0 <span class='color_orange'>update:8</span>:int; p = _t$1 <span class='color_orange'>update:5</span>:int*; return = _t$0 <span class='color_orange'>initial</span>:int ;
+  p|->[4|0:5 <span class='color_orange'>update:6</span>] <span class='color_orange'>alloc</span>:char[_*_][4]</span>
+  
+  sigma_partial_join succeeded
+  pi_partial_join succeeded
+  inst_partial_join failed on update:8 update:8
+  <span class='color_red'>.... JOIN FAILED ....</span>
   
   </LISTING></span>

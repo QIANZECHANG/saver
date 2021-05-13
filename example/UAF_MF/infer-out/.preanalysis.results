@@ -1,6 +1,0 @@
-REG: { _n$0_main -> ({ _src.c:4:3:int }, { }),
-       _n$2_main -> ({ _src.c:4:3:int }, { }),
-       _n$4_main -> ({ _src.c:4:3:int }, { }),
-       _n$5_main -> ({ _src.c:4:3:int }, { }) }
- MEM: { _p_main:int* -> ({ _src.c:4:3:int }, { }) }
-
