@@ -1,0 +1,5 @@
+{
+"targets": [],
+"edges": [[0,0], [4,0], [4,4]],
+"callsite_dominators":{}
+}
