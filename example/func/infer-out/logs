@@ -1,0 +1,1675 @@
+[24203][environment] CWD = /home/saver/saver/example/func
+[24203][environment] No .inferconfig file found
+[24203][environment] Project root = /home/saver/saver/example/func
+[24203][environment] INFER_ARGS =   @/tmp/args.tmp.106269
+[24203][environment]   ++Contents of '/tmp/args.tmp.106269':
+[24203][environment]     -g run
+[24203][environment]   
+[24203][environment] command line arguments:   infer -g run -- clang src.c
+[24203][environment] Analyzer: checkers
+[24203][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), ownership (C/C++/ObjC), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC)
+[24203][   progress] Logs in /home/saver/saver/example/func/infer-out/logs
+[24203][environment] Infer log identifier is 
+Infer version v0.15.0-821a8db
+[24203][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[24203][environment] Driver mode:
+[24203][environment] Clang driver mode:
+[24203][environment] prog = 'clang'
+[24203][environment] args =   src.c
+[24203][environment] 
+[24203][   progress] Capturing in make/cc mode...
+[24203][      debug] Clang options stored in file /tmp/clang_command_.tmp.9de052.txt
+[24203][      debug] clang -### invocation: '/home/saver/project/saver/libs/infer/bin/../../facebook-clang-plugins/clang/install/bin/clang' '@/tmp/clang_command_.tmp.9de052.txt' 2>&1
+[24203][      debug] 
+[24203][      debug] *** Beginning capture of file /home/saver/saver/example/func/src.c ***
+[24203][      debug] Clang options stored in file /tmp/clang_command_.tmp.810d69.txt
+[24203][      debug] Clang options stored in file /tmp/clang_command_.tmp.456b44.txt
+[24203][      debug] Processing src.cClang frontend action is translating and linting
+[24203][      debug] Start translating and linting of AST from stdin of src.c
+[24203][      debug] Loading the following linters files: /home/saver/project/saver/libs/infer/bin/../lib/linter_rules/linters.al
+[24203][      debug] Loading linters rules from /home/saver/project/saver/libs/infer/bin/../lib/linter_rules/linters.al
+[24203][      debug] 	Parsed identifier 'DIRECT_ATOMIC_PROPERTY_ACCESS'
+[24203][      debug] 	Parsed identifier 'report_when'
+[24203][      debug] 	Parsed identifier 'context_in_synchronized_block'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed NOT
+[24203][      debug] 	Parsed identifier 'is_ivar_atomic'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed AND
+[24203][      debug] 	Parsed identifier 'is_method_property_accessor_of_ivar'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed NOT
+[24203][      debug] 	Parsed AND
+[24203][      debug] 	Parsed identifier 'is_objc_constructor'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed NOT
+[24203][      debug] 	Parsed AND
+[24203][      debug] 	Parsed identifier 'is_objc_dealloc'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed NOT
+[24203][      debug] 	Parsed AND
+[24203][      debug] 	Parsed identifier 'ObjCIvarRefExpr'
+[24203][      debug] 	Parsed InNode
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'message'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'suggestion'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'severity'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 
+[24203][      debug] Parsed checker definition
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] Checker name: DIRECT_ATOMIC_PROPERTY_ACCESS
+[24203][      debug]     report_when=  
+[24203][      debug]     IN-NODE ObjCIvarRefExpr: (((((NOT(context_in_synchronized_block()) AND is_ivar_atomic()) AND NOT(is_method_property_accessor_of_ivar())) AND NOT(is_objc_constructor())) AND NOT(is_objc_dealloc())))
+[24203][      debug] 
+[24203][      debug]     message=  
+[24203][      debug]     Direct access to ivar %ivar_name% of an atomic property
+[24203][      debug] 
+[24203][      debug]     suggestion=  
+[24203][      debug]     Accessing an ivar of an atomic property makes the property nonatomic.
+[24203][      debug] 
+[24203][      debug]     severity=  
+[24203][      debug]     WARNING
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 	Parsed identifier 'ASSIGN_POINTER_WARNING'
+[24203][      debug] 	Parsed identifier 'report_when'
+[24203][      debug] 	Parsed identifier 'is_assign_property'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed identifier 'is_property_pointer_type'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed AND
+[24203][      debug] 	Parsed identifier 'ObjCPropertyDecl'
+[24203][      debug] 	Parsed InNode
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'message'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'suggestion'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'severity'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 
+[24203][      debug] Parsed checker definition
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] Checker name: ASSIGN_POINTER_WARNING
+[24203][      debug]     report_when=  
+[24203][      debug]     IN-NODE ObjCPropertyDecl: ((is_assign_property() AND is_property_pointer_type()))
+[24203][      debug] 
+[24203][      debug]     message=  
+[24203][      debug]     Property %decl_name% is a pointer type marked with the `assign` attribute
+[24203][      debug] 
+[24203][      debug]     suggestion=  
+[24203][      debug]     Use a different attribute like `strong` or `weak`.
+[24203][      debug] 
+[24203][      debug]     severity=  
+[24203][      debug]     WARNING
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 	Parsed identifier 'BAD_POINTER_COMPARISON'
+[24203][      debug] 	Parsed identifier 'bool_op'
+[24203][      debug] 	Parsed formula identifier 'bool_op'
+[24203][      debug] 	Parsed identifier 'is_binop_with_kind'
+[24203][      debug] 	Parsed string constant 'LAnd'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed identifier 'is_binop_with_kind'
+[24203][      debug] 	Parsed string constant 'LOr'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed OR
+[24203][      debug] 	Parsed identifier 'is_unop_with_kind'
+[24203][      debug] 	Parsed string constant 'LNot'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed OR
+[24203][      debug] 	Parsed identifier 'is_unop_with_kind'
+[24203][      debug] 	Parsed string constant 'LNot'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed OR
+[24203][      debug] 	Parsed LET clause
+[24203][      debug] 	Parsed identifier 'comparison_with_integral'
+[24203][      debug] 	Parsed formula identifier 'comparison_with_integral'
+[24203][      debug] 	Parsed identifier 'is_binop_with_kind'
+[24203][      debug] 	Parsed string constant 'EQ'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed identifier 'is_binop_with_kind'
+[24203][      debug] 	Parsed string constant 'NE'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed OR
+[24203][      debug] 	Parsed identifier 'is_binop_with_kind'
+[24203][      debug] 	Parsed string constant 'GT'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed OR
+[24203][      debug] 	Parsed identifier 'is_binop_with_kind'
+[24203][      debug] 	Parsed string constant 'GE'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed OR
+[24203][      debug] 	Parsed identifier 'is_binop_with_kind'
+[24203][      debug] 	Parsed string constant 'LT'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed OR
+[24203][      debug] 	Parsed identifier 'is_binop_with_kind'
+[24203][      debug] 	Parsed string constant 'LE'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed OR
+[24203][      debug] 	Parsed identifier 'is_node'
+[24203][      debug] 	Parsed string constant 'ImplicitCastExpr'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed identifier 'has_type'
+[24203][      debug] 	Parsed string constant 'NSNumber *'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed AND
+[24203][      debug] 	Parsed identifier 'has_cast_kind'
+[24203][      debug] 	Parsed string constant 'IntegralToPointer'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed identifier 'has_cast_kind'
+[24203][      debug] 	Parsed string constant 'NullToPointer'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed OR
+[24203][      debug] 	Parsed AND
+[24203][      debug] 	Parsed EX
+[24203][      debug] 	Parsed AND
+[24203][      debug] 	Parsed LET clause
+[24203][      debug] 	Parsed identifier 'root_is_stmt_expecting_bool'
+[24203][      debug] 	Parsed formula identifier 'root_is_stmt_expecting_bool'
+[24203][      debug] 	Parsed identifier 'is_node'
+[24203][      debug] 	Parsed string constant 'IfStmt'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed identifier 'is_node'
+[24203][      debug] 	Parsed string constant 'ForStmt'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed OR
+[24203][      debug] 	Parsed identifier 'is_node'
+[24203][      debug] 	Parsed string constant 'WhileStmt'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed OR
+[24203][      debug] 	Parsed LET clause
+[24203][      debug] 	Parsed identifier 'use_num_as_bool'
+[24203][      debug] 	Parsed formula identifier 'use_num_as_bool'
+[24203][      debug] 	Parsed identifier 'bool_op'
+[24203][      debug] 	Parsed formula identifier 'bool_op'
+[24203][      debug] 	Parsed identifier 'root_is_stmt_expecting_bool'
+[24203][      debug] 	Parsed formula identifier 'root_is_stmt_expecting_bool'
+[24203][      debug] 	Parsed OR
+[24203][      debug] 	Parsed identifier 'has_type'
+[24203][      debug] 	Parsed string constant 'NSNumber *'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed EX
+[24203][      debug] 	Parsed AND
+[24203][      debug] 	Parsed LET clause
+[24203][      debug] 	Parsed identifier 'bad_conditional'
+[24203][      debug] 	Parsed formula identifier 'bad_conditional'
+[24203][      debug] 	Parsed identifier 'is_node'
+[24203][      debug] 	Parsed string constant 'ConditionalOperator'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed identifier 'has_type'
+[24203][      debug] 	Parsed string constant 'NSNumber *'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed EX WITH-TRANSITION 'Cond'
+[24203][      debug] 	Parsed AND
+[24203][      debug] 	Parsed LET clause
+[24203][      debug] 	Parsed identifier 'report_when'
+[24203][      debug] 	Parsed identifier 'use_num_as_bool'
+[24203][      debug] 	Parsed formula identifier 'use_num_as_bool'
+[24203][      debug] 	Parsed identifier 'comparison_with_integral'
+[24203][      debug] 	Parsed formula identifier 'comparison_with_integral'
+[24203][      debug] 	Parsed OR
+[24203][      debug] 	Parsed identifier 'bad_conditional'
+[24203][      debug] 	Parsed formula identifier 'bad_conditional'
+[24203][      debug] 	Parsed OR
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'message'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'suggestion'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 
+[24203][      debug] Parsed checker definition
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] Checker name: BAD_POINTER_COMPARISON
+[24203][      debug]     bool_op=  
+[24203][      debug]     (((is_binop_with_kind(LAnd) OR is_binop_with_kind(LOr)) OR is_unop_with_kind(LNot)) OR is_unop_with_kind(LNot))
+[24203][      debug] 
+[24203][      debug]     comparison_with_integral=  
+[24203][      debug]     ((((((is_binop_with_kind(EQ) OR is_binop_with_kind(NE)) OR is_binop_with_kind(GT)) OR is_binop_with_kind(GE)) OR is_binop_with_kind(LT)) OR is_binop_with_kind(LE)) AND EX[->_](((is_node(ImplicitCastExpr) AND has_type(NSNumber *)) AND (has_cast_kind(IntegralToPointer) OR has_cast_kind(NullToPointer)))))
+[24203][      debug] 
+[24203][      debug]     root_is_stmt_expecting_bool=  
+[24203][      debug]     ((is_node(IfStmt) OR is_node(ForStmt)) OR is_node(WhileStmt))
+[24203][      debug] 
+[24203][      debug]     use_num_as_bool=  
+[24203][      debug]     ((bool_op() OR root_is_stmt_expecting_bool()) AND EX[->_](has_type(NSNumber *)))
+[24203][      debug] 
+[24203][      debug]     bad_conditional=  
+[24203][      debug]     (is_node(ConditionalOperator) AND EX[->Cond](has_type(NSNumber *)))
+[24203][      debug] 
+[24203][      debug]     report_when=  
+[24203][      debug]     ((use_num_as_bool() OR comparison_with_integral()) OR bad_conditional())
+[24203][      debug] 
+[24203][      debug]     message=  
+[24203][      debug]     Implicitly checking whether NSNumber pointer is nil or comparing to integral value
+[24203][      debug] 
+[24203][      debug]     suggestion=  
+[24203][      debug]     Did you mean to use/compare against the unboxed value instead? Please either explicitly compare the NSNumber instance to nil, or use one of the NSNumber accessors before the comparison.
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 	Parsed identifier 'REGISTERED_OBSERVER_BEING_DEALLOCATED'
+[24203][      debug] 	Parsed identifier 'exists_method_calling_addObserver'
+[24203][      debug] 	Parsed formula identifier 'exists_method_calling_addObserver'
+[24203][      debug] 	Parsed identifier 'call_method'
+[24203][      debug] 	Parsed string constant 'addObserver:selector:name:object:'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed EF
+[24203][      debug] 	Parsed LET clause
+[24203][      debug] 	Parsed identifier 'exists_method_calling_addObserverForName'
+[24203][      debug] 	Parsed formula identifier 'exists_method_calling_addObserverForName'
+[24203][      debug] 	Parsed identifier 'call_method'
+[24203][      debug] 	Parsed string constant 'addObserverForName:object:queue:usingBlock:'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed EF
+[24203][      debug] 	Parsed LET clause
+[24203][      debug] 	Parsed identifier 'add_observer'
+[24203][      debug] 	Parsed formula identifier 'add_observer'
+[24203][      debug] 	Parsed identifier 'exists_method_calling_addObserver'
+[24203][      debug] 	Parsed formula identifier 'exists_method_calling_addObserver'
+[24203][      debug] 	Parsed identifier 'exists_method_calling_addObserverForName'
+[24203][      debug] 	Parsed formula identifier 'exists_method_calling_addObserverForName'
+[24203][      debug] 	Parsed OR
+[24203][      debug] 	Parsed LET clause
+[24203][      debug] 	Parsed identifier 'eventually_addObserver'
+[24203][      debug] 	Parsed formula identifier 'eventually_addObserver'
+[24203][      debug] 	Parsed identifier 'ObjCMethodDecl'
+[24203][      debug] 	Parsed identifier 'add_observer'
+[24203][      debug] 	Parsed formula identifier 'add_observer'
+[24203][      debug] 	Parsed ET with transition 'Body'
+[24203][      debug] 	Parsed LET clause
+[24203][      debug] 	Parsed identifier 'exists_method_calling_removeObserver'
+[24203][      debug] 	Parsed formula identifier 'exists_method_calling_removeObserver'
+[24203][      debug] 	Parsed identifier 'call_method'
+[24203][      debug] 	Parsed string constant 'removeObserver:'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed EF
+[24203][      debug] 	Parsed LET clause
+[24203][      debug] 	Parsed identifier 'exists_method_calling_removeObserverName'
+[24203][      debug] 	Parsed formula identifier 'exists_method_calling_removeObserverName'
+[24203][      debug] 	Parsed identifier 'call_method'
+[24203][      debug] 	Parsed string constant 'removeObserver:name:object:'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed EF
+[24203][      debug] 	Parsed LET clause
+[24203][      debug] 	Parsed identifier 'remove_observer'
+[24203][      debug] 	Parsed formula identifier 'remove_observer'
+[24203][      debug] 	Parsed identifier 'exists_method_calling_removeObserver'
+[24203][      debug] 	Parsed formula identifier 'exists_method_calling_removeObserver'
+[24203][      debug] 	Parsed identifier 'exists_method_calling_removeObserverName'
+[24203][      debug] 	Parsed formula identifier 'exists_method_calling_removeObserverName'
+[24203][      debug] 	Parsed OR
+[24203][      debug] 	Parsed LET clause
+[24203][      debug] 	Parsed identifier 'remove_observer_in_block'
+[24203][      debug] 	Parsed formula identifier 'remove_observer_in_block'
+[24203][      debug] 	Parsed identifier 'BlockDecl'
+[24203][      debug] 	Parsed identifier 'remove_observer'
+[24203][      debug] 	Parsed formula identifier 'remove_observer'
+[24203][      debug] 	Parsed ET with transition 'Body'
+[24203][      debug] 	Parsed LET clause
+[24203][      debug] 	Parsed identifier 'remove_observer1'
+[24203][      debug] 	Parsed formula identifier 'remove_observer1'
+[24203][      debug] 	Parsed identifier 'remove_observer'
+[24203][      debug] 	Parsed formula identifier 'remove_observer'
+[24203][      debug] 	Parsed identifier 'remove_observer_in_block'
+[24203][      debug] 	Parsed formula identifier 'remove_observer_in_block'
+[24203][      debug] 	Parsed OR
+[24203][      debug] 	Parsed LET clause
+[24203][      debug] 	Parsed identifier 'remove_observer_in_method'
+[24203][      debug] 	Parsed formula identifier 'remove_observer_in_method'
+[24203][      debug] 	Parsed identifier 'ObjCMethodDecl'
+[24203][      debug] 	Parsed identifier 'remove_observer1'
+[24203][      debug] 	Parsed formula identifier 'remove_observer1'
+[24203][      debug] 	Parsed ET with transition 'Body'
+[24203][      debug] 	Parsed LET clause
+[24203][      debug] 	Parsed identifier 'eventually_removeObserver'
+[24203][      debug] 	Parsed formula identifier 'eventually_removeObserver'
+[24203][      debug] 	Parsed identifier 'ObjCImplementationDecl'
+[24203][      debug] 	Parsed identifier 'ObjCProtocolDecl'
+[24203][      debug] 	Parsed identifier 'remove_observer_in_method'
+[24203][      debug] 	Parsed formula identifier 'remove_observer_in_method'
+[24203][      debug] 	Parsed identifier 'remove_observer_in_method'
+[24203][      debug] 	Parsed formula identifier 'remove_observer_in_method'
+[24203][      debug] 	Parsed identifier 'ObjCImplementationDecl'
+[24203][      debug] 	Parsed EH
+[24203][      debug] 	Parsed OR
+[24203][      debug] 	Parsed ET with transition '_'
+[24203][      debug] 	Parsed LET clause
+[24203][      debug] 	Parsed identifier 'report_when'
+[24203][      debug] 	Parsed identifier 'eventually_addObserver'
+[24203][      debug] 	Parsed formula identifier 'eventually_addObserver'
+[24203][      debug] 	Parsed identifier 'eventually_removeObserver'
+[24203][      debug] 	Parsed formula identifier 'eventually_removeObserver'
+[24203][      debug] 	Parsed IMPLIES
+[24203][      debug] 	Parsed NOT
+[24203][      debug] 	Parsed identifier 'iphoneos_target_sdk_version_greater_or_equal'
+[24203][      debug] 	Parsed string constant '9.0'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed NOT
+[24203][      debug] 	Parsed AND
+[24203][      debug] 	Parsed identifier 'ObjCImplementationDecl'
+[24203][      debug] 	Parsed identifier 'ObjCProtocolDecl'
+[24203][      debug] 	Parsed InNode
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'message'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'suggestion'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 
+[24203][      debug] Parsed checker definition
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] Checker name: REGISTERED_OBSERVER_BEING_DEALLOCATED
+[24203][      debug]     exists_method_calling_addObserver=  
+[24203][      debug]     EF[->_](call_method(addObserver:selector:name:object:))
+[24203][      debug] 
+[24203][      debug]     exists_method_calling_addObserverForName=  
+[24203][      debug]     EF[->_](call_method(addObserverForName:object:queue:usingBlock:))
+[24203][      debug] 
+[24203][      debug]     add_observer=  
+[24203][      debug]     (exists_method_calling_addObserver() OR exists_method_calling_addObserverForName())
+[24203][      debug] 
+[24203][      debug]     eventually_addObserver=  
+[24203][      debug]     ET[ObjCMethodDecl][Body](add_observer())
+[24203][      debug] 
+[24203][      debug]     exists_method_calling_removeObserver=  
+[24203][      debug]     EF[->_](call_method(removeObserver:))
+[24203][      debug] 
+[24203][      debug]     exists_method_calling_removeObserverName=  
+[24203][      debug]     EF[->_](call_method(removeObserver:name:object:))
+[24203][      debug] 
+[24203][      debug]     remove_observer=  
+[24203][      debug]     (exists_method_calling_removeObserver() OR exists_method_calling_removeObserverName())
+[24203][      debug] 
+[24203][      debug]     remove_observer_in_block=  
+[24203][      debug]     ET[BlockDecl][Body](remove_observer())
+[24203][      debug] 
+[24203][      debug]     remove_observer1=  
+[24203][      debug]     (remove_observer() OR remove_observer_in_block())
+[24203][      debug] 
+[24203][      debug]     remove_observer_in_method=  
+[24203][      debug]     ET[ObjCMethodDecl][Body](remove_observer1())
+[24203][      debug] 
+[24203][      debug]     eventually_removeObserver=  
+[24203][      debug]     ET[ObjCImplementationDecl,ObjCProtocolDecl][_]((remove_observer_in_method() OR EH[ObjCImplementationDecl](remove_observer_in_method())))
+[24203][      debug] 
+[24203][      debug]     report_when=  
+[24203][      debug]     IN-NODE ObjCImplementationDecl,ObjCProtocolDecl: ((NOT((eventually_addObserver() ==> eventually_removeObserver())) AND NOT(iphoneos_target_sdk_version_greater_or_equal(9.0))))
+[24203][      debug] 
+[24203][      debug]     message=  
+[24203][      debug]     Object self is registered in a notification center but not being removed before deallocation
+[24203][      debug] 
+[24203][      debug]     suggestion=  
+[24203][      debug]     Consider removing the object from the notification center before its deallocation.
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 	Parsed identifier 'STRONG_DELEGATE_WARNING'
+[24203][      debug] 	Parsed identifier 'name_contains_delegate'
+[24203][      debug] 	Parsed formula identifier 'name_contains_delegate'
+[24203][      debug] 	Parsed identifier 'declaration_has_name'
+[24203][      debug] 	Parsed regular expression '[dD]elegate'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed LET clause
+[24203][      debug] 	Parsed identifier 'name_does_not_contain_delegates'
+[24203][      debug] 	Parsed formula identifier 'name_does_not_contain_delegates'
+[24203][      debug] 	Parsed identifier 'declaration_has_name'
+[24203][      debug] 	Parsed regular expression '[dD]elegates'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed NOT
+[24203][      debug] 	Parsed LET clause
+[24203][      debug] 	Parsed identifier 'name_does_not_contains_queue'
+[24203][      debug] 	Parsed formula identifier 'name_does_not_contains_queue'
+[24203][      debug] 	Parsed identifier 'declaration_has_name'
+[24203][      debug] 	Parsed regular expression '[qQ]ueue'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed NOT
+[24203][      debug] 	Parsed LET clause
+[24203][      debug] 	Parsed identifier 'report_when'
+[24203][      debug] 	Parsed identifier 'name_contains_delegate'
+[24203][      debug] 	Parsed formula identifier 'name_contains_delegate'
+[24203][      debug] 	Parsed identifier 'name_does_not_contain_delegates'
+[24203][      debug] 	Parsed formula identifier 'name_does_not_contain_delegates'
+[24203][      debug] 	Parsed AND
+[24203][      debug] 	Parsed identifier 'name_does_not_contains_queue'
+[24203][      debug] 	Parsed formula identifier 'name_does_not_contains_queue'
+[24203][      debug] 	Parsed AND
+[24203][      debug] 	Parsed identifier 'is_strong_property'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed AND
+[24203][      debug] 	Parsed identifier 'ObjCPropertyDecl'
+[24203][      debug] 	Parsed InNode
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'message'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'suggestion'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 
+[24203][      debug] Parsed checker definition
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] Checker name: STRONG_DELEGATE_WARNING
+[24203][      debug]     name_contains_delegate=  
+[24203][      debug]     declaration_has_name([dD]elegate)
+[24203][      debug] 
+[24203][      debug]     name_does_not_contain_delegates=  
+[24203][      debug]     NOT(declaration_has_name([dD]elegates))
+[24203][      debug] 
+[24203][      debug]     name_does_not_contains_queue=  
+[24203][      debug]     NOT(declaration_has_name([qQ]ueue))
+[24203][      debug] 
+[24203][      debug]     report_when=  
+[24203][      debug]     IN-NODE ObjCPropertyDecl: ((((name_contains_delegate() AND name_does_not_contain_delegates()) AND name_does_not_contains_queue()) AND is_strong_property()))
+[24203][      debug] 
+[24203][      debug]     message=  
+[24203][      debug]     Property or ivar %decl_name% declared strong
+[24203][      debug] 
+[24203][      debug]     suggestion=  
+[24203][      debug]     In general delegates should be declared weak or assign.
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 	Parsed identifier 'GLOBAL_VARIABLE_INITIALIZED_WITH_FUNCTION_OR_METHOD_CALL'
+[24203][      debug] 	Parsed identifier 'is_global_variable'
+[24203][      debug] 	Parsed formula identifier 'is_global_variable'
+[24203][      debug] 	Parsed identifier 'is_objc_extension'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed identifier 'is_global_var'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed AND
+[24203][      debug] 	Parsed identifier 'is_const_var'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed NOT
+[24203][      debug] 	Parsed AND
+[24203][      debug] 	Parsed LET clause
+[24203][      debug] 	Parsed identifier 'makes_an_expensive_call'
+[24203][      debug] 	Parsed formula identifier 'makes_an_expensive_call'
+[24203][      debug] 	Parsed identifier 'is_node'
+[24203][      debug] 	Parsed string constant 'CallExpr'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed identifier 'call_function'
+[24203][      debug] 	Parsed string constant 'CGPointMake'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed NOT
+[24203][      debug] 	Parsed AND
+[24203][      debug] 	Parsed identifier 'is_node'
+[24203][      debug] 	Parsed string constant 'CXXTemporaryObjectExpr'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed OR
+[24203][      debug] 	Parsed identifier 'is_node'
+[24203][      debug] 	Parsed string constant 'CXXMemberCallExpr'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed OR
+[24203][      debug] 	Parsed identifier 'is_node'
+[24203][      debug] 	Parsed string constant 'CXXOperatorCallExpr'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed OR
+[24203][      debug] 	Parsed identifier 'is_node'
+[24203][      debug] 	Parsed string constant 'ObjCMessageExpr'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed OR
+[24203][      debug] 	Parsed LET clause
+[24203][      debug] 	Parsed identifier 'is_initialized_with_expensive_call'
+[24203][      debug] 	Parsed formula identifier 'is_initialized_with_expensive_call'
+[24203][      debug] 	Parsed identifier 'VarDecl'
+[24203][      debug] 	Parsed identifier 'makes_an_expensive_call'
+[24203][      debug] 	Parsed formula identifier 'makes_an_expensive_call'
+[24203][      debug] 	Parsed EF
+[24203][      debug] 	Parsed ET with transition 'InitExpr'
+[24203][      debug] 	Parsed LET clause
+[24203][      debug] 	Parsed identifier 'report_when'
+[24203][      debug] 	Parsed identifier 'is_global_variable'
+[24203][      debug] 	Parsed formula identifier 'is_global_variable'
+[24203][      debug] 	Parsed identifier 'is_initialized_with_expensive_call'
+[24203][      debug] 	Parsed formula identifier 'is_initialized_with_expensive_call'
+[24203][      debug] 	Parsed AND
+[24203][      debug] 	Parsed identifier 'VarDecl'
+[24203][      debug] 	Parsed InNode
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'message'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'suggestion'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 
+[24203][      debug] Parsed checker definition
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] Checker name: GLOBAL_VARIABLE_INITIALIZED_WITH_FUNCTION_OR_METHOD_CALL
+[24203][      debug]     is_global_variable=  
+[24203][      debug]     ((is_objc_extension() AND is_global_var()) AND NOT(is_const_var()))
+[24203][      debug] 
+[24203][      debug]     makes_an_expensive_call=  
+[24203][      debug]     (((((is_node(CallExpr) AND NOT(call_function(CGPointMake))) OR is_node(CXXTemporaryObjectExpr)) OR is_node(CXXMemberCallExpr)) OR is_node(CXXOperatorCallExpr)) OR is_node(ObjCMessageExpr))
+[24203][      debug] 
+[24203][      debug]     is_initialized_with_expensive_call=  
+[24203][      debug]     ET[VarDecl][InitExpr](EF[->_](makes_an_expensive_call()))
+[24203][      debug] 
+[24203][      debug]     report_when=  
+[24203][      debug]     IN-NODE VarDecl: ((is_global_variable() AND is_initialized_with_expensive_call()))
+[24203][      debug] 
+[24203][      debug]     message=  
+[24203][      debug]     Global variable %decl_name% is initialized using a function or method call
+[24203][      debug] 
+[24203][      debug]     suggestion=  
+[24203][      debug]     If the function/method call is expensive, it can affect the starting time of the app.
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 	Parsed identifier 'CXX_REFERENCE_CAPTURED_IN_OBJC_BLOCK'
+[24203][      debug] 	Parsed identifier 'report_when'
+[24203][      debug] 	Parsed identifier 'is_node'
+[24203][      debug] 	Parsed string constant 'BlockDecl'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed identifier 'captures_cxx_references'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed AND
+[24203][      debug] 	Parsed EX
+[24203][      debug] 	Parsed identifier 'BlockExpr'
+[24203][      debug] 	Parsed InNode
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'message'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'suggestion'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 
+[24203][      debug] Parsed checker definition
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] Checker name: CXX_REFERENCE_CAPTURED_IN_OBJC_BLOCK
+[24203][      debug]     report_when=  
+[24203][      debug]     IN-NODE BlockExpr: (EX[->_]((is_node(BlockDecl) AND captures_cxx_references())))
+[24203][      debug] 
+[24203][      debug]     message=  
+[24203][      debug]     C++ Reference variable(s) %cxx_ref_captured_in_block% captured by Objective-C block
+[24203][      debug] 
+[24203][      debug]     suggestion=  
+[24203][      debug]     C++ References are unmanaged and may be invalid by the time the block executes.
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 	Parsed identifier 'UNAVAILABLE_API_IN_SUPPORTED_IOS_SDK'
+[24203][      debug] 	Parsed identifier 'report_when'
+[24203][      debug] 	Parsed identifier 'decl_unavailable_in_supported_ios_sdk'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed identifier 'within_responds_to_selector_block'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed NOT
+[24203][      debug] 	Parsed AND
+[24203][      debug] 	Parsed EX with transition 'PointerToDecl'
+[24203][      debug] 	Parsed identifier 'DeclRefExpr'
+[24203][      debug] 	Parsed identifier 'ObjCMessageExpr'
+[24203][      debug] 	Parsed InNode
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'message'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'name'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'suggestion'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'severity'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 
+[24203][      debug] Parsed checker definition
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] Checker name: UNAVAILABLE_API_IN_SUPPORTED_IOS_SDK
+[24203][      debug]     report_when=  
+[24203][      debug]     IN-NODE DeclRefExpr,ObjCMessageExpr: (EX[->PointerToDecl]((decl_unavailable_in_supported_ios_sdk() AND NOT(within_responds_to_selector_block()))))
+[24203][      debug] 
+[24203][      debug]     message=  
+[24203][      debug]     %decl_ref_or_selector_name% is not available in the required iOS SDK version %iphoneos_target_sdk_version% (only available from version %available_ios_sdk%)
+[24203][      debug] 
+[24203][      debug]     name_hum_readable=  
+[24203][      debug]     Unavailable API In Supported iOS SDK
+[24203][      debug] 
+[24203][      debug]     suggestion=  
+[24203][      debug]     This could cause a crash.
+[24203][      debug] 
+[24203][      debug]     severity=  
+[24203][      debug]     ERROR
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 	Parsed identifier 'UNAVAILABLE_CLASS_IN_SUPPORTED_IOS_SDK'
+[24203][      debug] 	Parsed identifier 'report_when'
+[24203][      debug] 	Parsed identifier 'class_unavailable_in_supported_ios_sdk'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed identifier 'within_available_class_block'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed NOT
+[24203][      debug] 	Parsed AND
+[24203][      debug] 	Parsed identifier 'call_class_method'
+[24203][      debug] 	Parsed regular expression '.*'
+[24203][      debug] 	Parsed string constant 'alloc'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed identifier 'call_class_method'
+[24203][      debug] 	Parsed regular expression '.*'
+[24203][      debug] 	Parsed string constant 'new'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed OR
+[24203][      debug] 	Parsed AND
+[24203][      debug] 	Parsed identifier 'ObjCMessageExpr'
+[24203][      debug] 	Parsed InNode
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'message'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'name'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'severity'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'mode'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 
+[24203][      debug] Parsed checker definition
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] Checker name: UNAVAILABLE_CLASS_IN_SUPPORTED_IOS_SDK
+[24203][      debug]     report_when=  
+[24203][      debug]     IN-NODE ObjCMessageExpr: (((class_unavailable_in_supported_ios_sdk() AND NOT(within_available_class_block())) AND (call_class_method(.*,alloc) OR call_class_method(.*,new))))
+[24203][      debug] 
+[24203][      debug]     message=  
+[24203][      debug]     The receiver %receiver_method_call% of %name% is not available in the required iOS SDK version %iphoneos_target_sdk_version% (only available from version %class_available_ios_sdk%)
+[24203][      debug] 
+[24203][      debug]     name_hum_readable=  
+[24203][      debug]     Unavailable API In Supported iOS SDK
+[24203][      debug] 
+[24203][      debug]     severity=  
+[24203][      debug]     ERROR
+[24203][      debug] 
+[24203][      debug]     mode=  
+[24203][      debug]     ON
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 	Parsed identifier 'POINTER_TO_INTEGRAL_IMPLICIT_CAST'
+[24203][      debug] 	Parsed identifier 'report_when'
+[24203][      debug] 	Parsed identifier 'has_cast_kind'
+[24203][      debug] 	Parsed string constant 'PointerToIntegral'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed identifier 'ImplicitCastExpr'
+[24203][      debug] 	Parsed InNode
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'message'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'doc_url'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 
+[24203][      debug] Parsed checker definition
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] Checker name: POINTER_TO_INTEGRAL_IMPLICIT_CAST
+[24203][      debug]     report_when=  
+[24203][      debug]     IN-NODE ImplicitCastExpr: (has_cast_kind(PointerToIntegral))
+[24203][      debug] 
+[24203][      debug]     message=  
+[24203][      debug]     Implicit conversion from %child_type% to %type% in usage of %name%
+[24203][      debug] 
+[24203][      debug]     doc_url=  
+[24203][      debug]     https://clang.llvm.org/docs/DiagnosticsReference.html#wint-conversion
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 	Parsed identifier 'POINTER_TO_CONST_OBJC_CLASS'
+[24203][      debug] 	Parsed identifier 'name'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'report_when'
+[24203][      debug] 	Parsed identifier 'is_decl'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed identifier 'has_type_const_ptr_to_objc_class'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed AND
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'message'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'suggestion'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'severity'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'mode'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 
+[24203][      debug] Parsed checker definition
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] Checker name: POINTER_TO_CONST_OBJC_CLASS
+[24203][      debug]     name_hum_readable=  
+[24203][      debug]     Pointer To const Objective-C Class
+[24203][      debug] 
+[24203][      debug]     report_when=  
+[24203][      debug]     (is_decl() AND has_type_const_ptr_to_objc_class())
+[24203][      debug] 
+[24203][      debug]     message=  
+[24203][      debug]     `const %class_name%*` may not mean what you want:
+                   it represents a mutable pointer pointing to an Objective-C
+                   class where the ivars cannot be changed.
+[24203][      debug] 
+[24203][      debug]     suggestion=  
+[24203][      debug]     Consider using `%class_name% *const` instead, meaning
+	                  the destination of the pointer cannot be changed.
+[24203][      debug] 
+[24203][      debug]     severity=  
+[24203][      debug]     WARNING
+[24203][      debug] 
+[24203][      debug]     mode=  
+[24203][      debug]     ON
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 	Parsed identifier 'DISCOURAGED_WEAK_PROPERTY_CUSTOM_SETTER'
+[24203][      debug] 	Parsed identifier 'has_body'
+[24203][      debug] 	Parsed formula identifier 'has_body'
+[24203][      debug] 	Parsed True
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed EX with transition 'Body'
+[24203][      debug] 	Parsed LET clause
+[24203][      debug] 	Parsed identifier 'is_weak_property_setter'
+[24203][      debug] 	Parsed formula identifier 'is_weak_property_setter'
+[24203][      debug] 	Parsed string constant 'setter'
+[24203][      debug] 	Parsed identifier 'is_weak_property'
+[24203][      debug] 	Parsed predicate
+[24203][      debug] 	Parsed atomic formula
+[24203][      debug] 	Parsed EX with transition 'AccessorForProperty setter'
+[24203][      debug] 	Parsed LET clause
+[24203][      debug] 	Parsed identifier 'report_when'
+[24203][      debug] 	Parsed identifier 'has_body'
+[24203][      debug] 	Parsed formula identifier 'has_body'
+[24203][      debug] 	Parsed identifier 'is_weak_property_setter'
+[24203][      debug] 	Parsed formula identifier 'is_weak_property_setter'
+[24203][      debug] 	Parsed AND
+[24203][      debug] 	Parsed identifier 'ObjCMethodDecl'
+[24203][      debug] 	Parsed InNode
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'message'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'severity'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 	Parsed identifier 'mode'
+[24203][      debug] 	Parsed SET clause
+[24203][      debug] 
+[24203][      debug] Parsed checker definition
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] Checker name: DISCOURAGED_WEAK_PROPERTY_CUSTOM_SETTER
+[24203][      debug]     has_body=  
+[24203][      debug]     EX[->Body](True)
+[24203][      debug] 
+[24203][      debug]     is_weak_property_setter=  
+[24203][      debug]     EX[->AccessorForProperty setter](is_weak_property())
+[24203][      debug] 
+[24203][      debug]     report_when=  
+[24203][      debug]     IN-NODE ObjCMethodDecl: ((has_body() AND is_weak_property_setter()))
+[24203][      debug] 
+[24203][      debug]     message=  
+[24203][      debug]     Custom setters are not called when ARC sets weak properties to nil.
+[24203][      debug] 
+[24203][      debug]     severity=  
+[24203][      debug]     WARNING
+[24203][      debug] 
+[24203][      debug]     mode=  
+[24203][      debug]     OFF
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] #### Start parsing import macros #####
+[24203][      debug] #### Add global macros to import macros #####
+[24203][      debug] #### Start Expanding checkers #####
+[24203][      debug]  +Start expanding DIRECT_ATOMIC_PROPERTY_ACCESS
+[24203][      debug]   -Expanding report_when
+[24203][      debug]  +Start expanding ASSIGN_POINTER_WARNING
+[24203][      debug]   -Expanding report_when
+[24203][      debug]  +Start expanding BAD_POINTER_COMPARISON
+[24203][      debug]   -Expanding report_when
+[24203][      debug]  +Start expanding REGISTERED_OBSERVER_BEING_DEALLOCATED
+[24203][      debug]   -Expanding report_when
+[24203][      debug]  +Start expanding STRONG_DELEGATE_WARNING
+[24203][      debug]   -Expanding report_when
+[24203][      debug]  +Start expanding GLOBAL_VARIABLE_INITIALIZED_WITH_FUNCTION_OR_METHOD_CALL
+[24203][      debug]   -Expanding report_when
+[24203][      debug]  +Start expanding CXX_REFERENCE_CAPTURED_IN_OBJC_BLOCK
+[24203][      debug]   -Expanding report_when
+[24203][      debug]  +Start expanding UNAVAILABLE_API_IN_SUPPORTED_IOS_SDK
+[24203][      debug]   -Expanding report_when
+[24203][      debug]  +Start expanding UNAVAILABLE_CLASS_IN_SUPPORTED_IOS_SDK
+[24203][      debug]   -Expanding report_when
+[24203][      debug]  +Start expanding POINTER_TO_INTEGRAL_IMPLICIT_CAST
+[24203][      debug]   -Expanding report_when
+[24203][      debug]  +Start expanding POINTER_TO_CONST_OBJC_CLASS
+[24203][      debug]   -Expanding report_when
+[24203][      debug]  +Start expanding DISCOURAGED_WEAK_PROPERTY_CUSTOM_SETTER
+[24203][      debug]   -Expanding report_when
+[24203][      debug] #### Checkers Expanded #####
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] Checker name: DIRECT_ATOMIC_PROPERTY_ACCESS
+[24203][      debug]     severity=  
+[24203][      debug]     WARNING
+[24203][      debug] 
+[24203][      debug]     suggestion=  
+[24203][      debug]     Accessing an ivar of an atomic property makes the property nonatomic.
+[24203][      debug] 
+[24203][      debug]     message=  
+[24203][      debug]     Direct access to ivar %ivar_name% of an atomic property
+[24203][      debug] 
+[24203][      debug]     report_when=  
+[24203][      debug]     IN-NODE ObjCIvarRefExpr: (((((NOT(context_in_synchronized_block()) AND is_ivar_atomic()) AND NOT(is_method_property_accessor_of_ivar())) AND NOT(is_objc_constructor())) AND NOT(is_objc_dealloc())))
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] Checker name: ASSIGN_POINTER_WARNING
+[24203][      debug]     severity=  
+[24203][      debug]     WARNING
+[24203][      debug] 
+[24203][      debug]     suggestion=  
+[24203][      debug]     Use a different attribute like `strong` or `weak`.
+[24203][      debug] 
+[24203][      debug]     message=  
+[24203][      debug]     Property %decl_name% is a pointer type marked with the `assign` attribute
+[24203][      debug] 
+[24203][      debug]     report_when=  
+[24203][      debug]     IN-NODE ObjCPropertyDecl: ((is_assign_property() AND is_property_pointer_type()))
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] Checker name: BAD_POINTER_COMPARISON
+[24203][      debug]     suggestion=  
+[24203][      debug]     Did you mean to use/compare against the unboxed value instead? Please either explicitly compare the NSNumber instance to nil, or use one of the NSNumber accessors before the comparison.
+[24203][      debug] 
+[24203][      debug]     message=  
+[24203][      debug]     Implicitly checking whether NSNumber pointer is nil or comparing to integral value
+[24203][      debug] 
+[24203][      debug]     report_when=  
+[24203][      debug]     (((((((is_binop_with_kind(LAnd) OR is_binop_with_kind(LOr)) OR is_unop_with_kind(LNot)) OR is_unop_with_kind(LNot)) OR ((is_node(IfStmt) OR is_node(ForStmt)) OR is_node(WhileStmt))) AND EX[->_](has_type(NSNumber *))) OR ((((((is_binop_with_kind(EQ) OR is_binop_with_kind(NE)) OR is_binop_with_kind(GT)) OR is_binop_with_kind(GE)) OR is_binop_with_kind(LT)) OR is_binop_with_kind(LE)) AND EX[->_](((is_node(ImplicitCastExpr) AND has_type(NSNumber *)) AND (has_cast_kind(IntegralToPointer) OR has_cast_kind(NullToPointer)))))) OR (is_node(ConditionalOperator) AND EX[->Cond](has_type(NSNumber *))))
+[24203][      debug] 
+[24203][      debug]     bad_conditional=  
+[24203][      debug]     (is_node(ConditionalOperator) AND EX[->Cond](has_type(NSNumber *)))
+[24203][      debug] 
+[24203][      debug]     use_num_as_bool=  
+[24203][      debug]     ((bool_op() OR root_is_stmt_expecting_bool()) AND EX[->_](has_type(NSNumber *)))
+[24203][      debug] 
+[24203][      debug]     root_is_stmt_expecting_bool=  
+[24203][      debug]     ((is_node(IfStmt) OR is_node(ForStmt)) OR is_node(WhileStmt))
+[24203][      debug] 
+[24203][      debug]     comparison_with_integral=  
+[24203][      debug]     ((((((is_binop_with_kind(EQ) OR is_binop_with_kind(NE)) OR is_binop_with_kind(GT)) OR is_binop_with_kind(GE)) OR is_binop_with_kind(LT)) OR is_binop_with_kind(LE)) AND EX[->_](((is_node(ImplicitCastExpr) AND has_type(NSNumber *)) AND (has_cast_kind(IntegralToPointer) OR has_cast_kind(NullToPointer)))))
+[24203][      debug] 
+[24203][      debug]     bool_op=  
+[24203][      debug]     (((is_binop_with_kind(LAnd) OR is_binop_with_kind(LOr)) OR is_unop_with_kind(LNot)) OR is_unop_with_kind(LNot))
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] Checker name: REGISTERED_OBSERVER_BEING_DEALLOCATED
+[24203][      debug]     suggestion=  
+[24203][      debug]     Consider removing the object from the notification center before its deallocation.
+[24203][      debug] 
+[24203][      debug]     message=  
+[24203][      debug]     Object self is registered in a notification center but not being removed before deallocation
+[24203][      debug] 
+[24203][      debug]     report_when=  
+[24203][      debug]     IN-NODE ObjCImplementationDecl,ObjCProtocolDecl: ((NOT((ET[ObjCMethodDecl][Body]((EF[->_](call_method(addObserver:selector:name:object:)) OR EF[->_](call_method(addObserverForName:object:queue:usingBlock:)))) ==> ET[ObjCImplementationDecl,ObjCProtocolDecl][_]((ET[ObjCMethodDecl][Body](((EF[->_](call_method(removeObserver:)) OR EF[->_](call_method(removeObserver:name:object:))) OR ET[BlockDecl][Body]((EF[->_](call_method(removeObserver:)) OR EF[->_](call_method(removeObserver:name:object:)))))) OR EH[ObjCImplementationDecl](ET[ObjCMethodDecl][Body](((EF[->_](call_method(removeObserver:)) OR EF[->_](call_method(removeObserver:name:object:))) OR ET[BlockDecl][Body]((EF[->_](call_method(removeObserver:)) OR EF[->_](call_method(removeObserver:name:object:))))))))))) AND NOT(iphoneos_target_sdk_version_greater_or_equal(9.0))))
+[24203][      debug] 
+[24203][      debug]     eventually_removeObserver=  
+[24203][      debug]     ET[ObjCImplementationDecl,ObjCProtocolDecl][_]((remove_observer_in_method() OR EH[ObjCImplementationDecl](remove_observer_in_method())))
+[24203][      debug] 
+[24203][      debug]     remove_observer_in_method=  
+[24203][      debug]     ET[ObjCMethodDecl][Body](remove_observer1())
+[24203][      debug] 
+[24203][      debug]     remove_observer1=  
+[24203][      debug]     (remove_observer() OR remove_observer_in_block())
+[24203][      debug] 
+[24203][      debug]     remove_observer_in_block=  
+[24203][      debug]     ET[BlockDecl][Body](remove_observer())
+[24203][      debug] 
+[24203][      debug]     remove_observer=  
+[24203][      debug]     (exists_method_calling_removeObserver() OR exists_method_calling_removeObserverName())
+[24203][      debug] 
+[24203][      debug]     exists_method_calling_removeObserverName=  
+[24203][      debug]     EF[->_](call_method(removeObserver:name:object:))
+[24203][      debug] 
+[24203][      debug]     exists_method_calling_removeObserver=  
+[24203][      debug]     EF[->_](call_method(removeObserver:))
+[24203][      debug] 
+[24203][      debug]     eventually_addObserver=  
+[24203][      debug]     ET[ObjCMethodDecl][Body](add_observer())
+[24203][      debug] 
+[24203][      debug]     add_observer=  
+[24203][      debug]     (exists_method_calling_addObserver() OR exists_method_calling_addObserverForName())
+[24203][      debug] 
+[24203][      debug]     exists_method_calling_addObserverForName=  
+[24203][      debug]     EF[->_](call_method(addObserverForName:object:queue:usingBlock:))
+[24203][      debug] 
+[24203][      debug]     exists_method_calling_addObserver=  
+[24203][      debug]     EF[->_](call_method(addObserver:selector:name:object:))
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] Checker name: STRONG_DELEGATE_WARNING
+[24203][      debug]     suggestion=  
+[24203][      debug]     In general delegates should be declared weak or assign.
+[24203][      debug] 
+[24203][      debug]     message=  
+[24203][      debug]     Property or ivar %decl_name% declared strong
+[24203][      debug] 
+[24203][      debug]     report_when=  
+[24203][      debug]     IN-NODE ObjCPropertyDecl: ((((declaration_has_name([dD]elegate) AND NOT(declaration_has_name([dD]elegates))) AND NOT(declaration_has_name([qQ]ueue))) AND is_strong_property()))
+[24203][      debug] 
+[24203][      debug]     name_does_not_contains_queue=  
+[24203][      debug]     NOT(declaration_has_name([qQ]ueue))
+[24203][      debug] 
+[24203][      debug]     name_does_not_contain_delegates=  
+[24203][      debug]     NOT(declaration_has_name([dD]elegates))
+[24203][      debug] 
+[24203][      debug]     name_contains_delegate=  
+[24203][      debug]     declaration_has_name([dD]elegate)
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] Checker name: GLOBAL_VARIABLE_INITIALIZED_WITH_FUNCTION_OR_METHOD_CALL
+[24203][      debug]     suggestion=  
+[24203][      debug]     If the function/method call is expensive, it can affect the starting time of the app.
+[24203][      debug] 
+[24203][      debug]     message=  
+[24203][      debug]     Global variable %decl_name% is initialized using a function or method call
+[24203][      debug] 
+[24203][      debug]     report_when=  
+[24203][      debug]     IN-NODE VarDecl: ((((is_objc_extension() AND is_global_var()) AND NOT(is_const_var())) AND ET[VarDecl][InitExpr](EF[->_]((((((is_node(CallExpr) AND NOT(call_function(CGPointMake))) OR is_node(CXXTemporaryObjectExpr)) OR is_node(CXXMemberCallExpr)) OR is_node(CXXOperatorCallExpr)) OR is_node(ObjCMessageExpr))))))
+[24203][      debug] 
+[24203][      debug]     is_initialized_with_expensive_call=  
+[24203][      debug]     ET[VarDecl][InitExpr](EF[->_](makes_an_expensive_call()))
+[24203][      debug] 
+[24203][      debug]     makes_an_expensive_call=  
+[24203][      debug]     (((((is_node(CallExpr) AND NOT(call_function(CGPointMake))) OR is_node(CXXTemporaryObjectExpr)) OR is_node(CXXMemberCallExpr)) OR is_node(CXXOperatorCallExpr)) OR is_node(ObjCMessageExpr))
+[24203][      debug] 
+[24203][      debug]     is_global_variable=  
+[24203][      debug]     ((is_objc_extension() AND is_global_var()) AND NOT(is_const_var()))
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] Checker name: CXX_REFERENCE_CAPTURED_IN_OBJC_BLOCK
+[24203][      debug]     suggestion=  
+[24203][      debug]     C++ References are unmanaged and may be invalid by the time the block executes.
+[24203][      debug] 
+[24203][      debug]     message=  
+[24203][      debug]     C++ Reference variable(s) %cxx_ref_captured_in_block% captured by Objective-C block
+[24203][      debug] 
+[24203][      debug]     report_when=  
+[24203][      debug]     IN-NODE BlockExpr: (EX[->_]((is_node(BlockDecl) AND captures_cxx_references())))
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] Checker name: UNAVAILABLE_API_IN_SUPPORTED_IOS_SDK
+[24203][      debug]     severity=  
+[24203][      debug]     ERROR
+[24203][      debug] 
+[24203][      debug]     suggestion=  
+[24203][      debug]     This could cause a crash.
+[24203][      debug] 
+[24203][      debug]     name_hum_readable=  
+[24203][      debug]     Unavailable API In Supported iOS SDK
+[24203][      debug] 
+[24203][      debug]     message=  
+[24203][      debug]     %decl_ref_or_selector_name% is not available in the required iOS SDK version %iphoneos_target_sdk_version% (only available from version %available_ios_sdk%)
+[24203][      debug] 
+[24203][      debug]     report_when=  
+[24203][      debug]     IN-NODE DeclRefExpr,ObjCMessageExpr: (EX[->PointerToDecl]((decl_unavailable_in_supported_ios_sdk() AND NOT(within_responds_to_selector_block()))))
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] Checker name: UNAVAILABLE_CLASS_IN_SUPPORTED_IOS_SDK
+[24203][      debug]     mode=  
+[24203][      debug]     ON
+[24203][      debug] 
+[24203][      debug]     severity=  
+[24203][      debug]     ERROR
+[24203][      debug] 
+[24203][      debug]     name_hum_readable=  
+[24203][      debug]     Unavailable API In Supported iOS SDK
+[24203][      debug] 
+[24203][      debug]     message=  
+[24203][      debug]     The receiver %receiver_method_call% of %name% is not available in the required iOS SDK version %iphoneos_target_sdk_version% (only available from version %class_available_ios_sdk%)
+[24203][      debug] 
+[24203][      debug]     report_when=  
+[24203][      debug]     IN-NODE ObjCMessageExpr: (((class_unavailable_in_supported_ios_sdk() AND NOT(within_available_class_block())) AND (call_class_method(.*,alloc) OR call_class_method(.*,new))))
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] Checker name: POINTER_TO_INTEGRAL_IMPLICIT_CAST
+[24203][      debug]     doc_url=  
+[24203][      debug]     https://clang.llvm.org/docs/DiagnosticsReference.html#wint-conversion
+[24203][      debug] 
+[24203][      debug]     message=  
+[24203][      debug]     Implicit conversion from %child_type% to %type% in usage of %name%
+[24203][      debug] 
+[24203][      debug]     report_when=  
+[24203][      debug]     IN-NODE ImplicitCastExpr: (has_cast_kind(PointerToIntegral))
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] Checker name: POINTER_TO_CONST_OBJC_CLASS
+[24203][      debug]     mode=  
+[24203][      debug]     ON
+[24203][      debug] 
+[24203][      debug]     severity=  
+[24203][      debug]     WARNING
+[24203][      debug] 
+[24203][      debug]     suggestion=  
+[24203][      debug]     Consider using `%class_name% *const` instead, meaning
+	                  the destination of the pointer cannot be changed.
+[24203][      debug] 
+[24203][      debug]     message=  
+[24203][      debug]     `const %class_name%*` may not mean what you want:
+                   it represents a mutable pointer pointing to an Objective-C
+                   class where the ivars cannot be changed.
+[24203][      debug] 
+[24203][      debug]     report_when=  
+[24203][      debug]     (is_decl() AND has_type_const_ptr_to_objc_class())
+[24203][      debug] 
+[24203][      debug]     name_hum_readable=  
+[24203][      debug]     Pointer To const Objective-C Class
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] Checker name: DISCOURAGED_WEAK_PROPERTY_CUSTOM_SETTER
+[24203][      debug]     mode=  
+[24203][      debug]     OFF
+[24203][      debug] 
+[24203][      debug]     severity=  
+[24203][      debug]     WARNING
+[24203][      debug] 
+[24203][      debug]     message=  
+[24203][      debug]     Custom setters are not called when ARC sets weak properties to nil.
+[24203][      debug] 
+[24203][      debug]     report_when=  
+[24203][      debug]     IN-NODE ObjCMethodDecl: ((EX[->Body](True) AND EX[->AccessorForProperty setter](is_weak_property())))
+[24203][      debug] 
+[24203][      debug]     is_weak_property_setter=  
+[24203][      debug]     EX[->AccessorForProperty setter](is_weak_property())
+[24203][      debug] 
+[24203][      debug]     has_body=  
+[24203][      debug]     EX[->Body](True)
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] -------------------- 
+[24203][      debug] 
+[24203][      debug] Converting checkers in (condition, issue) pairs
+[24203][      debug] 
+[24203][      debug] Making condition and issue desc for checker 'DIRECT_ATOMIC_PROPERTY_ACCESS'
+[24203][      debug] 
+[24203][      debug] Condition =
+[24203][      debug]     IN-NODE ObjCIvarRefExpr: (((((NOT(context_in_synchronized_block()) AND is_ivar_atomic()) AND NOT(is_method_property_accessor_of_ivar())) AND NOT(is_objc_constructor())) AND NOT(is_objc_dealloc())))
+[24203][      debug] 
+[24203][      debug] Issue_desc = {
+[24203][      debug]    Id = DIRECT_ATOMIC_PROPERTY_ACCESS
+[24203][      debug] {  Name = 
+[24203][      debug]    Severity = WARNING
+[24203][      debug]    Mode = On
+[24203][      debug]    Description = Direct access to ivar %ivar_name% of an atomic property
+[24203][      debug]    Suggestion = Accessing an ivar of an atomic property makes the property nonatomic.
+[24203][      debug]    Docs URL = 
+[24203][      debug]    Loc = -1
+[24203][      debug] }
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] Making condition and issue desc for checker 'ASSIGN_POINTER_WARNING'
+[24203][      debug] 
+[24203][      debug] Condition =
+[24203][      debug]     IN-NODE ObjCPropertyDecl: ((is_assign_property() AND is_property_pointer_type()))
+[24203][      debug] 
+[24203][      debug] Issue_desc = {
+[24203][      debug]    Id = ASSIGN_POINTER_WARNING
+[24203][      debug] {  Name = 
+[24203][      debug]    Severity = WARNING
+[24203][      debug]    Mode = On
+[24203][      debug]    Description = Property %decl_name% is a pointer type marked with the `assign` attribute
+[24203][      debug]    Suggestion = Use a different attribute like `strong` or `weak`.
+[24203][      debug]    Docs URL = 
+[24203][      debug]    Loc = -1
+[24203][      debug] }
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] Making condition and issue desc for checker 'BAD_POINTER_COMPARISON'
+[24203][      debug] 
+[24203][      debug] Condition =
+[24203][      debug]     (((((((is_binop_with_kind(LAnd) OR is_binop_with_kind(LOr)) OR is_unop_with_kind(LNot)) OR is_unop_with_kind(LNot)) OR ((is_node(IfStmt) OR is_node(ForStmt)) OR is_node(WhileStmt))) AND EX[->_](has_type(NSNumber *))) OR ((((((is_binop_with_kind(EQ) OR is_binop_with_kind(NE)) OR is_binop_with_kind(GT)) OR is_binop_with_kind(GE)) OR is_binop_with_kind(LT)) OR is_binop_with_kind(LE)) AND EX[->_](((is_node(ImplicitCastExpr) AND has_type(NSNumber *)) AND (has_cast_kind(IntegralToPointer) OR has_cast_kind(NullToPointer)))))) OR (is_node(ConditionalOperator) AND EX[->Cond](has_type(NSNumber *))))
+[24203][      debug] 
+[24203][      debug] Issue_desc = {
+[24203][      debug]    Id = BAD_POINTER_COMPARISON
+[24203][      debug] {  Name = 
+[24203][      debug]    Severity = WARNING
+[24203][      debug]    Mode = On
+[24203][      debug]    Description = Implicitly checking whether NSNumber pointer is nil or comparing to integral value
+[24203][      debug]    Suggestion = Did you mean to use/compare against the unboxed value instead? Please either explicitly compare the NSNumber instance to nil, or use one of the NSNumber accessors before the comparison.
+[24203][      debug]    Docs URL = 
+[24203][      debug]    Loc = -1
+[24203][      debug] }
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] Making condition and issue desc for checker 'REGISTERED_OBSERVER_BEING_DEALLOCATED'
+[24203][      debug] 
+[24203][      debug] Condition =
+[24203][      debug]     IN-NODE ObjCImplementationDecl,ObjCProtocolDecl: ((NOT((ET[ObjCMethodDecl][Body]((EF[->_](call_method(addObserver:selector:name:object:)) OR EF[->_](call_method(addObserverForName:object:queue:usingBlock:)))) ==> ET[ObjCImplementationDecl,ObjCProtocolDecl][_]((ET[ObjCMethodDecl][Body](((EF[->_](call_method(removeObserver:)) OR EF[->_](call_method(removeObserver:name:object:))) OR ET[BlockDecl][Body]((EF[->_](call_method(removeObserver:)) OR EF[->_](call_method(removeObserver:name:object:)))))) OR EH[ObjCImplementationDecl](ET[ObjCMethodDecl][Body](((EF[->_](call_method(removeObserver:)) OR EF[->_](call_method(removeObserver:name:object:))) OR ET[BlockDecl][Body]((EF[->_](call_method(removeObserver:)) OR EF[->_](call_method(removeObserver:name:object:))))))))))) AND NOT(iphoneos_target_sdk_version_greater_or_equal(9.0))))
+[24203][      debug] 
+[24203][      debug] Issue_desc = {
+[24203][      debug]    Id = REGISTERED_OBSERVER_BEING_DEALLOCATED
+[24203][      debug] {  Name = 
+[24203][      debug]    Severity = WARNING
+[24203][      debug]    Mode = On
+[24203][      debug]    Description = Object self is registered in a notification center but not being removed before deallocation
+[24203][      debug]    Suggestion = Consider removing the object from the notification center before its deallocation.
+[24203][      debug]    Docs URL = 
+[24203][      debug]    Loc = -1
+[24203][      debug] }
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] Making condition and issue desc for checker 'STRONG_DELEGATE_WARNING'
+[24203][      debug] 
+[24203][      debug] Condition =
+[24203][      debug]     IN-NODE ObjCPropertyDecl: ((((declaration_has_name([dD]elegate) AND NOT(declaration_has_name([dD]elegates))) AND NOT(declaration_has_name([qQ]ueue))) AND is_strong_property()))
+[24203][      debug] 
+[24203][      debug] Issue_desc = {
+[24203][      debug]    Id = STRONG_DELEGATE_WARNING
+[24203][      debug] {  Name = 
+[24203][      debug]    Severity = WARNING
+[24203][      debug]    Mode = On
+[24203][      debug]    Description = Property or ivar %decl_name% declared strong
+[24203][      debug]    Suggestion = In general delegates should be declared weak or assign.
+[24203][      debug]    Docs URL = 
+[24203][      debug]    Loc = -1
+[24203][      debug] }
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] Making condition and issue desc for checker 'GLOBAL_VARIABLE_INITIALIZED_WITH_FUNCTION_OR_METHOD_CALL'
+[24203][      debug] 
+[24203][      debug] Condition =
+[24203][      debug]     IN-NODE VarDecl: ((((is_objc_extension() AND is_global_var()) AND NOT(is_const_var())) AND ET[VarDecl][InitExpr](EF[->_]((((((is_node(CallExpr) AND NOT(call_function(CGPointMake))) OR is_node(CXXTemporaryObjectExpr)) OR is_node(CXXMemberCallExpr)) OR is_node(CXXOperatorCallExpr)) OR is_node(ObjCMessageExpr))))))
+[24203][      debug] 
+[24203][      debug] Issue_desc = {
+[24203][      debug]    Id = GLOBAL_VARIABLE_INITIALIZED_WITH_FUNCTION_OR_METHOD_CALL
+[24203][      debug] {  Name = 
+[24203][      debug]    Severity = WARNING
+[24203][      debug]    Mode = On
+[24203][      debug]    Description = Global variable %decl_name% is initialized using a function or method call
+[24203][      debug]    Suggestion = If the function/method call is expensive, it can affect the starting time of the app.
+[24203][      debug]    Docs URL = 
+[24203][      debug]    Loc = -1
+[24203][      debug] }
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] Making condition and issue desc for checker 'CXX_REFERENCE_CAPTURED_IN_OBJC_BLOCK'
+[24203][      debug] 
+[24203][      debug] Condition =
+[24203][      debug]     IN-NODE BlockExpr: (EX[->_]((is_node(BlockDecl) AND captures_cxx_references())))
+[24203][      debug] 
+[24203][      debug] Issue_desc = {
+[24203][      debug]    Id = CXX_REFERENCE_CAPTURED_IN_OBJC_BLOCK
+[24203][      debug] {  Name = 
+[24203][      debug]    Severity = WARNING
+[24203][      debug]    Mode = On
+[24203][      debug]    Description = C++ Reference variable(s) %cxx_ref_captured_in_block% captured by Objective-C block
+[24203][      debug]    Suggestion = C++ References are unmanaged and may be invalid by the time the block executes.
+[24203][      debug]    Docs URL = 
+[24203][      debug]    Loc = -1
+[24203][      debug] }
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] Making condition and issue desc for checker 'UNAVAILABLE_API_IN_SUPPORTED_IOS_SDK'
+[24203][      debug] 
+[24203][      debug] Condition =
+[24203][      debug]     IN-NODE DeclRefExpr,ObjCMessageExpr: (EX[->PointerToDecl]((decl_unavailable_in_supported_ios_sdk() AND NOT(within_responds_to_selector_block()))))
+[24203][      debug] 
+[24203][      debug] Issue_desc = {
+[24203][      debug]    Id = UNAVAILABLE_API_IN_SUPPORTED_IOS_SDK
+[24203][      debug] {  Name = Unavailable API In Supported iOS SDK
+[24203][      debug]    Severity = ERROR
+[24203][      debug]    Mode = On
+[24203][      debug]    Description = %decl_ref_or_selector_name% is not available in the required iOS SDK version %iphoneos_target_sdk_version% (only available from version %available_ios_sdk%)
+[24203][      debug]    Suggestion = This could cause a crash.
+[24203][      debug]    Docs URL = 
+[24203][      debug]    Loc = -1
+[24203][      debug] }
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] Making condition and issue desc for checker 'UNAVAILABLE_CLASS_IN_SUPPORTED_IOS_SDK'
+[24203][      debug] 
+[24203][      debug] Condition =
+[24203][      debug]     IN-NODE ObjCMessageExpr: (((class_unavailable_in_supported_ios_sdk() AND NOT(within_available_class_block())) AND (call_class_method(.*,alloc) OR call_class_method(.*,new))))
+[24203][      debug] 
+[24203][      debug] Issue_desc = {
+[24203][      debug]    Id = UNAVAILABLE_CLASS_IN_SUPPORTED_IOS_SDK
+[24203][      debug] {  Name = Unavailable API In Supported iOS SDK
+[24203][      debug]    Severity = ERROR
+[24203][      debug]    Mode = On
+[24203][      debug]    Description = The receiver %receiver_method_call% of %name% is not available in the required iOS SDK version %iphoneos_target_sdk_version% (only available from version %class_available_ios_sdk%)
+[24203][      debug]    Suggestion = 
+[24203][      debug]    Docs URL = 
+[24203][      debug]    Loc = -1
+[24203][      debug] }
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] Making condition and issue desc for checker 'POINTER_TO_INTEGRAL_IMPLICIT_CAST'
+[24203][      debug] 
+[24203][      debug] Condition =
+[24203][      debug]     IN-NODE ImplicitCastExpr: (has_cast_kind(PointerToIntegral))
+[24203][      debug] 
+[24203][      debug] Issue_desc = {
+[24203][      debug]    Id = POINTER_TO_INTEGRAL_IMPLICIT_CAST
+[24203][      debug] {  Name = 
+[24203][      debug]    Severity = WARNING
+[24203][      debug]    Mode = On
+[24203][      debug]    Description = Implicit conversion from %child_type% to %type% in usage of %name%
+[24203][      debug]    Suggestion = 
+[24203][      debug]    Docs URL = https://clang.llvm.org/docs/DiagnosticsReference.html#wint-conversion
+[24203][      debug]    Loc = -1
+[24203][      debug] }
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] Making condition and issue desc for checker 'POINTER_TO_CONST_OBJC_CLASS'
+[24203][      debug] 
+[24203][      debug] Condition =
+[24203][      debug]     (is_decl() AND has_type_const_ptr_to_objc_class())
+[24203][      debug] 
+[24203][      debug] Issue_desc = {
+[24203][      debug]    Id = POINTER_TO_CONST_OBJC_CLASS
+[24203][      debug] {  Name = Pointer To const Objective-C Class
+[24203][      debug]    Severity = WARNING
+[24203][      debug]    Mode = On
+[24203][      debug]    Description = `const %class_name%*` may not mean what you want:
+                   it represents a mutable pointer pointing to an Objective-C
+                   class where the ivars cannot be changed.
+[24203][      debug]    Suggestion = Consider using `%class_name% *const` instead, meaning
+	                  the destination of the pointer cannot be changed.
+[24203][      debug]    Docs URL = 
+[24203][      debug]    Loc = -1
+[24203][      debug] }
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] Making condition and issue desc for checker 'DISCOURAGED_WEAK_PROPERTY_CUSTOM_SETTER'
+[24203][      debug] 
+[24203][      debug] Condition =
+[24203][      debug]     IN-NODE ObjCMethodDecl: ((EX[->Body](True) AND EX[->AccessorForProperty setter](is_weak_property())))
+[24203][      debug] 
+[24203][      debug] Issue_desc = {
+[24203][      debug]    Id = DISCOURAGED_WEAK_PROPERTY_CUSTOM_SETTER
+[24203][      debug] {  Name = 
+[24203][      debug]    Severity = WARNING
+[24203][      debug]    Mode = Off
+[24203][      debug]    Description = Custom setters are not called when ARC sets weak properties to nil.
+[24203][      debug]    Suggestion = 
+[24203][      debug]    Docs URL = 
+[24203][      debug]    Loc = -1
+[24203][      debug] }
+[24203][      debug] 
+[24203][      debug] Start linting file src.c with rules: 
+[24203][      debug] DIRECT_ATOMIC_PROPERTY_ACCESS
+[24203][      debug] ASSIGN_POINTER_WARNING
+[24203][      debug] BAD_POINTER_COMPARISON
+[24203][      debug] REGISTERED_OBSERVER_BEING_DEALLOCATED
+[24203][      debug] STRONG_DELEGATE_WARNING
+[24203][      debug] GLOBAL_VARIABLE_INITIALIZED_WITH_FUNCTION_OR_METHOD_CALL
+[24203][      debug] CXX_REFERENCE_CAPTURED_IN_OBJC_BLOCK
+[24203][      debug] UNAVAILABLE_API_IN_SUPPORTED_IOS_SDK
+[24203][      debug] UNAVAILABLE_CLASS_IN_SUPPORTED_IOS_SDK
+[24203][      debug] POINTER_TO_INTEGRAL_IMPLICIT_CAST
+[24203][      debug] POINTER_TO_CONST_OBJC_CLASS
+[24203][      debug] DISCOURAGED_WEAK_PROPERTY_CUSTOM_SETTER
+[24203][      debug] 
+[24203][      debug] End linting file src.c
+[24203][      debug] 
+[24203][      debug]  Start building call/cfg graph for 'src.c'....
+[24203][      debug] 
+[24203][      debug]  Start creating icfg
+[24203][      debug] 
+[24203][      debug] Creating a new procdesc for function: 'new'
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] ms = Method new [k, clang_ptr_79,n, clang_ptr_694]->clang_ptr_694 ({"file":"/home/saver/saver/example/func/src.c","line":8,"column":1},{"file":"/home/saver/saver/example/func/src.c","line":13,"column":1})
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] byvals = [ 0 ]
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] >>---------- ADDING METHOD: 'new' ---------<<
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] >>---------- Start translating body of function: 'new' ---------<<
+[24203][      debug] 
+[24203][      debug] Translating statement 'CompoundStmt' (pointer= '699')
+[24203][      debug] Translating statement 'ReturnStmt' (pointer= '727')
+[24203][      debug]   Priority is free. Locking priority node in 727
+[24203][      debug]     
+[24203][      debug] Translating statement 'ImplicitCastExpr' (pointer= '728')
+[24203][      debug]   priority node free = 'false'
+[24203][      debug]   
+[24203][      debug] Translating statement 'DeclRefExpr' (pointer= '729')
+[24203][      debug]   priority node free = 'false'
+[24203][      debug]   
+[24203][      debug]   priority node free = 'false'
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug]  PVAR ='x'
+[24203][      debug] 
+[24203][      debug] Translating statement 'BinaryOperator' (pointer= '721')
+[24203][      debug]   BinaryOperator '<"Assign">'   priority node free = 'true'
+[24203][      debug]   
+[24203][      debug] Priority is free. Locking priority node in 721
+[24203][      debug] 
+[24203][      debug] Translating statement 'MemberExpr' (pointer= '722')
+[24203][      debug] Translating statement 'ImplicitCastExpr' (pointer= '723')
+[24203][      debug]     priority node free = 'false'
+[24203][      debug]     
+[24203][      debug] Translating statement 'DeclRefExpr' (pointer= '724')
+[24203][      debug]   priority node free = 'false'
+[24203][      debug]   
+[24203][      debug]   priority node free = 'false'
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug]  PVAR ='x'
+[24203][      debug] 
+[24203][      debug]   priority node free = 'false'
+[24203][      debug] 
+[24203][      debug] Translating field 'v'
+[24203][      debug] Type is  'node' 
+[24203][      debug] Translating statement 'ImplicitCastExpr' (pointer= '725')
+[24203][      debug]   priority node free = 'false'
+[24203][      debug]   
+[24203][      debug] Translating statement 'DeclRefExpr' (pointer= '726')
+[24203][      debug]   priority node free = 'false'
+[24203][      debug]   
+[24203][      debug]   priority node free = 'false'
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug]  PVAR ='k'
+[24203][      debug] 
+[24203][      debug] Translating statement 'BinaryOperator' (pointer= '715')
+[24203][      debug]   BinaryOperator '<"Assign">'   priority node free = 'true'
+[24203][      debug]   
+[24203][      debug] Priority is free. Locking priority node in 715
+[24203][      debug] 
+[24203][      debug] Translating statement 'MemberExpr' (pointer= '716')
+[24203][      debug] Translating statement 'ImplicitCastExpr' (pointer= '717')
+[24203][      debug]     priority node free = 'false'
+[24203][      debug]     
+[24203][      debug] Translating statement 'DeclRefExpr' (pointer= '718')
+[24203][      debug]   priority node free = 'false'
+[24203][      debug]   
+[24203][      debug]   priority node free = 'false'
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug]  PVAR ='x'
+[24203][      debug] 
+[24203][      debug]   priority node free = 'false'
+[24203][      debug] 
+[24203][      debug] Translating field 'next'
+[24203][      debug] Type is  'node' 
+[24203][      debug] Translating statement 'ImplicitCastExpr' (pointer= '719')
+[24203][      debug]   priority node free = 'false'
+[24203][      debug]   
+[24203][      debug] Translating statement 'DeclRefExpr' (pointer= '720')
+[24203][      debug]   priority node free = 'false'
+[24203][      debug]   
+[24203][      debug]   priority node free = 'false'
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug]  PVAR ='n'
+[24203][      debug] 
+[24203][      debug] Translating statement 'DeclStmt' (pointer= '700')
+[24203][      debug] Priority is free. Locking priority node in 700
+[24203][      debug]   
+[24203][      debug] Translating statement 'ImplicitCastExpr' (pointer= '701')
+[24203][      debug]   priority node free = 'false'
+[24203][      debug]   
+[24203][      debug] Translating statement 'CallExpr' (pointer= '702')
+[24203][      debug] Priority busy in 702. No claim possible
+[24203][      debug]   
+[24203][      debug] Translating statement 'ImplicitCastExpr' (pointer= '703')
+[24203][      debug]   priority node free = 'false'
+[24203][      debug]   
+[24203][      debug] Translating statement 'DeclRefExpr' (pointer= '704')
+[24203][      debug]   priority node free = 'false'
+[24203][      debug]   
+[24203][      debug]   priority node free = 'false'
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] Creating a new procdesc for function: 'malloc'
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] ms = Method malloc [__param_0, clang_ptr_402]->clang_ptr_150 ({"file":"/home/saver/saver/example/func/src.c","line":9,"column":18},{"file":"/home/saver/saver/example/func/src.c","line":9,"column":18})
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] byvals = [ 0 ]
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] WARNING: Missing translation for Cast Kind <"FunctionToPointerDecay">. The construct has been ignored...
+[24203][      debug] Translating statement 'UnaryExprOrTypeTraitExpr' (pointer= '708')
+[24203][      debug] 
+[24203][      debug] Creating a new procdesc for function: 'main'
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] ms = Method main []->clang_ptr_79 ({"file":"/home/saver/saver/example/func/src.c","line":15,"column":1},{"file":"/home/saver/saver/example/func/src.c","line":18,"column":1})
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] byvals = [  ]
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] >>---------- ADDING METHOD: 'main' ---------<<
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] >>---------- Start translating body of function: 'main' ---------<<
+[24203][      debug] 
+[24203][      debug] Translating statement 'CompoundStmt' (pointer= '733')
+[24203][      debug] Translating statement 'ReturnStmt' (pointer= '745')
+[24203][      debug]   Priority is free. Locking priority node in 745
+[24203][      debug]     
+[24203][      debug] Translating statement 'IntegerLiteral' (pointer= '746')
+[24203][      debug] Translating statement 'DeclStmt' (pointer= '734')
+[24203][      debug] Priority is free. Locking priority node in 734
+[24203][      debug]   
+[24203][      debug] Translating statement 'CallExpr' (pointer= '735')
+[24203][      debug] Priority busy in 735. No claim possible
+[24203][      debug]   
+[24203][      debug] Translating statement 'ImplicitCastExpr' (pointer= '736')
+[24203][      debug]   priority node free = 'false'
+[24203][      debug]   
+[24203][      debug] Translating statement 'DeclRefExpr' (pointer= '737')
+[24203][      debug]   priority node free = 'false'
+[24203][      debug]   
+[24203][      debug]   priority node free = 'false'
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] WARNING: Missing translation for Cast Kind <"FunctionToPointerDecay">. The construct has been ignored...
+[24203][      debug] Translating statement 'IntegerLiteral' (pointer= '739')
+[24203][      debug] Translating statement 'ImplicitCastExpr' (pointer= '740')
+[24203][      debug]   priority node free = 'false'
+[24203][      debug]   
+[24203][      debug] Translating statement 'ParenExpr' (pointer= '741')
+[24203][      debug] Translating statement 'CStyleCastExpr' (pointer= '742')
+[24203][      debug]     priority node free = 'false'
+[24203][      debug]     
+[24203][      debug] Translating statement 'IntegerLiteral' (pointer= '743')
+[24203][      debug] 
+[24203][      debug]  Finished creating icfg
+[24203][      debug] 
+[24203][      debug]  End building call/cfg graph for 'src.c'.
+[24203][      debug] METHOD SIGNATURES
+[24203][      debug] main [defined, Return type: int, Formals: None, Locals:  x:node*]
+[24203][      debug] malloc [undefined, Return type: void*, Formals:  __param_0:unsigned long, Locals: None]
+[24203][      debug] new [defined, Return type: node*, Formals:  k:int n:node*, Locals:  x:node*]
+[24203][      debug] End translating and linting of AST file stdin of src.c... OK!
+[24203][      debug] Elapsed: 179ms.
+[24203][      debug] Running non-cc command without capture:   /usr/bin/ld -z relro
+[24203][      debug]                                           --hash-style=gnu --eh-frame-hdr -m
+[24203][      debug]                                           elf_x86_64 -dynamic-linker
+[24203][      debug]                                           /lib64/ld-linux-x86-64.so.2 -o
+[24203][      debug]                                           a.out
+[24203][      debug]                                           /usr/lib/gcc/x86_64-linux-gnu/5.5.0/../../../x86_64-linux-gnu/crt1.o
+[24203][      debug]                                           /usr/lib/gcc/x86_64-linux-gnu/5.5.0/../../../x86_64-linux-gnu/crti.o
+[24203][      debug]                                           /usr/lib/gcc/x86_64-linux-gnu/5.5.0/crtbegin.o
+[24203][      debug]                                           -L/usr/lib/gcc/x86_64-linux-gnu/5.5.0
+[24203][      debug]                                           -L/usr/lib/gcc/x86_64-linux-gnu/5.5.0/../../../x86_64-linux-gnu
+[24203][      debug]                                           -L/lib/x86_64-linux-gnu
+[24203][      debug]                                           -L/lib/../lib64
+[24203][      debug]                                           -L/usr/lib/x86_64-linux-gnu
+[24203][      debug]                                           -L/usr/lib/gcc/x86_64-linux-gnu/5.5.0/../../..
+[24203][      debug]                                           -L/home/saver/project/saver/libs/facebook-clang-plugins/clang/install/bin/../lib
+[24203][      debug]                                           -L/lib -L/usr/lib /tmp/src-0dfdb7.o
+[24203][      debug]                                           -lgcc --as-needed -lgcc_s
+[24203][      debug]                                           --no-as-needed -lc -lgcc
+[24203][      debug]                                           --as-needed -lgcc_s --no-as-needed
+[24203][      debug]                                           /usr/lib/gcc/x86_64-linux-gnu/5.5.0/crtend.o
+[24203][      debug]                                           /usr/lib/gcc/x86_64-linux-gnu/5.5.0/../../../x86_64-linux-gnu/crtn.o
+[24203][      debug] 
+[24203][      debug] 
+[24203][   progress] Found 1 source file to analyze in /home/saver/saver/example/func/infer-out
+[24203][   progress] Starting analysis...
+[24203][   progress] 
+[24203][   progress] legend:
+[24203][   progress]   "F" analyzing a file
+[24203][   progress]   "." analyzing a procedure
+[24203][   progress]   "C" analyzer crashed
+[24203][   progress]   "T" timeout: procedure analysis took too much time
+[24203][   progress]   "S" timeout: procedure analysis took too many symbolic execution steps
+[24203][   progress]   "R" timeout: procedure analysis took too many recursive iterations
+[24203][   progress] 
+[24203][   progress] 
+[24203][      debug] 
+[24203][      debug] Processing 'src.c'
+[24203][   progress] F..
+[24203][      debug] 
+[24203][      debug] src.c:10: ERROR: NULL_DEREFERENCE [B1] pointer `x` last assigned on line 9 could be null and is dereferenced at line 10, column 3(biabduction/Rearrange.ml:1643:57-64:)
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] src.c:10: ERROR: NULL_DEREFERENCE [B1] pointer `x` last assigned on line 9 could be null and is dereferenced at line 10, column 3(biabduction/Rearrange.ml:1643:57-64:)
+[24203][      debug] 
+[24203][      debug] Elapsed analysis time: new: 42.627ms
+[24203][      debug] 
+[24203][      debug] src.c:16: ERROR: DEAD_STORE The value written to &x (type node*) is never used
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] src.c:16: WARNING: SKIP_FUNCTION new
+[24203][      debug] 
+[24203][      debug] 
+[24203][      debug] src.c:16: WARNING: SKIP_FUNCTION new
+[24203][      debug] 
+[24203][      debug] 
+[24203][   progress] 
+[24203][   progress] Analysis finished in 543mss
+[24203][      debug] Elapsed analysis time: main: 57.618ms
+[24203][      debug] 

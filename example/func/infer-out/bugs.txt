@@ -1,0 +1,22 @@
+Found 2 issues
+
+src.c:10: error: NULL_DEREFERENCE (biabduction/Rearrange.ml:1643:57-64:)
+  [B1] pointer `x` last assigned on line 9 could be null and is dereferenced at line 10, column 3.
+  8.   struct node* new(int k, struct node* n){
+  9.     struct node* x=malloc(sizeof(*x));
+  10. >   x->next=n;
+  11.     x->v=k;
+  12.     return x;
+
+src.c:16: error: DEAD_STORE
+  The value written to &x (type node*) is never used.
+  14.   
+  15.   int main() { 
+  16. >   struct node* x=new(0,NULL);
+  17.     return 0;
+  18.   }
+
+Summary of the reports
+
+  NULL_DEREFERENCE: 1
+        DEAD_STORE: 1

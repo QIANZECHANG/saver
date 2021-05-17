@@ -1,0 +1,41 @@
+/* @generated */
+digraph cfg {
+"main.fad58de7366495db4650cfefac2fcd61_1" [label="1: Start main\nFormals: \nLocals:  x:node* \n   DECLARE_LOCALS(&return,&x); [line 15, column 1]\n " color=yellow style=filled]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_1" -> "main.fad58de7366495db4650cfefac2fcd61_4" ;
+"main.fad58de7366495db4650cfefac2fcd61_2" [label="2: Exit main \n  " color=yellow style=filled]
+	
+
+"main.fad58de7366495db4650cfefac2fcd61_3" [label="3:  Return Stmt \n   *&return:int=0 [line 17, column 3]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_3" -> "main.fad58de7366495db4650cfefac2fcd61_2" ;
+"main.fad58de7366495db4650cfefac2fcd61_4" [label="4:  DeclStmt \n   n$0=_fun_new(0:int,null:node*) [line 16, column 18]\n  *&x:node*=n$0 [line 16, column 3]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_4" -> "main.fad58de7366495db4650cfefac2fcd61_3" ;
+"new.22af645d1859cb5ca6da0c484f1f37ea_1" [label="1: Start new\nFormals:  k:int n:node*\nLocals:  x:node* \n   DECLARE_LOCALS(&return,&x); [line 8, column 1]\n " color=yellow style=filled]
+	
+
+	 "new.22af645d1859cb5ca6da0c484f1f37ea_1" -> "new.22af645d1859cb5ca6da0c484f1f37ea_6" ;
+"new.22af645d1859cb5ca6da0c484f1f37ea_2" [label="2: Exit new \n  " color=yellow style=filled]
+	
+
+"new.22af645d1859cb5ca6da0c484f1f37ea_3" [label="3:  Return Stmt \n   n$0=*&x:node* [line 12, column 10]\n  *&return:node*=n$0 [line 12, column 3]\n " shape="box"]
+	
+
+	 "new.22af645d1859cb5ca6da0c484f1f37ea_3" -> "new.22af645d1859cb5ca6da0c484f1f37ea_2" ;
+"new.22af645d1859cb5ca6da0c484f1f37ea_4" [label="4:  BinaryOperatorStmt: Assign \n   n$1=*&x:node* [line 11, column 3]\n  n$2=*&k:int [line 11, column 8]\n  *n$1.v:int=n$2 [line 11, column 3]\n " shape="box"]
+	
+
+	 "new.22af645d1859cb5ca6da0c484f1f37ea_4" -> "new.22af645d1859cb5ca6da0c484f1f37ea_3" ;
+"new.22af645d1859cb5ca6da0c484f1f37ea_5" [label="5:  BinaryOperatorStmt: Assign \n   n$3=*&x:node* [line 10, column 3]\n  n$4=*&n:node* [line 10, column 11]\n  *n$3.next:node*=n$4 [line 10, column 3]\n " shape="box"]
+	
+
+	 "new.22af645d1859cb5ca6da0c484f1f37ea_5" -> "new.22af645d1859cb5ca6da0c484f1f37ea_4" ;
+"new.22af645d1859cb5ca6da0c484f1f37ea_6" [label="6:  DeclStmt \n   n$5=_fun_malloc(sizeof(t=node;nbytes=16):node) [line 9, column 18]\n  *&x:node*=n$5 [line 9, column 3]\n " shape="box"]
+	
+
+	 "new.22af645d1859cb5ca6da0c484f1f37ea_6" -> "new.22af645d1859cb5ca6da0c484f1f37ea_5" ;
+}
