@@ -7,7 +7,7 @@
 # Run infer
 
 ```
-  infer -g run --clang *.c
+  infer -g run -- clang *.c
 ```
 
 # Run SAVER

@@ -48,12 +48,14 @@ int main() {
     //printf("new %p\n",x);
 
     //add(x);
+    
     t=head;
     while(t->next){
       t=t->next;
       printf("%d\n",t->v);
     }
     t->next=x;
+    
     if(i==3){
       n=x;
       //printf("n=x\n");
@@ -73,6 +75,3 @@ int main() {
   //head=NULL;
   return 0;
 }
-
-
-

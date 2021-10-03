@@ -78,7 +78,7 @@ POST: { }
   PROP 1 of 1:
   <span class='color_blue'><span class='color_red'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span>; <span class='color_red'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;
   <span class='color_red'>x = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_red'>n = null <span class='color_orange'>update:40</span>:node*</span>; <span class='color_red'>t = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_red'>#GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*</span>; <span class='color_red'>i = 1 <span class='color_orange'>update:43</span>:int</span>; <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:int</span> ;
-  <span class='color_red'>_t$2|->{next:null <span class='color_orange'>update:46</span>, v:0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16</span>; <span class='color_red'>_t$1|->{next:_t$2 <span class='color_orange'>update:56</span>, v:@f$0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+  <span class='color_red'>_t$2|->{next:null <span class='color_orange'>update:46</span>, v:0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16</span>; <span class='color_red'>_t$1|->{next:_t$2 <span class='color_orange'>update:57</span>, v:@f$0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
   [footprint
      <span class='color_red'>#GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*</span>  ]</span>
   .... Instructions: .... 
@@ -88,7 +88,7 @@ POST: { }
   JOIN SYM HEAP1: 
   <span class='color_blue'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2); MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1) ;
   x = 0 <span class='color_orange'>nullify</span>:node*; n = null <span class='color_orange'>update:40</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*; i = 1 <span class='color_orange'>update:43</span>:int; return = _t$0 <span class='color_orange'>initial</span>:int ;
-  _t$2|->{next:null <span class='color_orange'>update:46</span>, v:0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; _t$1|->{next:_t$2 <span class='color_orange'>update:56</span>, v:@f$0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16
+  _t$2|->{next:null <span class='color_orange'>update:46</span>, v:0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; _t$1|->{next:_t$2 <span class='color_orange'>update:57</span>, v:@f$0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16
   [footprint
      #GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*  ]</span>
   JOIN SYM HEAP2: 
@@ -112,7 +112,7 @@ POST: { }
   [footprint
      <span class='color_red'>#GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*</span>  ]
   where
-  P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
+  P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
   .... Instructions: .... 
   <span class='color_green'></span>
   
@@ -124,7 +124,7 @@ POST: { }
   [footprint
      #GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*  ]
   where
-  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
   JOIN SYM HEAP2: 
   <span class='color_blue'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1) ;
   x = _t$3 <span class='color_orange'>initial</span>:node*; n = null <span class='color_orange'>update:40</span>:node*; t = _t$2 <span class='color_orange'>initial</span>:node*; #GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*; i = 0 <span class='color_orange'>update:43</span>:int; return = _t$0 <span class='color_orange'>initial</span>:int ;
@@ -145,11 +145,11 @@ POST: { }
   [footprint
      #GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*  ]
   where
-  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
   JOIN SYM HEAP2: 
   <span class='color_blue'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2); MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1) ;
   x = 0 <span class='color_orange'>nullify</span>:node*; n = null <span class='color_orange'>update:40</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*; i = 1 <span class='color_orange'>update:43</span>:int; return = _t$0 <span class='color_orange'>initial</span>:int ;
-  _t$2|->{next:null <span class='color_orange'>update:46</span>, v:0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; _t$1|->{next:_t$2 <span class='color_orange'>update:56</span>, v:@f$0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16
+  _t$2|->{next:null <span class='color_orange'>update:46</span>, v:0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; _t$1|->{next:_t$2 <span class='color_orange'>update:57</span>, v:@f$0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16
   [footprint
      #GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*  ]</span>
   
@@ -167,7 +167,7 @@ POST: { }
   [footprint
      <span class='color_red'>#GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*</span>  ]
   where
-  P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
+  P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
   .... Instructions: .... 
   <span class='color_green'></span>
   
@@ -179,7 +179,7 @@ POST: { }
   [footprint
      #GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*  ]
   where
-  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
   JOIN SYM HEAP2: 
   <span class='color_blue'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1) ;
   x = 0 <span class='color_orange'>nullify</span>:node*; n = null <span class='color_orange'>update:40</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*; i = 2 <span class='color_orange'>update:43</span>:int; return = _t$0 <span class='color_orange'>initial</span>:int ;
@@ -187,7 +187,7 @@ POST: { }
   [footprint
      #GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*  ]
   where
-  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
   
   sigma_partial_join succeeded
   pi_partial_join succeeded
@@ -201,7 +201,7 @@ POST: { }
   [footprint
      #GB<src.c>$head = @f$58 <span class='color_orange'>rearrange:38</span>:node*  ]
   where
-  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
   
   .... JOIN ....
   JOIN SYM HEAP1: 
@@ -211,7 +211,7 @@ POST: { }
   [footprint
      #GB<src.c>$head = @f$58 <span class='color_orange'>rearrange:38</span>:node*  ]
   where
-  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
   JOIN SYM HEAP2: 
   <span class='color_blue'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1) ;
   x = _t$3 <span class='color_orange'>initial</span>:node*; n = null <span class='color_orange'>update:40</span>:node*; t = _t$2 <span class='color_orange'>initial</span>:node*; #GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*; i = 0 <span class='color_orange'>update:43</span>:int; return = _t$0 <span class='color_orange'>initial</span>:int ;
@@ -232,11 +232,11 @@ POST: { }
   [footprint
      #GB<src.c>$head = @f$58 <span class='color_orange'>rearrange:38</span>:node*  ]
   where
-  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
   JOIN SYM HEAP2: 
   <span class='color_blue'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2); MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1) ;
   x = 0 <span class='color_orange'>nullify</span>:node*; n = null <span class='color_orange'>update:40</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*; i = 1 <span class='color_orange'>update:43</span>:int; return = _t$0 <span class='color_orange'>initial</span>:int ;
-  _t$2|->{next:null <span class='color_orange'>update:46</span>, v:0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; _t$1|->{next:_t$2 <span class='color_orange'>update:56</span>, v:@f$0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16
+  _t$2|->{next:null <span class='color_orange'>update:46</span>, v:0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; _t$1|->{next:_t$2 <span class='color_orange'>update:57</span>, v:@f$0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16
   [footprint
      #GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*  ]</span>
   
@@ -250,7 +250,7 @@ POST: { }
   PROP 1 of 4:
   <span class='color_blue'><span class='color_red'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span>; <span class='color_red'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;
   <span class='color_red'>x = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_red'>n = null <span class='color_orange'>update:40</span>:node*</span>; <span class='color_red'>t = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_red'>#GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*</span>; <span class='color_red'>i = (@f$0 + 1) <span class='color_orange'>update:43</span>:int</span>; <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:int</span> ;
-  <span class='color_red'>_t$2|->{next:null <span class='color_orange'>update:46</span>, v:@f$0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16</span>; <span class='color_red'>_t$1|->{next:_t$2 <span class='color_orange'>update:56</span>, v:_t$3 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+  <span class='color_red'>_t$2|->{next:null <span class='color_orange'>update:46</span>, v:@f$0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16</span>; <span class='color_red'>_t$1|->{next:_t$2 <span class='color_orange'>update:57</span>, v:_t$3 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
   [footprint
      <span class='color_red'>#GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*</span>  ]</span>
   PROP 2 of 4:
@@ -260,37 +260,37 @@ POST: { }
   [footprint
      <span class='color_red'>#GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*</span>  ]
   where
-  P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
+  P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
   PROP 3 of 4:
   <span class='color_blue'><span class='color_red'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(n)</span>; <span class='color_red'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;
-  <span class='color_red'>x = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_red'>n = _t$2 <span class='color_orange'>update:58</span>:node*</span>; <span class='color_red'>t = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_red'>#GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*</span>; <span class='color_red'>i = 4 <span class='color_orange'>update:43</span>:int</span>; <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:int</span> ;
-  <span class='color_red'>n|->{next:null <span class='color_orange'>update:46</span>, v:3 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16</span>; <span class='color_red'>_t$1|->{next:n <span class='color_orange'>update:56</span>, v:_t$3 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+  <span class='color_red'>x = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_red'>n = _t$2 <span class='color_orange'>update:60</span>:node*</span>; <span class='color_red'>t = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_red'>#GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*</span>; <span class='color_red'>i = 4 <span class='color_orange'>update:43</span>:int</span>; <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:int</span> ;
+  <span class='color_red'>n|->{next:null <span class='color_orange'>update:46</span>, v:3 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16</span>; <span class='color_red'>_t$1|->{next:n <span class='color_orange'>update:57</span>, v:_t$3 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
   [footprint
      <span class='color_red'>#GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*</span>  ]</span>
   PROP 4 of 4:
   <span class='color_blue'><span class='color_red'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(n)</span>; <span class='color_red'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;
-  <span class='color_red'>x = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_red'>n = _t$2 <span class='color_orange'>update:58</span>:node*</span>; <span class='color_red'>t = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_red'>#GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*</span>; <span class='color_red'>i = 4 <span class='color_orange'>update:43</span>:int</span>; <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:int</span> ;
+  <span class='color_red'>x = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_red'>n = _t$2 <span class='color_orange'>update:60</span>:node*</span>; <span class='color_red'>t = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_red'>#GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*</span>; <span class='color_red'>i = 4 <span class='color_orange'>update:43</span>:int</span>; <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:int</span> ;
   <span class='color_red'>n|->{next:null <span class='color_orange'>update:46</span>, v:3 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16</span>; <span class='color_red'>lsegne(_t$1,n,[],P0)</span>
   [footprint
      <span class='color_red'>#GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*</span>  ]
   where
-  P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
+  P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
   .... Instructions: .... 
   <span class='color_green'></span>
   
   .... JOIN ....
   JOIN SYM HEAP1: 
   <span class='color_blue'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(n); MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1) ;
-  x = 0 <span class='color_orange'>nullify</span>:node*; n = _t$2 <span class='color_orange'>update:58</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*; i = 4 <span class='color_orange'>update:43</span>:int; return = _t$0 <span class='color_orange'>initial</span>:int ;
+  x = 0 <span class='color_orange'>nullify</span>:node*; n = _t$2 <span class='color_orange'>update:60</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*; i = 4 <span class='color_orange'>update:43</span>:int; return = _t$0 <span class='color_orange'>initial</span>:int ;
   n|->{next:null <span class='color_orange'>update:46</span>, v:3 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; lsegne(_t$1,n,[],P0)
   [footprint
      #GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*  ]
   where
-  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
   JOIN SYM HEAP2: 
   <span class='color_blue'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(n); MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1) ;
-  x = 0 <span class='color_orange'>nullify</span>:node*; n = _t$2 <span class='color_orange'>update:58</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*; i = 4 <span class='color_orange'>update:43</span>:int; return = _t$0 <span class='color_orange'>initial</span>:int ;
-  n|->{next:null <span class='color_orange'>update:46</span>, v:3 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; _t$1|->{next:n <span class='color_orange'>update:56</span>, v:_t$3 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16
+  x = 0 <span class='color_orange'>nullify</span>:node*; n = _t$2 <span class='color_orange'>update:60</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*; i = 4 <span class='color_orange'>update:43</span>:int; return = _t$0 <span class='color_orange'>initial</span>:int ;
+  n|->{next:null <span class='color_orange'>update:46</span>, v:3 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; _t$1|->{next:n <span class='color_orange'>update:57</span>, v:_t$3 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16
   [footprint
      #GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*  ]</span>
   
@@ -301,22 +301,22 @@ POST: { }
   <span class='color_green'>.... JOIN SUCCEEDED ....</span>
   RESULT SYM HEAP:
   <span class='color_blue'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1524); MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(n) ;
-  x = 0 <span class='color_orange'>nullify</span>:node*; n = _t$1523 <span class='color_orange'>update:58</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1524 <span class='color_orange'>update:38</span>:node*; i = 4 <span class='color_orange'>update:43</span>:int; return = _t$1527 <span class='color_orange'>initial</span>:int ;
+  x = 0 <span class='color_orange'>nullify</span>:node*; n = _t$1523 <span class='color_orange'>update:60</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1524 <span class='color_orange'>update:38</span>:node*; i = 4 <span class='color_orange'>update:43</span>:int; return = _t$1527 <span class='color_orange'>initial</span>:int ;
   n|->{next:null <span class='color_orange'>update:46</span>, v:3 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; lsegne(_t$1524,n,[],P0)
   [footprint
      #GB<src.c>$head = @f$111 <span class='color_orange'>rearrange:38</span>:node*  ]
   where
-  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
   
   .... JOIN ....
   JOIN SYM HEAP1: 
   <span class='color_blue'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1524); MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(n) ;
-  x = 0 <span class='color_orange'>nullify</span>:node*; n = _t$1523 <span class='color_orange'>update:58</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1524 <span class='color_orange'>update:38</span>:node*; i = 4 <span class='color_orange'>update:43</span>:int; return = _t$1527 <span class='color_orange'>initial</span>:int ;
+  x = 0 <span class='color_orange'>nullify</span>:node*; n = _t$1523 <span class='color_orange'>update:60</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1524 <span class='color_orange'>update:38</span>:node*; i = 4 <span class='color_orange'>update:43</span>:int; return = _t$1527 <span class='color_orange'>initial</span>:int ;
   n|->{next:null <span class='color_orange'>update:46</span>, v:3 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; lsegne(_t$1524,n,[],P0)
   [footprint
      #GB<src.c>$head = @f$111 <span class='color_orange'>rearrange:38</span>:node*  ]
   where
-  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
   JOIN SYM HEAP2: 
   <span class='color_blue'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2); MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1) ;
   x = 0 <span class='color_orange'>nullify</span>:node*; n = null <span class='color_orange'>update:40</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*; i = (@f$0 + 1) <span class='color_orange'>update:43</span>:int; return = _t$0 <span class='color_orange'>initial</span>:int ;
@@ -324,43 +324,43 @@ POST: { }
   [footprint
      #GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*  ]
   where
-  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
   
   sigma_partial_join succeeded
   pi_partial_join succeeded
-  inst_partial_join failed on update:58 update:40
+  inst_partial_join failed on update:60 update:40
   <span class='color_red'>.... JOIN FAILED ....</span>
   
   .... JOIN ....
   JOIN SYM HEAP1: 
   <span class='color_blue'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1524); MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(n) ;
-  x = 0 <span class='color_orange'>nullify</span>:node*; n = _t$1523 <span class='color_orange'>update:58</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1524 <span class='color_orange'>update:38</span>:node*; i = 4 <span class='color_orange'>update:43</span>:int; return = _t$1527 <span class='color_orange'>initial</span>:int ;
+  x = 0 <span class='color_orange'>nullify</span>:node*; n = _t$1523 <span class='color_orange'>update:60</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1524 <span class='color_orange'>update:38</span>:node*; i = 4 <span class='color_orange'>update:43</span>:int; return = _t$1527 <span class='color_orange'>initial</span>:int ;
   n|->{next:null <span class='color_orange'>update:46</span>, v:3 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; lsegne(_t$1524,n,[],P0)
   [footprint
      #GB<src.c>$head = @f$111 <span class='color_orange'>rearrange:38</span>:node*  ]
   where
-  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
   JOIN SYM HEAP2: 
   <span class='color_blue'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2); MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1) ;
   x = 0 <span class='color_orange'>nullify</span>:node*; n = null <span class='color_orange'>update:40</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*; i = (@f$0 + 1) <span class='color_orange'>update:43</span>:int; return = _t$0 <span class='color_orange'>initial</span>:int ;
-  _t$2|->{next:null <span class='color_orange'>update:46</span>, v:@f$0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; _t$1|->{next:_t$2 <span class='color_orange'>update:56</span>, v:_t$3 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16
+  _t$2|->{next:null <span class='color_orange'>update:46</span>, v:@f$0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; _t$1|->{next:_t$2 <span class='color_orange'>update:57</span>, v:_t$3 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16
   [footprint
      #GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*  ]</span>
   
   sigma_partial_join succeeded
   pi_partial_join succeeded
-  inst_partial_join failed on update:58 update:40
+  inst_partial_join failed on update:60 update:40
   <span class='color_red'>.... JOIN FAILED ....</span>
   
   .... JOIN ....
   JOIN SYM HEAP1: 
   <span class='color_blue'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1524); MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(n) ;
-  x = 0 <span class='color_orange'>nullify</span>:node*; n = _t$1523 <span class='color_orange'>update:58</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1524 <span class='color_orange'>update:38</span>:node*; i = 4 <span class='color_orange'>update:43</span>:int; return = _t$1527 <span class='color_orange'>initial</span>:int ;
+  x = 0 <span class='color_orange'>nullify</span>:node*; n = _t$1523 <span class='color_orange'>update:60</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1524 <span class='color_orange'>update:38</span>:node*; i = 4 <span class='color_orange'>update:43</span>:int; return = _t$1527 <span class='color_orange'>initial</span>:int ;
   n|->{next:null <span class='color_orange'>update:46</span>, v:3 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; lsegne(_t$1524,n,[],P0)
   [footprint
      #GB<src.c>$head = @f$111 <span class='color_orange'>rearrange:38</span>:node*  ]
   where
-  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
   JOIN SYM HEAP2: 
   <span class='color_blue'>(1  &lt;  @f$0); (@f$0  &lt;=  3); MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1) ;
   x = 0 <span class='color_orange'>nullify</span>:node*; n = null <span class='color_orange'>update:40</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*; i = @f$0 <span class='color_orange'>update:43</span>:int; return = _t$0 <span class='color_orange'>initial</span>:int ;
@@ -368,22 +368,22 @@ POST: { }
   [footprint
      #GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*  ]
   where
-  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
   
   sigma_partial_join succeeded
   pi_partial_join succeeded
-  inst_partial_join failed on update:58 update:40
+  inst_partial_join failed on update:60 update:40
   <span class='color_red'>.... JOIN FAILED ....</span>
   
   .... JOIN ....
   JOIN SYM HEAP1: 
   <span class='color_blue'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1524); MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(n) ;
-  x = 0 <span class='color_orange'>nullify</span>:node*; n = _t$1523 <span class='color_orange'>update:58</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1524 <span class='color_orange'>update:38</span>:node*; i = 4 <span class='color_orange'>update:43</span>:int; return = _t$1527 <span class='color_orange'>initial</span>:int ;
+  x = 0 <span class='color_orange'>nullify</span>:node*; n = _t$1523 <span class='color_orange'>update:60</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1524 <span class='color_orange'>update:38</span>:node*; i = 4 <span class='color_orange'>update:43</span>:int; return = _t$1527 <span class='color_orange'>initial</span>:int ;
   n|->{next:null <span class='color_orange'>update:46</span>, v:3 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; lsegne(_t$1524,n,[],P0)
   [footprint
      #GB<src.c>$head = @f$111 <span class='color_orange'>rearrange:38</span>:node*  ]
   where
-  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
   JOIN SYM HEAP2: 
   <span class='color_blue'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1) ;
   x = _t$3 <span class='color_orange'>initial</span>:node*; n = null <span class='color_orange'>update:40</span>:node*; t = _t$2 <span class='color_orange'>initial</span>:node*; #GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*; i = 0 <span class='color_orange'>update:43</span>:int; return = _t$0 <span class='color_orange'>initial</span>:int ;
@@ -399,22 +399,22 @@ POST: { }
   .... JOIN ....
   JOIN SYM HEAP1: 
   <span class='color_blue'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1524); MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(n) ;
-  x = 0 <span class='color_orange'>nullify</span>:node*; n = _t$1523 <span class='color_orange'>update:58</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1524 <span class='color_orange'>update:38</span>:node*; i = 4 <span class='color_orange'>update:43</span>:int; return = _t$1527 <span class='color_orange'>initial</span>:int ;
+  x = 0 <span class='color_orange'>nullify</span>:node*; n = _t$1523 <span class='color_orange'>update:60</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1524 <span class='color_orange'>update:38</span>:node*; i = 4 <span class='color_orange'>update:43</span>:int; return = _t$1527 <span class='color_orange'>initial</span>:int ;
   n|->{next:null <span class='color_orange'>update:46</span>, v:3 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; lsegne(_t$1524,n,[],P0)
   [footprint
      #GB<src.c>$head = @f$111 <span class='color_orange'>rearrange:38</span>:node*  ]
   where
-  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
   JOIN SYM HEAP2: 
   <span class='color_blue'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2); MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1) ;
   x = 0 <span class='color_orange'>nullify</span>:node*; n = null <span class='color_orange'>update:40</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*; i = 1 <span class='color_orange'>update:43</span>:int; return = _t$0 <span class='color_orange'>initial</span>:int ;
-  _t$2|->{next:null <span class='color_orange'>update:46</span>, v:0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; _t$1|->{next:_t$2 <span class='color_orange'>update:56</span>, v:@f$0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16
+  _t$2|->{next:null <span class='color_orange'>update:46</span>, v:0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; _t$1|->{next:_t$2 <span class='color_orange'>update:57</span>, v:@f$0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16
   [footprint
      #GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*  ]</span>
   
   sigma_partial_join succeeded
   pi_partial_join succeeded
-  inst_partial_join failed on update:58 update:40
+  inst_partial_join failed on update:60 update:40
   <span class='color_red'>.... JOIN FAILED ....</span>
   
   .... JOIN ....
@@ -425,19 +425,19 @@ POST: { }
   [footprint
      #GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*  ]
   where
-  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
   JOIN SYM HEAP2: 
   <span class='color_blue'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1524); MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(n) ;
-  x = 0 <span class='color_orange'>nullify</span>:node*; n = _t$1523 <span class='color_orange'>update:58</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1524 <span class='color_orange'>update:38</span>:node*; i = 4 <span class='color_orange'>update:43</span>:int; return = _t$1527 <span class='color_orange'>initial</span>:int ;
+  x = 0 <span class='color_orange'>nullify</span>:node*; n = _t$1523 <span class='color_orange'>update:60</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1524 <span class='color_orange'>update:38</span>:node*; i = 4 <span class='color_orange'>update:43</span>:int; return = _t$1527 <span class='color_orange'>initial</span>:int ;
   n|->{next:null <span class='color_orange'>update:46</span>, v:3 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; lsegne(_t$1524,n,[],P0)
   [footprint
      #GB<src.c>$head = @f$111 <span class='color_orange'>rearrange:38</span>:node*  ]
   where
-  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
   
   sigma_partial_join succeeded
   pi_partial_join succeeded
-  inst_partial_join failed on update:40 update:58
+  inst_partial_join failed on update:40 update:60
   <span class='color_red'>.... JOIN FAILED ....</span>
   
   .... JOIN ....
@@ -448,11 +448,11 @@ POST: { }
   [footprint
      #GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*  ]
   where
-  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
   JOIN SYM HEAP2: 
   <span class='color_blue'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2); MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1) ;
   x = 0 <span class='color_orange'>nullify</span>:node*; n = null <span class='color_orange'>update:40</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*; i = (@f$0 + 1) <span class='color_orange'>update:43</span>:int; return = _t$0 <span class='color_orange'>initial</span>:int ;
-  _t$2|->{next:null <span class='color_orange'>update:46</span>, v:@f$0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; _t$1|->{next:_t$2 <span class='color_orange'>update:56</span>, v:_t$3 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16
+  _t$2|->{next:null <span class='color_orange'>update:46</span>, v:@f$0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; _t$1|->{next:_t$2 <span class='color_orange'>update:57</span>, v:_t$3 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16
   [footprint
      #GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*  ]</span>
   
@@ -469,7 +469,7 @@ POST: { }
   [footprint
      #GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*  ]
   where
-  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
   JOIN SYM HEAP2: 
   <span class='color_blue'>(1  &lt;  @f$0); (@f$0  &lt;=  3); MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1) ;
   x = 0 <span class='color_orange'>nullify</span>:node*; n = null <span class='color_orange'>update:40</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*; i = @f$0 <span class='color_orange'>update:43</span>:int; return = _t$0 <span class='color_orange'>initial</span>:int ;
@@ -477,7 +477,7 @@ POST: { }
   [footprint
      #GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*  ]
   where
-  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
   
   sigma_partial_join succeeded
   pi_partial_join succeeded
@@ -492,7 +492,7 @@ POST: { }
   [footprint
      #GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*  ]
   where
-  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
   JOIN SYM HEAP2: 
   <span class='color_blue'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1) ;
   x = _t$3 <span class='color_orange'>initial</span>:node*; n = null <span class='color_orange'>update:40</span>:node*; t = _t$2 <span class='color_orange'>initial</span>:node*; #GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*; i = 0 <span class='color_orange'>update:43</span>:int; return = _t$0 <span class='color_orange'>initial</span>:int ;
@@ -513,11 +513,11 @@ POST: { }
   [footprint
      #GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*  ]
   where
-  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
   JOIN SYM HEAP2: 
   <span class='color_blue'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2); MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1) ;
   x = 0 <span class='color_orange'>nullify</span>:node*; n = null <span class='color_orange'>update:40</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*; i = 1 <span class='color_orange'>update:43</span>:int; return = _t$0 <span class='color_orange'>initial</span>:int ;
-  _t$2|->{next:null <span class='color_orange'>update:46</span>, v:0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; _t$1|->{next:_t$2 <span class='color_orange'>update:56</span>, v:@f$0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16
+  _t$2|->{next:null <span class='color_orange'>update:46</span>, v:0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; _t$1|->{next:_t$2 <span class='color_orange'>update:57</span>, v:@f$0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16
   [footprint
      #GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*  ]</span>
   
@@ -530,7 +530,7 @@ POST: { }
   JOIN SYM HEAP1: 
   <span class='color_blue'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2); MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1) ;
   x = 0 <span class='color_orange'>nullify</span>:node*; n = null <span class='color_orange'>update:40</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*; i = (@f$0 + 1) <span class='color_orange'>update:43</span>:int; return = _t$0 <span class='color_orange'>initial</span>:int ;
-  _t$2|->{next:null <span class='color_orange'>update:46</span>, v:@f$0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; _t$1|->{next:_t$2 <span class='color_orange'>update:56</span>, v:_t$3 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16
+  _t$2|->{next:null <span class='color_orange'>update:46</span>, v:@f$0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; _t$1|->{next:_t$2 <span class='color_orange'>update:57</span>, v:_t$3 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16
   [footprint
      #GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*  ]</span>
   JOIN SYM HEAP2: 
@@ -540,7 +540,7 @@ POST: { }
   [footprint
      #GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*  ]
   where
-  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
   
   sigma_partial_join succeeded
   pi_partial_join succeeded
@@ -551,28 +551,28 @@ POST: { }
   JOIN SYM HEAP1: 
   <span class='color_blue'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2); MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1) ;
   x = 0 <span class='color_orange'>nullify</span>:node*; n = null <span class='color_orange'>update:40</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*; i = (@f$0 + 1) <span class='color_orange'>update:43</span>:int; return = _t$0 <span class='color_orange'>initial</span>:int ;
-  _t$2|->{next:null <span class='color_orange'>update:46</span>, v:@f$0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; _t$1|->{next:_t$2 <span class='color_orange'>update:56</span>, v:_t$3 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16
+  _t$2|->{next:null <span class='color_orange'>update:46</span>, v:@f$0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; _t$1|->{next:_t$2 <span class='color_orange'>update:57</span>, v:_t$3 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16
   [footprint
      #GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*  ]</span>
   JOIN SYM HEAP2: 
   <span class='color_blue'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1524); MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(n) ;
-  x = 0 <span class='color_orange'>nullify</span>:node*; n = _t$1523 <span class='color_orange'>update:58</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1524 <span class='color_orange'>update:38</span>:node*; i = 4 <span class='color_orange'>update:43</span>:int; return = _t$1527 <span class='color_orange'>initial</span>:int ;
+  x = 0 <span class='color_orange'>nullify</span>:node*; n = _t$1523 <span class='color_orange'>update:60</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1524 <span class='color_orange'>update:38</span>:node*; i = 4 <span class='color_orange'>update:43</span>:int; return = _t$1527 <span class='color_orange'>initial</span>:int ;
   n|->{next:null <span class='color_orange'>update:46</span>, v:3 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; lsegne(_t$1524,n,[],P0)
   [footprint
      #GB<src.c>$head = @f$111 <span class='color_orange'>rearrange:38</span>:node*  ]
   where
-  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
   
   sigma_partial_join succeeded
   pi_partial_join succeeded
-  inst_partial_join failed on update:40 update:58
+  inst_partial_join failed on update:40 update:60
   <span class='color_red'>.... JOIN FAILED ....</span>
   
   .... JOIN ....
   JOIN SYM HEAP1: 
   <span class='color_blue'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2); MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1) ;
   x = 0 <span class='color_orange'>nullify</span>:node*; n = null <span class='color_orange'>update:40</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*; i = (@f$0 + 1) <span class='color_orange'>update:43</span>:int; return = _t$0 <span class='color_orange'>initial</span>:int ;
-  _t$2|->{next:null <span class='color_orange'>update:46</span>, v:@f$0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; _t$1|->{next:_t$2 <span class='color_orange'>update:56</span>, v:_t$3 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16
+  _t$2|->{next:null <span class='color_orange'>update:46</span>, v:@f$0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; _t$1|->{next:_t$2 <span class='color_orange'>update:57</span>, v:_t$3 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16
   [footprint
      #GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*  ]</span>
   JOIN SYM HEAP2: 
@@ -582,7 +582,7 @@ POST: { }
   [footprint
      #GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*  ]
   where
-  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+  P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
   
   sigma_partial_join succeeded
   pi_partial_join succeeded
@@ -593,7 +593,7 @@ POST: { }
   JOIN SYM HEAP1: 
   <span class='color_blue'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2); MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1) ;
   x = 0 <span class='color_orange'>nullify</span>:node*; n = null <span class='color_orange'>update:40</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*; i = (@f$0 + 1) <span class='color_orange'>update:43</span>:int; return = _t$0 <span class='color_orange'>initial</span>:int ;
-  _t$2|->{next:null <span class='color_orange'>update:46</span>, v:@f$0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; _t$1|->{next:_t$2 <span class='color_orange'>update:56</span>, v:_t$3 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16
+  _t$2|->{next:null <span class='color_orange'>update:46</span>, v:@f$0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; _t$1|->{next:_t$2 <span class='color_orange'>update:57</span>, v:_t$3 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16
   [footprint
      #GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*  ]</span>
   JOIN SYM HEAP2: 
@@ -612,13 +612,13 @@ POST: { }
   JOIN SYM HEAP1: 
   <span class='color_blue'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2); MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1) ;
   x = 0 <span class='color_orange'>nullify</span>:node*; n = null <span class='color_orange'>update:40</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*; i = (@f$0 + 1) <span class='color_orange'>update:43</span>:int; return = _t$0 <span class='color_orange'>initial</span>:int ;
-  _t$2|->{next:null <span class='color_orange'>update:46</span>, v:@f$0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; _t$1|->{next:_t$2 <span class='color_orange'>update:56</span>, v:_t$3 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16
+  _t$2|->{next:null <span class='color_orange'>update:46</span>, v:@f$0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; _t$1|->{next:_t$2 <span class='color_orange'>update:57</span>, v:_t$3 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16
   [footprint
      #GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*  ]</span>
   JOIN SYM HEAP2: 
   <span class='color_blue'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2); MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1) ;
   x = 0 <span class='color_orange'>nullify</span>:node*; n = null <span class='color_orange'>update:40</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*; i = 1 <span class='color_orange'>update:43</span>:int; return = _t$0 <span class='color_orange'>initial</span>:int ;
-  _t$2|->{next:null <span class='color_orange'>update:46</span>, v:0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; _t$1|->{next:_t$2 <span class='color_orange'>update:56</span>, v:@f$0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16
+  _t$2|->{next:null <span class='color_orange'>update:46</span>, v:0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; _t$1|->{next:_t$2 <span class='color_orange'>update:57</span>, v:@f$0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16
   [footprint
      #GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*  ]</span>
   

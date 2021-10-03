@@ -1,0 +1,12 @@
+REG: { _n$0_main -> ({ (main,4)_src.c:9:3:node }, { }),
+       _n$0_new -> ({ (main,4)_src.c:9:3:node }, { }),
+       _n$1_new -> ({ (main,4)_src.c:9:3:node }, { }),
+       _n$3_new -> ({ (main,4)_src.c:9:3:node }, { }),
+       _n$4_new -> ({ Null }, { }),
+       _n$5_new -> ({ (main,4)_src.c:9:3:node }, { }) }
+ MEM: { _n_new:node* -> ({ Null }, { }),
+        _return_new:void* -> ({ (main,4)_src.c:9:3:node }, { }),
+        _x_new:node* -> ({ (main,4)_src.c:9:3:node }, { }),
+        _x_main:node* -> ({ (main,4)_src.c:9:3:node }, { }),
+        (main,4)_src.c:9:3:node.next:node* -> ({ Null }, { }) }
+

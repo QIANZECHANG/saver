@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>src.c.b9996786c0d0c7ca7785f2f6d38e80de</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable { padding: 5px; font-size:12pt; margin:20px; border-collapse: collapse; border-spacing: 0px; }
+td.rowname { text-align:right; font-weight:bold; color:#444444; padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>File src.c </h1></center>
+<table class="code">
+<tr><td class="num" id="LINE1">1</td><td class="line">#include &lt;stdio.h&gt; </td></tr>
+<tr><td class="num" id="LINE2">2</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE3">3</td><td class="line">int main() {  <a href="./src.c.b9996786c0d0c7ca7785f2f6d38e80de/nodes/main.fad58de7366495db4650cfefac2fcd61_node1.html"><span class='visited'>S_1<span class='expansion'>node1 preds: succs:5 exn: Start
+DECLARE_LOCALS(&amp;return,&amp;i,&amp;x); [line 3, column 1];
+</span></span></a> <a href="./src.c.b9996786c0d0c7ca7785f2f6d38e80de/main.fad58de7366495db4650cfefac2fcd61.html">main: 0 specs</a></td></tr>
+<tr><td class="num" id="LINE4">4</td><td class="line">  for(int i=0;i&lt;10;i++){ <a href="./src.c.b9996786c0d0c7ca7785f2f6d38e80de/nodes/main.fad58de7366495db4650cfefac2fcd61_node4.html"><span class='visited'>J_4<span class='expansion'>node4 preds:6 5 succs:7 exn: Join
+</span></span></a> <a href="./src.c.b9996786c0d0c7ca7785f2f6d38e80de/nodes/main.fad58de7366495db4650cfefac2fcd61_node5.html"><span class='visited'>I_5<span class='expansion'>node5 preds:1 succs:4 exn: Instructions
+*&amp;i:int=0 [line 4, column 7];
+</span></span></a> <a href="./src.c.b9996786c0d0c7ca7785f2f6d38e80de/nodes/main.fad58de7366495db4650cfefac2fcd61_node6.html"><span class='visited'>I_6<span class='expansion'>node6 preds:10 succs:4 exn: Instructions
+n$0=*&amp;i:int [line 4, column 20];
+*&amp;i:int=(n$0 + 1) [line 4, column 20];
+</span></span></a> <a href="./src.c.b9996786c0d0c7ca7785f2f6d38e80de/nodes/main.fad58de7366495db4650cfefac2fcd61_node7.html"><span class='visited'>I_7<span class='expansion'>node7 preds:4 succs:8 9 exn: Instructions
+n$1=*&amp;i:int [line 4, column 15];
+</span></span></a> <a href="./src.c.b9996786c0d0c7ca7785f2f6d38e80de/nodes/main.fad58de7366495db4650cfefac2fcd61_node8.html"><span class='visited'>C_8<span class='expansion'>node8 preds:7 succs:16 exn: Conditional true Branch
+PRUNE((n$1  &lt;  10), true); [line 4, column 15];
+</span></span></a> <a href="./src.c.b9996786c0d0c7ca7785f2f6d38e80de/nodes/main.fad58de7366495db4650cfefac2fcd61_node9.html"><span class='visited'>C_9<span class='expansion'>node9 preds:7 succs:3 exn: Conditional false Branch
+PRUNE(!(n$1  &lt;  10), false); [line 4, column 15];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE5">5</td><td class="line">    int x=malloc(4); <a href="./src.c.b9996786c0d0c7ca7785f2f6d38e80de/nodes/main.fad58de7366495db4650cfefac2fcd61_node16.html"><span class='visited'>I_16<span class='expansion'>node16 preds:8 succs:12 exn: Instructions
+n$9=_fun_malloc(4:unsigned long) [line 5, column 11];
+*&amp;x:int=n$9 [line 5, column 5];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE6">6</td><td class="line">    if(i==5)free(x); <a href="./src.c.b9996786c0d0c7ca7785f2f6d38e80de/nodes/main.fad58de7366495db4650cfefac2fcd61_node11.html"><span class='visited'>J_11<span class='expansion'>node11 preds:14 15 succs:10 exn: Join
+</span></span></a> <a href="./src.c.b9996786c0d0c7ca7785f2f6d38e80de/nodes/main.fad58de7366495db4650cfefac2fcd61_node12.html"><span class='visited'>I_12<span class='expansion'>node12 preds:16 succs:13 14 exn: Instructions
+n$4=*&amp;i:int [line 6, column 8];
+</span></span></a> <a href="./src.c.b9996786c0d0c7ca7785f2f6d38e80de/nodes/main.fad58de7366495db4650cfefac2fcd61_node13.html"><span class='visited'>C_13<span class='expansion'>node13 preds:12 succs:15 exn: Conditional true Branch
+PRUNE((n$4 == 5), true); [line 6, column 8];
+</span></span></a> <a href="./src.c.b9996786c0d0c7ca7785f2f6d38e80de/nodes/main.fad58de7366495db4650cfefac2fcd61_node14.html"><span class='visited'>C_14<span class='expansion'>node14 preds:12 succs:11 exn: Conditional false Branch
+PRUNE(!(n$4 == 5), false); [line 6, column 8];
+</span></span></a> <a href="./src.c.b9996786c0d0c7ca7785f2f6d38e80de/nodes/main.fad58de7366495db4650cfefac2fcd61_node15.html"><span class='visited'>I_15<span class='expansion'>node15 preds:13 succs:11 exn: Instructions
+n$5=*&amp;x:int [line 6, column 18];
+n$6=_fun_free(n$5:int) [line 6, column 13];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE7">7</td><td class="line">    free(x); <a href="./src.c.b9996786c0d0c7ca7785f2f6d38e80de/nodes/main.fad58de7366495db4650cfefac2fcd61_node10.html"><span class='visited'>I_10<span class='expansion'>node10 preds:11 succs:6 exn: Instructions
+n$2=*&amp;x:int [line 7, column 10];
+n$3=_fun_free(n$2:int) [line 7, column 5];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">USE_AFTER_FREE [B3] pointer `x` last assigned on line 5 was freed by call to `free()` at line 6, column 13 and is dereferenced or freed at line 7, column 5</div></td></tr>
+<tr><td class="num" id="LINE8">8</td><td class="line">  } </td></tr>
+<tr><td class="num" id="LINE9">9</td><td class="line">  return 0; <a href="./src.c.b9996786c0d0c7ca7785f2f6d38e80de/nodes/main.fad58de7366495db4650cfefac2fcd61_node3.html"><span class='visited'>I_3<span class='expansion'>node3 preds:9 succs:2 exn: Instructions
+*&amp;return:int=0 [line 9, column 3];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE10">10</td><td class="line">} <a href="./src.c.b9996786c0d0c7ca7785f2f6d38e80de/nodes/main.fad58de7366495db4650cfefac2fcd61_node2.html"><span class='visited'>E_2<span class='expansion'>node2 preds:3 succs: exn: Exit
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE11">11</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE12">12</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE13">13</td><td class="line"> </td></tr>
+</table>
+<hr width="100%">
+ERRORS DURING FOOTPRINT
+<br>USE_AFTER_FREE [B3] pointer `x` last assigned on line 5 was freed by call to `free()` at line 6, column 13 and is dereferenced or freed at line 7, column 5 <a href="./src.c.b9996786c0d0c7ca7785f2f6d38e80de/nodes/node10.html#session141">node10#session141</a>(<a href="./src.c.b9996786c0d0c7ca7785f2f6d38e80de/../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE7">7</a>)<hr width="100%">
+ERRORS DURING RE-EXECUTION
+<br>USE_AFTER_FREE [B3] pointer `x` last assigned on line 5 was freed by call to `free()` at line 6, column 13 and is dereferenced or freed at line 7, column 5 <a href="./src.c.b9996786c0d0c7ca7785f2f6d38e80de/nodes/node10.html#session189">node10#session189</a>(<a href="./src.c.b9996786c0d0c7ca7785f2f6d38e80de/../src.c.b9996786c0d0c7ca7785f2f6d38e80de.html#LINE7">7</a>)<hr width="100%">
+WARNINGS DURING FOOTPRINT
+<hr width="100%">
+WARNINGS DURING RE-EXECUTION
+<hr width="100%">
+INFOS DURING FOOTPRINT
+<hr width="100%">
+INFOS DURING RE-EXECUTION
+</body>
+</html>

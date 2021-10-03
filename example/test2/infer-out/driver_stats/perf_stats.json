@@ -1,16 +1,16 @@
 {
   "time": {
-    "rtime": 1.03675095,
-    "utime": 0.6193650000000001,
-    "stime": 0.022143,
-    "cutime": 0.058582,
-    "cstime": 0.015533
+    "rtime": 1.197611892,
+    "utime": 0.6323139999999999,
+    "stime": 0.034302,
+    "cutime": 0.058103,
+    "cstime": 0.016369
   },
   "mem": {
-    "minor_gb": 0.7219180911779404,
-    "promoted_gb": 0.0067330002784729,
-    "major_gb": 0.008103005588054657,
-    "allocated_gb": 0.7232880964875221,
+    "minor_gb": 0.7219117134809494,
+    "promoted_gb": 0.006732769310474396,
+    "major_gb": 0.008102774620056152,
+    "allocated_gb": 0.7232817187905312,
     "minor_collections": 97,
     "major_collections": 4,
     "compactions": 0,

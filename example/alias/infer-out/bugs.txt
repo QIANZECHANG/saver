@@ -1,0 +1,22 @@
+Found 2 issues
+
+alias.c:18: error: Bad_footprint (biabduction/Rearrange.ml:306:38-45:)
+  .
+  16.     //printf("%d %p\n",**(&sm1.hid1+1),&sm1.hid1);
+  17.     //free(p);
+  18. >   free(*(&sm1.hid1+1));
+  19.     //free(sm1.hid1);
+  20.     return 0;
+
+alias.c:18: error: MEMORY_LEAK (biabduction/Abs.ml:1082:18-25:)
+  memory dynamically allocated by call to `malloc()` at line 11, column 12 is not reachable after line 18, column 3.
+  16.     //printf("%d %p\n",**(&sm1.hid1+1),&sm1.hid1);
+  17.     //free(p);
+  18. >   free(*(&sm1.hid1+1));
+  19.     //free(sm1.hid1);
+  20.     return 0;
+
+Summary of the reports
+
+  Bad_footprint: 1
+    MEMORY_LEAK: 1

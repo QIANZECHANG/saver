@@ -132,7 +132,7 @@ POST: { }
   PROP 1 of 1:
   <span class='color_blue'><span class='color_red'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span>; <span class='color_red'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;
   <span class='color_red'>x = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_red'>n = null <span class='color_orange'>update:40</span>:node*</span>; <span class='color_red'>t = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_red'>#GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*</span>; <span class='color_red'>i = 1 <span class='color_orange'>update:43</span>:int</span>; <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:int</span> ;
-  <span class='color_red'>_t$2|->{next:null <span class='color_orange'>update:46</span>, v:0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16</span>; <span class='color_red'>_t$1|->{next:_t$2 <span class='color_orange'>update:56</span>, v:@f$0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+  <span class='color_red'>_t$2|->{next:null <span class='color_orange'>update:46</span>, v:0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16</span>; <span class='color_red'>_t$1|->{next:_t$2 <span class='color_orange'>update:57</span>, v:@f$0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
   [footprint
      <span class='color_red'>#GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*</span>  ]</span>
   .... Instructions: .... 
@@ -150,7 +150,7 @@ POST: { }
     Prop: 
     <span class='color_blue'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(n$177); MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(n$176) ;
     x = 0 <span class='color_orange'>nullify</span>:node*; n = null <span class='color_orange'>update:40</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = n$177 <span class='color_orange'>update:38</span>:node*; i = 1 <span class='color_orange'>update:43</span>:int; return = n$178 <span class='color_orange'>initial</span>:int ;
-    n$177|->{next:n$176 <span class='color_orange'>update:56</span>, v:@f$0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16; n$176|->{next:null <span class='color_orange'>update:46</span>, v:0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16
+    n$177|->{next:n$176 <span class='color_orange'>update:57</span>, v:@f$0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16; n$176|->{next:null <span class='color_orange'>update:46</span>, v:0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16
     [footprint
        #GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*  ]</span>
     
@@ -158,7 +158,7 @@ POST: { }
     prop before:
     <span class='color_blue'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(n$177); MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(n$176) ;
     x = 0 <span class='color_orange'>nullify</span>:node*; n = null <span class='color_orange'>update:40</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = n$177 <span class='color_orange'>update:38</span>:node*; i = 1 <span class='color_orange'>update:43</span>:int; return = n$178 <span class='color_orange'>initial</span>:int ;
-    n$177|->{next:n$176 <span class='color_orange'>update:56</span>, v:@f$0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16; n$176|->{next:null <span class='color_orange'>update:46</span>, v:0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16
+    n$177|->{next:n$176 <span class='color_orange'>update:57</span>, v:@f$0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16; n$176|->{next:null <span class='color_orange'>update:46</span>, v:0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16
     [footprint
        #GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*  ]</span>
     
@@ -167,7 +167,7 @@ POST: { }
     PROP 1 of 1:
     <span class='color_blue'><span class='color_blue'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(n$177)</span>; <span class='color_blue'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(n$176)</span> ;
     <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_blue'>n = null <span class='color_orange'>update:40</span>:node*</span>; <span class='color_blue'>t = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_blue'>#GB<src.c>$head = n$177 <span class='color_orange'>update:38</span>:node*</span>; <span class='color_blue'>i = 1 <span class='color_orange'>update:43</span>:int</span>; <span class='color_blue'>return = n$178 <span class='color_orange'>initial</span>:int</span> ;
-    <span class='color_blue'>n$177|->{next:n$176 <span class='color_orange'>update:56</span>, v:@f$0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>; <span class='color_blue'>n$176|->{next:null <span class='color_orange'>update:46</span>, v:0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16</span>
+    <span class='color_blue'>n$177|->{next:n$176 <span class='color_orange'>update:57</span>, v:@f$0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>; <span class='color_blue'>n$176|->{next:null <span class='color_orange'>update:46</span>, v:0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16</span>
     [footprint
        <span class='color_blue'>#GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*</span>  ]</span>
     
@@ -178,7 +178,7 @@ POST: { }
     <span class='color_blue'><span class='color_red'>n$1 = 1</span> ;
     <span class='color_blue'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span>; <span class='color_blue'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;
     <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_blue'>n = null <span class='color_orange'>update:40</span>:node*</span>; <span class='color_blue'>t = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_blue'>#GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*</span>; <span class='color_blue'>i = 1 <span class='color_orange'>update:43</span>:int</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:int</span> ;
-    <span class='color_blue'>_t$2|->{next:null <span class='color_orange'>update:46</span>, v:0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16</span>; <span class='color_blue'>_t$1|->{next:_t$2 <span class='color_orange'>update:56</span>, v:@f$0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+    <span class='color_blue'>_t$2|->{next:null <span class='color_orange'>update:46</span>, v:0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16</span>; <span class='color_blue'>_t$1|->{next:_t$2 <span class='color_orange'>update:57</span>, v:@f$0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
     [footprint
        <span class='color_blue'>#GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*</span>  ]</span>
     
@@ -187,7 +187,7 @@ POST: { }
     <span class='color_blue'><span class='color_red'>n$1 = 1</span> ;
     <span class='color_blue'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span>; <span class='color_blue'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;
     <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_blue'>n = null <span class='color_orange'>update:40</span>:node*</span>; <span class='color_blue'>t = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_blue'>#GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*</span>; <span class='color_blue'>i = 1 <span class='color_orange'>update:43</span>:int</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:int</span> ;
-    <span class='color_blue'>_t$2|->{next:null <span class='color_orange'>update:46</span>, v:0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16</span>; <span class='color_blue'>_t$1|->{next:_t$2 <span class='color_orange'>update:56</span>, v:@f$0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+    <span class='color_blue'>_t$2|->{next:null <span class='color_orange'>update:46</span>, v:0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16</span>; <span class='color_blue'>_t$1|->{next:_t$2 <span class='color_orange'>update:57</span>, v:@f$0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
     [footprint
        <span class='color_blue'>#GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*</span>  ]</span>
     
@@ -202,7 +202,7 @@ POST: { }
   [footprint
      <span class='color_red'>#GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*</span>  ]
   where
-  P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
+  P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
   .... Instructions: .... 
   <span class='color_green'>n$1=*&amp;i:int [line 43, column 16];
   </span>
@@ -220,7 +220,7 @@ POST: { }
     [footprint
        #GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*  ]
     where
-    P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+    P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
     
     in prop_iter_extend_ptsto lexp: &amp;i
     prop before:
@@ -230,7 +230,7 @@ POST: { }
     [footprint
        #GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*  ]
     where
-    P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+    P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
     
     
     prop list after:
@@ -241,7 +241,7 @@ POST: { }
     [footprint
        <span class='color_blue'>#GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*</span>  ]
     where
-    P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
+    P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
     
     
     
@@ -254,7 +254,7 @@ POST: { }
     [footprint
        <span class='color_blue'>#GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*</span>  ]
     where
-    P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
+    P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
     
     .... After Symbolic Execution ....
     PROP 1 of 1:
@@ -265,7 +265,7 @@ POST: { }
     [footprint
        <span class='color_blue'>#GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*</span>  ]
     where
-    P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
+    P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
     
     
     
@@ -278,7 +278,7 @@ POST: { }
   [footprint
      <span class='color_red'>#GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*</span>  ]
   where
-  P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
+  P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
   .... Instructions: .... 
   <span class='color_green'>n$1=*&amp;i:int [line 43, column 16];
   </span>
@@ -296,7 +296,7 @@ POST: { }
     [footprint
        #GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*  ]
     where
-    P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+    P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
     
     in prop_iter_extend_ptsto lexp: &amp;i
     prop before:
@@ -306,7 +306,7 @@ POST: { }
     [footprint
        #GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*  ]
     where
-    P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+    P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
     
     
     prop list after:
@@ -317,7 +317,7 @@ POST: { }
     [footprint
        <span class='color_blue'>#GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*</span>  ]
     where
-    P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
+    P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
     
     
     
@@ -330,7 +330,7 @@ POST: { }
     [footprint
        <span class='color_blue'>#GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*</span>  ]
     where
-    P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
+    P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
     
     .... After Symbolic Execution ....
     PROP 1 of 1:
@@ -341,7 +341,7 @@ POST: { }
     [footprint
        <span class='color_blue'>#GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*</span>  ]
     where
-    P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
+    P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
     
     
     
@@ -350,7 +350,7 @@ POST: { }
   PROP 1 of 3:
   <span class='color_blue'><span class='color_red'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span>; <span class='color_red'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;
   <span class='color_red'>x = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_red'>n = null <span class='color_orange'>update:40</span>:node*</span>; <span class='color_red'>t = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_red'>#GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*</span>; <span class='color_red'>i = (@f$0 + 1) <span class='color_orange'>update:43</span>:int</span>; <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:int</span> ;
-  <span class='color_red'>_t$2|->{next:null <span class='color_orange'>update:46</span>, v:@f$0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16</span>; <span class='color_red'>_t$1|->{next:_t$2 <span class='color_orange'>update:56</span>, v:_t$3 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+  <span class='color_red'>_t$2|->{next:null <span class='color_orange'>update:46</span>, v:@f$0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16</span>; <span class='color_red'>_t$1|->{next:_t$2 <span class='color_orange'>update:57</span>, v:_t$3 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
   [footprint
      <span class='color_red'>#GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*</span>  ]</span>
   PROP 2 of 3:
@@ -360,15 +360,15 @@ POST: { }
   [footprint
      <span class='color_red'>#GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*</span>  ]
   where
-  P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
+  P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
   PROP 3 of 3:
   <span class='color_blue'><span class='color_red'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(n)</span>; <span class='color_red'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;
-  <span class='color_red'>x = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_red'>n = _t$2 <span class='color_orange'>update:58</span>:node*</span>; <span class='color_red'>t = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_red'>#GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*</span>; <span class='color_red'>i = 4 <span class='color_orange'>update:43</span>:int</span>; <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:int</span> ;
+  <span class='color_red'>x = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_red'>n = _t$2 <span class='color_orange'>update:60</span>:node*</span>; <span class='color_red'>t = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_red'>#GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*</span>; <span class='color_red'>i = 4 <span class='color_orange'>update:43</span>:int</span>; <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:int</span> ;
   <span class='color_red'>n|->{next:null <span class='color_orange'>update:46</span>, v:3 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16</span>; <span class='color_red'>lsegne(_t$1,n,[],P0)</span>
   [footprint
      <span class='color_red'>#GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*</span>  ]
   where
-  P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
+  P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
   .... Instructions: .... 
   <span class='color_green'>n$1=*&amp;i:int [line 43, column 16];
   </span>
@@ -384,7 +384,7 @@ POST: { }
     Prop: 
     <span class='color_blue'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(n$892); MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(n$891) ;
     x = 0 <span class='color_orange'>nullify</span>:node*; n = null <span class='color_orange'>update:40</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = n$892 <span class='color_orange'>update:38</span>:node*; i = (@f$0 + 1) <span class='color_orange'>update:43</span>:int; return = n$894 <span class='color_orange'>initial</span>:int ;
-    n$892|->{next:n$891 <span class='color_orange'>update:56</span>, v:n$893 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16; n$891|->{next:null <span class='color_orange'>update:46</span>, v:@f$0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16
+    n$892|->{next:n$891 <span class='color_orange'>update:57</span>, v:n$893 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16; n$891|->{next:null <span class='color_orange'>update:46</span>, v:@f$0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16
     [footprint
        #GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*  ]</span>
     
@@ -392,7 +392,7 @@ POST: { }
     prop before:
     <span class='color_blue'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(n$892); MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(n$891) ;
     x = 0 <span class='color_orange'>nullify</span>:node*; n = null <span class='color_orange'>update:40</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = n$892 <span class='color_orange'>update:38</span>:node*; i = (@f$0 + 1) <span class='color_orange'>update:43</span>:int; return = n$894 <span class='color_orange'>initial</span>:int ;
-    n$892|->{next:n$891 <span class='color_orange'>update:56</span>, v:n$893 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16; n$891|->{next:null <span class='color_orange'>update:46</span>, v:@f$0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16
+    n$892|->{next:n$891 <span class='color_orange'>update:57</span>, v:n$893 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16; n$891|->{next:null <span class='color_orange'>update:46</span>, v:@f$0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16
     [footprint
        #GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*  ]</span>
     
@@ -401,7 +401,7 @@ POST: { }
     PROP 1 of 1:
     <span class='color_blue'><span class='color_blue'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(n$892)</span>; <span class='color_blue'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(n$891)</span> ;
     <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_blue'>n = null <span class='color_orange'>update:40</span>:node*</span>; <span class='color_blue'>t = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_blue'>#GB<src.c>$head = n$892 <span class='color_orange'>update:38</span>:node*</span>; <span class='color_blue'>i = (@f$0 + 1) <span class='color_orange'>update:43</span>:int</span>; <span class='color_blue'>return = n$894 <span class='color_orange'>initial</span>:int</span> ;
-    <span class='color_blue'>n$892|->{next:n$891 <span class='color_orange'>update:56</span>, v:n$893 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>; <span class='color_blue'>n$891|->{next:null <span class='color_orange'>update:46</span>, v:@f$0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16</span>
+    <span class='color_blue'>n$892|->{next:n$891 <span class='color_orange'>update:57</span>, v:n$893 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>; <span class='color_blue'>n$891|->{next:null <span class='color_orange'>update:46</span>, v:@f$0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16</span>
     [footprint
        <span class='color_blue'>#GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*</span>  ]</span>
     
@@ -412,7 +412,7 @@ POST: { }
     <span class='color_blue'><span class='color_red'>n$1 = (@f$0 + 1)</span> ;
     <span class='color_blue'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span>; <span class='color_blue'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;
     <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_blue'>n = null <span class='color_orange'>update:40</span>:node*</span>; <span class='color_blue'>t = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_blue'>#GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*</span>; <span class='color_blue'>i = (@f$0 + 1) <span class='color_orange'>update:43</span>:int</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:int</span> ;
-    <span class='color_blue'>_t$2|->{next:null <span class='color_orange'>update:46</span>, v:@f$0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16</span>; <span class='color_blue'>_t$1|->{next:_t$2 <span class='color_orange'>update:56</span>, v:_t$3 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+    <span class='color_blue'>_t$2|->{next:null <span class='color_orange'>update:46</span>, v:@f$0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16</span>; <span class='color_blue'>_t$1|->{next:_t$2 <span class='color_orange'>update:57</span>, v:_t$3 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
     [footprint
        <span class='color_blue'>#GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*</span>  ]</span>
     
@@ -421,7 +421,7 @@ POST: { }
     <span class='color_blue'><span class='color_red'>n$1 = (@f$0 + 1)</span> ;
     <span class='color_blue'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span>; <span class='color_blue'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;
     <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_blue'>n = null <span class='color_orange'>update:40</span>:node*</span>; <span class='color_blue'>t = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_blue'>#GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*</span>; <span class='color_blue'>i = (@f$0 + 1) <span class='color_orange'>update:43</span>:int</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:int</span> ;
-    <span class='color_blue'>_t$2|->{next:null <span class='color_orange'>update:46</span>, v:@f$0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16</span>; <span class='color_blue'>_t$1|->{next:_t$2 <span class='color_orange'>update:56</span>, v:_t$3 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+    <span class='color_blue'>_t$2|->{next:null <span class='color_orange'>update:46</span>, v:@f$0 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16</span>; <span class='color_blue'>_t$1|->{next:_t$2 <span class='color_orange'>update:57</span>, v:_t$3 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
     [footprint
        <span class='color_blue'>#GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*</span>  ]</span>
     
@@ -442,7 +442,7 @@ POST: { }
     [footprint
        #GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*  ]
     where
-    P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+    P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
     
     in prop_iter_extend_ptsto lexp: &amp;i
     prop before:
@@ -452,7 +452,7 @@ POST: { }
     [footprint
        #GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*  ]
     where
-    P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+    P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
     
     
     prop list after:
@@ -463,7 +463,7 @@ POST: { }
     [footprint
        <span class='color_blue'>#GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*</span>  ]
     where
-    P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
+    P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
     
     
     
@@ -476,7 +476,7 @@ POST: { }
     [footprint
        <span class='color_blue'>#GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*</span>  ]
     where
-    P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
+    P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
     
     .... After Symbolic Execution ....
     PROP 1 of 1:
@@ -487,7 +487,7 @@ POST: { }
     [footprint
        <span class='color_blue'>#GB<src.c>$head = @f$1 <span class='color_orange'>rearrange:38</span>:node*</span>  ]
     where
-    P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
+    P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
     
     
     
@@ -501,33 +501,33 @@ POST: { }
     Exp: &amp;i
     Prop: 
     <span class='color_blue'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(n$899); MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(n) ;
-    x = 0 <span class='color_orange'>nullify</span>:node*; n = n$898 <span class='color_orange'>update:58</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = n$899 <span class='color_orange'>update:38</span>:node*; i = 4 <span class='color_orange'>update:43</span>:int; return = n$900 <span class='color_orange'>initial</span>:int ;
+    x = 0 <span class='color_orange'>nullify</span>:node*; n = n$898 <span class='color_orange'>update:60</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = n$899 <span class='color_orange'>update:38</span>:node*; i = 4 <span class='color_orange'>update:43</span>:int; return = n$900 <span class='color_orange'>initial</span>:int ;
     n|->{next:null <span class='color_orange'>update:46</span>, v:3 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; lsegne(n$899,n,[],P0)
     [footprint
        #GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*  ]
     where
-    P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+    P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
     
     in prop_iter_extend_ptsto lexp: &amp;i
     prop before:
     <span class='color_blue'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(n$899); MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(n) ;
-    x = 0 <span class='color_orange'>nullify</span>:node*; n = n$898 <span class='color_orange'>update:58</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = n$899 <span class='color_orange'>update:38</span>:node*; i = 4 <span class='color_orange'>update:43</span>:int; return = n$900 <span class='color_orange'>initial</span>:int ;
+    x = 0 <span class='color_orange'>nullify</span>:node*; n = n$898 <span class='color_orange'>update:60</span>:node*; t = 0 <span class='color_orange'>nullify</span>:node*; #GB<src.c>$head = n$899 <span class='color_orange'>update:38</span>:node*; i = 4 <span class='color_orange'>update:43</span>:int; return = n$900 <span class='color_orange'>initial</span>:int ;
     n|->{next:null <span class='color_orange'>update:46</span>, v:3 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16; lsegne(n$899,n,[],P0)
     [footprint
        #GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*  ]
     where
-    P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
+    P0 = exists [_t$2]. _t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span>
     
     
     prop list after:
     PROP 1 of 1:
     <span class='color_blue'><span class='color_blue'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(n$899)</span>; <span class='color_blue'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(n)</span> ;
-    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_blue'>n = n$898 <span class='color_orange'>update:58</span>:node*</span>; <span class='color_blue'>t = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_blue'>#GB<src.c>$head = n$899 <span class='color_orange'>update:38</span>:node*</span>; <span class='color_blue'>i = 4 <span class='color_orange'>update:43</span>:int</span>; <span class='color_blue'>return = n$900 <span class='color_orange'>initial</span>:int</span> ;
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_blue'>n = n$898 <span class='color_orange'>update:60</span>:node*</span>; <span class='color_blue'>t = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_blue'>#GB<src.c>$head = n$899 <span class='color_orange'>update:38</span>:node*</span>; <span class='color_blue'>i = 4 <span class='color_orange'>update:43</span>:int</span>; <span class='color_blue'>return = n$900 <span class='color_orange'>initial</span>:int</span> ;
     <span class='color_blue'>n|->{next:null <span class='color_orange'>update:46</span>, v:3 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16</span>; <span class='color_blue'>lsegne(n$899,n,[],P0)</span>
     [footprint
        <span class='color_blue'>#GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*</span>  ]
     where
-    P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
+    P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
     
     
     
@@ -535,23 +535,23 @@ POST: { }
     PROP 1 of 1:
     <span class='color_blue'><span class='color_red'>n$1 = 4</span> ;
     <span class='color_blue'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(n)</span>; <span class='color_blue'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;
-    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_blue'>n = _t$2 <span class='color_orange'>update:58</span>:node*</span>; <span class='color_blue'>t = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_blue'>#GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*</span>; <span class='color_blue'>i = 4 <span class='color_orange'>update:43</span>:int</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:int</span> ;
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_blue'>n = _t$2 <span class='color_orange'>update:60</span>:node*</span>; <span class='color_blue'>t = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_blue'>#GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*</span>; <span class='color_blue'>i = 4 <span class='color_orange'>update:43</span>:int</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:int</span> ;
     <span class='color_blue'>n|->{next:null <span class='color_orange'>update:46</span>, v:3 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16</span>; <span class='color_blue'>lsegne(_t$1,n,[],P0)</span>
     [footprint
        <span class='color_blue'>#GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*</span>  ]
     where
-    P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
+    P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
     
     .... After Symbolic Execution ....
     PROP 1 of 1:
     <span class='color_blue'><span class='color_red'>n$1 = 4</span> ;
     <span class='color_blue'>MEMma &lt; malloc:45 &gt;  <span class='color_orange'>{vpath: }</span>(n)</span>; <span class='color_blue'>MEMma &lt; malloc:38 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;
-    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_blue'>n = _t$2 <span class='color_orange'>update:58</span>:node*</span>; <span class='color_blue'>t = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_blue'>#GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*</span>; <span class='color_blue'>i = 4 <span class='color_orange'>update:43</span>:int</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:int</span> ;
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_blue'>n = _t$2 <span class='color_orange'>update:60</span>:node*</span>; <span class='color_blue'>t = 0 <span class='color_orange'>nullify</span>:node*</span>; <span class='color_blue'>#GB<src.c>$head = _t$1 <span class='color_orange'>update:38</span>:node*</span>; <span class='color_blue'>i = 4 <span class='color_orange'>update:43</span>:int</span>; <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:int</span> ;
     <span class='color_blue'>n|->{next:null <span class='color_orange'>update:46</span>, v:3 <span class='color_orange'>update:47</span>} <span class='color_orange'>alloc</span>:node16</span>; <span class='color_blue'>lsegne(_t$1,n,[],P0)</span>
     [footprint
        <span class='color_blue'>#GB<src.c>$head = @f$0 <span class='color_orange'>rearrange:38</span>:node*</span>  ]
     where
-    P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:56</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
+    P0 = exists [_t$2]. <span class='color_blue'>_t$0|->{next:_t$1 <span class='color_orange'>update:57</span>, v:_t$2 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:node16</span></span>
     
     
     

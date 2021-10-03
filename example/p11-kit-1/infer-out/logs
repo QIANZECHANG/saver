@@ -1,0 +1,32 @@
+[5337][environment] CWD = /home/saver/saver/example/p11-kit-1
+[5337][environment] No .inferconfig file found
+[5337][environment] Project root = /home/saver/saver/example/p11-kit-1
+[5337][environment] INFER_ARGS =   @/tmp/args.tmp.0755cd
+[5337][environment]   ++Contents of '/tmp/args.tmp.0755cd':
+[5337][environment]     -j 20 --headers --no-filtering
+[5337][environment]   
+[5337][environment] command line arguments:   infer -j 20 --headers --no-filtering -- clang src.c
+[5337][environment] Analyzer: checkers
+[5337][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), ownership (C/C++/ObjC), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC)
+[5337][environment] Infer log identifier is 
+Infer version v0.15.0-821a8db
+[5337][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[5337][environment] 
+[5337][   progress] Capturing in make/cc mode...
+[5337][      debug] 
+[5337][      debug] *** Beginning capture of file /home/saver/saver/example/p11-kit-1/src.c ***
+[5337][      debug] Clang frontend action is translating and linting
+[5337][      debug] Loading the following linters files: /home/saver/project/saver/libs/infer/bin/../lib/linter_rules/linters.al
+[5337][      debug] Elapsed: 60.776ms.
+[5337][      debug] 
+[5337][   progress] Found 1 source file to analyze in /home/saver/saver/example/p11-kit-1/infer-out
+[5337][   progress] Starting analysis...
+[5337][   progress] 
+[5337][   progress] legend:
+[5337][   progress]   "F" analyzing a file
+[5337][   progress]   "." analyzing a procedure
+[5337][   progress] 
+[5337][   progress] 
+[5337][environment] Parallel jobs: 20
+[5337][   progress] F
+[5351][   progress] ...

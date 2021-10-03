@@ -1,0 +1,13 @@
+Found 1 issue
+
+src.c:56: error: MEMORY_LEAK
+  memory dynamically allocated by call to `p11_constant_reverse()` at line 56, column 9 is not reachable after line 56, column 9.
+  54.   void main(){
+  55.           bool nick=1;
+  56. >         p11_constant_reverse (nick);
+  57.   }
+  58.   
+
+Summary of the reports
+
+  MEMORY_LEAK: 1

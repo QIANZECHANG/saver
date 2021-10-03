@@ -1,0 +1,29 @@
+[3412][environment] CWD = /home/saver/saver/example/plus
+[3412][environment] No .inferconfig file found
+[3412][environment] Project root = /home/saver/saver/example/plus
+[3412][environment] INFER_ARGS =   @/tmp/args.tmp.a68205
+[3412][environment]   ++Contents of '/tmp/args.tmp.a68205':
+[3412][environment]     -g run
+[3412][environment]   
+[3412][environment] command line arguments:   infer -g run -- clang --keep-going src.c
+[3412][environment] Analyzer: checkers
+[3412][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), ownership (C/C++/ObjC), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC)
+[3412][   progress] Logs in /home/saver/saver/example/plus/infer-out/logs
+[3412][environment] Infer log identifier is 
+Infer version v0.15.0-821a8db
+[3412][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[3412][environment] Driver mode:
+[3412][environment] Clang driver mode:
+[3412][environment] prog = 'clang'
+[3412][environment] args =   --keep-going src.c
+[3412][environment] 
+[3412][   progress] Capturing in make/cc mode...
+[3412][      debug] Clang options stored in file /tmp/clang_command_.tmp.83c34c.txt
+[3412][      debug] clang -### invocation: '/home/saver/project/saver/libs/infer/bin/../../facebook-clang-plugins/clang/install/bin/clang' '@/tmp/clang_command_.tmp.83c34c.txt' 2>&1
+[3412][      debug] WARNING: `clang -### <args>` returned an empty set of commands to run and no error. Will run the original command directly:
+[3412][      debug]   /home/saver/project/saver/libs/infer/bin/../../facebook-clang-plugins/clang/install/bin/clang --keep-going src.c
+[3412][      debug] 
+[3412][ extern err] Error executing: /home/saver/project/saver/libs/infer/bin/../../facebook-clang-plugins/clang/install/bin/clang --keep-going src.c
+died after receiving sigsegv (signal number 11)
+
+[3412][ extern err] 

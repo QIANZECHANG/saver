@@ -1,0 +1,207 @@
+NAME: struct argp_option
+TYPE: struct argp_option 
+      	fields: {
+      		char const * name <> 
+      		int key <> 
+      		char const * arg <> 
+      		int flags <> 
+      		char const * doc <> 
+      		int group <>
+      	}
+      	supers: {
+      	}
+      	methods: {
+      	}
+      	annots: {<>
+      	}NAME: struct timeval
+TYPE: struct timeval 
+      	fields: {
+      		long tv_sec <> 
+      		long tv_usec <>
+      	}
+      	supers: {
+      	}
+      	methods: {
+      	}
+      	annots: {<>
+      	}NAME: struct objc_object
+TYPE: struct objc_object 
+      	fields: {
+      	}
+      	supers: {
+      	}
+      	methods: {
+      	}
+      	annots: {<>
+      	}NAME: struct linger
+TYPE: struct linger 
+      	fields: {
+      		int l_onoff <> 
+      		int l_linger <>
+      	}
+      	supers: {
+      	}
+      	methods: {
+      	}
+      	annots: {<>
+      	}NAME: struct _IO_FILE
+TYPE: struct _IO_FILE 
+      	fields: {
+      		int _flags <> 
+      		char* _IO_read_ptr <> 
+      		char* _IO_read_end <> 
+      		char* _IO_read_base <> 
+      		char* _IO_write_base <> 
+      		char* _IO_write_ptr <> 
+      		char* _IO_write_end <> 
+      		char* _IO_buf_base <> 
+      		char* _IO_buf_end <> 
+      		char* _IO_save_base <> 
+      		char* _IO_backup_base <> 
+      		char* _IO_save_end <> 
+      		_IO_marker* _markers <> 
+      		_IO_FILE* _chain <> 
+      		int _fileno <> 
+      		int _flags2 <> 
+      		long _old_offset <> 
+      		unsigned short _cur_column <> 
+      		signed char _vtable_offset <> 
+      		char[1*1] _shortbuf <> 
+      		void* _lock <> 
+      		long _offset <> 
+      		void* __pad1 <> 
+      		void* __pad2 <> 
+      		void* __pad3 <> 
+      		void* __pad4 <> 
+      		unsigned long __pad5 <> 
+      		int _mode <> 
+      		char[20*1] _unused2 <>
+      	}
+      	supers: {
+      	}
+      	methods: {
+      	}
+      	annots: {<>
+      	}NAME: struct fd_set
+TYPE: struct fd_set 
+      	fields: {
+      		long[16*8] __fds_bits <>
+      	}
+      	supers: {
+      	}
+      	methods: {
+      	}
+      	annots: {<>
+      	}NAME: struct sockaddr_storage
+TYPE: struct sockaddr_storage 
+      	fields: {
+      		unsigned short ss_family <> 
+      		char[118*1] __ss_padding <> 
+      		unsigned long __ss_align <>
+      	}
+      	supers: {
+      	}
+      	methods: {
+      	}
+      	annots: {<>
+      	}NAME: struct sockaddr
+TYPE: struct sockaddr 
+      	fields: {
+      		unsigned short sa_family <> 
+      		char[14*1] sa_data <>
+      	}
+      	supers: {
+      	}
+      	methods: {
+      	}
+      	annots: {<>
+      	}NAME: struct _IO_marker
+TYPE: struct _IO_marker 
+      	fields: {
+      		_IO_marker* _next <> 
+      		_IO_FILE* _sbuf <> 
+      		int _pos <>
+      	}
+      	supers: {
+      	}
+      	methods: {
+      	}
+      	annots: {<>
+      	}NAME: struct objc_class
+TYPE: struct objc_class 
+      	fields: {
+      	}
+      	supers: {
+      	}
+      	methods: {
+      	}
+      	annots: {<>
+      	}NAME: struct argp_state
+TYPE: struct argp_state 
+      	fields: {
+      		argp const * root_argp <> 
+      		int argc <> 
+      		char** argv <> 
+      		int next <> 
+      		unsigned int flags <> 
+      		unsigned int arg_num <> 
+      		int quoted <> 
+      		void* input <> 
+      		void** child_inputs <> 
+      		void* hook <> 
+      		char* name <> 
+      		_IO_FILE* err_stream <> 
+      		_IO_FILE* out_stream <> 
+      		void* pstate <>
+      	}
+      	supers: {
+      	}
+      	methods: {
+      	}
+      	annots: {<>
+      	}NAME: struct argp_child
+TYPE: struct argp_child 
+      	fields: {
+      		argp const * argp <> 
+      		int flags <> 
+      		char const * header <> 
+      		int group <>
+      	}
+      	supers: {
+      	}
+      	methods: {
+      	}
+      	annots: {<>
+      	}NAME: struct passwd
+TYPE: struct passwd 
+      	fields: {
+      		char* pw_name <> 
+      		char* pw_passwd <> 
+      		unsigned int pw_uid <> 
+      		unsigned int pw_gid <> 
+      		char* pw_gecos <> 
+      		char* pw_dir <> 
+      		char* pw_shell <>
+      	}
+      	supers: {
+      	}
+      	methods: {
+      	}
+      	annots: {<>
+      	}NAME: struct argp
+TYPE: struct argp 
+      	fields: {
+      		argp_option const * options <> 
+      		_fn_(*) parser <> 
+      		char const * args_doc <> 
+      		char const * doc <> 
+      		argp_child const * children <> 
+      		_fn_(*) help_filter <> 
+      		char const * argp_domain <>
+      	}
+      	supers: {
+      	}
+      	methods: {
+      	}
+      	annots: {<>
+      	}

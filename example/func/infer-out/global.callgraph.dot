@@ -1,0 +1,10 @@
+digraph G {
+  main;
+  new;
+  malloc;
+  
+  
+  main -> new [label="src.c:16", ];
+  new -> malloc [label="src.c:9", ];
+  
+  }

@@ -1,8 +1,0 @@
-REG: { _n$0_main -> ({ _src.c:8:3:int, _src.c:12:5:int }, { }),
-       _n$2_main -> ({ _src.c:8:3:int, _src.c:12:5:int }, { }),
-       _n$4_main -> ({ _src.c:8:3:int }, { }),
-       _n$5_main -> ({ _src.c:12:5:int }, { }),
-       _n$7_main -> ({ _src.c:8:3:int }, { }) }
- MEM: { _p_main:int* -> ({ _src.c:8:3:int }, { }),
-        _q_main:int* -> ({ _src.c:8:3:int, _src.c:12:5:int }, { }) }
-

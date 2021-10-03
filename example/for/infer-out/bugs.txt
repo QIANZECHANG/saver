@@ -1,0 +1,30 @@
+Found 3 issues
+
+src.c:7: error: USE_AFTER_FREE (biabduction/Rearrange.ml:1654:50-57:)
+  [B3] pointer `x` last assigned on line 5 was freed by call to `free()` at line 6, column 13 and is dereferenced or freed at line 7, column 5.
+  5.       int x=malloc(4);
+  6.       if(i==5)free(x);
+  7. >     free(x);
+  8.     }
+  9.     return 0;
+
+src.c:5: warning: POINTER_TO_INTEGRAL_IMPLICIT_CAST (clang/cFrontend_errors.ml:452:85-92:)
+  Implicit conversion from `void*` to `int` in usage of `malloc(...)` at line 5, column 11.
+  3.   int main() { 
+  4.     for(int i=0;i<10;i++){
+  5. >     int x=malloc(4);
+  6.       if(i==5)free(x);
+  7.       free(x);
+
+src.c:5: warning: POINTER_TO_INTEGRAL_IMPLICIT_CAST (clang/cFrontend_errors.ml:452:85-92:)
+  Implicit conversion from `void*` to `int` in usage of `malloc(...)` at line 5, column 11.
+  3.   int main() { 
+  4.     for(int i=0;i<10;i++){
+  5. >     int x=malloc(4);
+  6.       if(i==5)free(x);
+  7.       free(x);
+
+Summary of the reports
+
+  POINTER_TO_INTEGRAL_IMPLICIT_CAST: 2
+                     USE_AFTER_FREE: 1

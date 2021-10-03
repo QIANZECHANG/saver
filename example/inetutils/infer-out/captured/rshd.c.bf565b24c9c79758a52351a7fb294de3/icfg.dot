@@ -1,0 +1,746 @@
+/* @generated */
+digraph cfg {
+"__infer_globals_initializer_argp#5029eba9b4a493f00fb141cf8109a963.62c90c422b0d7ebbfd22f5f50a9e985e_1" [label="1: Start __infer_globals_initializer_argp\nFormals: \nLocals:  \n   DECLARE_LOCALS(&return); [line 337, column 1]\n " color=yellow style=filled]
+	
+
+	 "__infer_globals_initializer_argp#5029eba9b4a493f00fb141cf8109a963.62c90c422b0d7ebbfd22f5f50a9e985e_1" -> "__infer_globals_initializer_argp#5029eba9b4a493f00fb141cf8109a963.62c90c422b0d7ebbfd22f5f50a9e985e_3" ;
+"__infer_globals_initializer_argp#5029eba9b4a493f00fb141cf8109a963.62c90c422b0d7ebbfd22f5f50a9e985e_2" [label="2: Exit __infer_globals_initializer_argp \n  " color=yellow style=filled]
+	
+
+"__infer_globals_initializer_argp#5029eba9b4a493f00fb141cf8109a963.62c90c422b0d7ebbfd22f5f50a9e985e_3" [label="3:  DeclStmt \n   *&#GB<rshd.c>$argp.options:argp_option const *=&#GB<rshd.c>$options [line 337, column 27]\n  *&#GB<rshd.c>$argp.parser:_fn_(*)=_fun_parse_opt [line 337, column 27]\n  *&#GB<rshd.c>$argp.args_doc:char const *=null [line 337, column 27]\n  *&#GB<rshd.c>$argp.doc:char const *=&#GB<rshd.c>$doc [line 337, column 27]\n  *&#GB<rshd.c>$argp.children:argp_child const *=null [line 337, column 27]\n  *&#GB<rshd.c>$argp.help_filter:_fn_(*)=null [line 337, column 27]\n  *&#GB<rshd.c>$argp.argp_domain:char const *=null [line 337, column 27]\n " shape="box"]
+	
+
+	 "__infer_globals_initializer_argp#5029eba9b4a493f00fb141cf8109a963.62c90c422b0d7ebbfd22f5f50a9e985e_3" -> "__infer_globals_initializer_argp#5029eba9b4a493f00fb141cf8109a963.62c90c422b0d7ebbfd22f5f50a9e985e_2" ;
+"__infer_globals_initializer_doc.b80da8160d4847429177b7448f451563_1" [label="1: Start __infer_globals_initializer_doc\nFormals: \nLocals:  \n   DECLARE_LOCALS(&return); [line 327, column 1]\n " color=yellow style=filled]
+	
+
+	 "__infer_globals_initializer_doc.b80da8160d4847429177b7448f451563_1" -> "__infer_globals_initializer_doc.b80da8160d4847429177b7448f451563_3" ;
+"__infer_globals_initializer_doc.b80da8160d4847429177b7448f451563_2" [label="2: Exit __infer_globals_initializer_doc \n  " color=yellow style=filled]
+	
+
+"__infer_globals_initializer_doc.b80da8160d4847429177b7448f451563_3" [label="3:  DeclStmt \n   *&#GB<rshd.c>$doc:char const [21*1] const (&)=\"Remote shell server.\" [line 327, column 1]\n " shape="box"]
+	
+
+	 "__infer_globals_initializer_doc.b80da8160d4847429177b7448f451563_3" -> "__infer_globals_initializer_doc.b80da8160d4847429177b7448f451563_2" ;
+"__infer_globals_initializer_homedir.ab1705db434ccbf8d0b378bfc279265f_1" [label="1: Start __infer_globals_initializer_homedir\nFormals: \nLocals:  \n   DECLARE_LOCALS(&return); [line 414, column 1]\n " color=yellow style=filled]
+	
+
+	 "__infer_globals_initializer_homedir.ab1705db434ccbf8d0b378bfc279265f_1" -> "__infer_globals_initializer_homedir.ab1705db434ccbf8d0b378bfc279265f_3" ;
+"__infer_globals_initializer_homedir.ab1705db434ccbf8d0b378bfc279265f_2" [label="2: Exit __infer_globals_initializer_homedir \n  " color=yellow style=filled]
+	
+
+"__infer_globals_initializer_homedir.ab1705db434ccbf8d0b378bfc279265f_3" [label="3:  DeclStmt \n   *&#GB<rshd.c>$homedir:char[262*1](&)=\"HOME=\" [line 414, column 1]\n " shape="box"]
+	
+
+	 "__infer_globals_initializer_homedir.ab1705db434ccbf8d0b378bfc279265f_3" -> "__infer_globals_initializer_homedir.ab1705db434ccbf8d0b378bfc279265f_2" ;
+"__infer_globals_initializer_keepalive.110f2c4fedfd990d00dcc230ba2846e3_1" [label="1: Start __infer_globals_initializer_keepalive\nFormals: \nLocals:  \n   DECLARE_LOCALS(&return); [line 185, column 1]\n " color=yellow style=filled]
+	
+
+	 "__infer_globals_initializer_keepalive.110f2c4fedfd990d00dcc230ba2846e3_1" -> "__infer_globals_initializer_keepalive.110f2c4fedfd990d00dcc230ba2846e3_3" ;
+"__infer_globals_initializer_keepalive.110f2c4fedfd990d00dcc230ba2846e3_2" [label="2: Exit __infer_globals_initializer_keepalive \n  " color=yellow style=filled]
+	
+
+"__infer_globals_initializer_keepalive.110f2c4fedfd990d00dcc230ba2846e3_3" [label="3:  DeclStmt \n   *&#GB<rshd.c>$keepalive:int=1 [line 185, column 1]\n " shape="box"]
+	
+
+	 "__infer_globals_initializer_keepalive.110f2c4fedfd990d00dcc230ba2846e3_3" -> "__infer_globals_initializer_keepalive.110f2c4fedfd990d00dcc230ba2846e3_2" ;
+"__infer_globals_initializer_logname.ae80dcd31dcef2cc84de9306ab9b4c95_1" [label="1: Start __infer_globals_initializer_logname\nFormals: \nLocals:  \n   DECLARE_LOCALS(&return); [line 413, column 1]\n " color=yellow style=filled]
+	
+
+	 "__infer_globals_initializer_logname.ae80dcd31dcef2cc84de9306ab9b4c95_1" -> "__infer_globals_initializer_logname.ae80dcd31dcef2cc84de9306ab9b4c95_3" ;
+"__infer_globals_initializer_logname.ae80dcd31dcef2cc84de9306ab9b4c95_2" [label="2: Exit __infer_globals_initializer_logname \n  " color=yellow style=filled]
+	
+
+"__infer_globals_initializer_logname.ae80dcd31dcef2cc84de9306ab9b4c95_3" [label="3:  DeclStmt \n   *&#GB<rshd.c>$logname:char[41*1](&)=\"LOGNAME=\" [line 413, column 1]\n " shape="box"]
+	
+
+	 "__infer_globals_initializer_logname.ae80dcd31dcef2cc84de9306ab9b4c95_3" -> "__infer_globals_initializer_logname.ae80dcd31dcef2cc84de9306ab9b4c95_2" ;
+"__infer_globals_initializer_options#5029eba9b4a493f00fb141cf8109a963.9dd22db95af653a1b832c62b72af4e4d_1" [label="1: Start __infer_globals_initializer_options\nFormals: \nLocals:  \n   DECLARE_LOCALS(&return); [line 227, column 1]\n " color=yellow style=filled]
+	
+
+	 "__infer_globals_initializer_options#5029eba9b4a493f00fb141cf8109a963.9dd22db95af653a1b832c62b72af4e4d_1" -> "__infer_globals_initializer_options#5029eba9b4a493f00fb141cf8109a963.9dd22db95af653a1b832c62b72af4e4d_3" ;
+"__infer_globals_initializer_options#5029eba9b4a493f00fb141cf8109a963.9dd22db95af653a1b832c62b72af4e4d_2" [label="2: Exit __infer_globals_initializer_options \n  " color=yellow style=filled]
+	
+
+"__infer_globals_initializer_options#5029eba9b4a493f00fb141cf8109a963.9dd22db95af653a1b832c62b72af4e4d_3" [label="3:  DeclStmt \n   *&#GB<rshd.c>$options[0].name:char const *=\"reverse-required\" [line 229, column 3]\n  *&#GB<rshd.c>$options[0].key:int=114 [line 229, column 3]\n  *&#GB<rshd.c>$options[0].arg:char const *=null [line 229, column 3]\n  *&#GB<rshd.c>$options[0].flags:int=0 [line 229, column 3]\n  *&#GB<rshd.c>$options[0].doc:char const *=\"require reverse resolving of remote host IP\" [line 229, column 3]\n  *&#GB<rshd.c>$options[0].group:int=10 [line 229, column 3]\n  *&#GB<rshd.c>$options[1].name:char const *=\"verify-hostname\" [line 231, column 3]\n  *&#GB<rshd.c>$options[1].key:int=97 [line 231, column 3]\n  *&#GB<rshd.c>$options[1].arg:char const *=null [line 231, column 3]\n  *&#GB<rshd.c>$options[1].flags:int=0 [line 231, column 3]\n  *&#GB<rshd.c>$options[1].doc:char const *=\"ask hostname for verification\" [line 231, column 3]\n  *&#GB<rshd.c>$options[1].group:int=10 [line 231, column 3]\n  *&#GB<rshd.c>$options[2].name:char const *=\"no-keepalive\" [line 237, column 3]\n  *&#GB<rshd.c>$options[2].key:int=110 [line 237, column 3]\n  *&#GB<rshd.c>$options[2].arg:char const *=null [line 237, column 3]\n  *&#GB<rshd.c>$options[2].flags:int=0 [line 237, column 3]\n  *&#GB<rshd.c>$options[2].doc:char const *=\"do not set SO_KEEPALIVE\" [line 237, column 3]\n  *&#GB<rshd.c>$options[2].group:int=10 [line 237, column 3]\n  *&#GB<rshd.c>$options[3].name:char const *=\"log-sessions\" [line 239, column 3]\n  *&#GB<rshd.c>$options[3].key:int=76 [line 239, column 3]\n  *&#GB<rshd.c>$options[3].arg:char const *=null [line 239, column 3]\n  *&#GB<rshd.c>$options[3].flags:int=0 [line 239, column 3]\n  *&#GB<rshd.c>$options[3].doc:char const *=\"log successful logins\" [line 239, column 3]\n  *&#GB<rshd.c>$options[3].group:int=10 [line 239, column 3]\n  *&#GB<rshd.c>$options[4].name:char const *=null [line 258, column 3]\n  *&#GB<rshd.c>$options[4].key:int=0 [line 258, column 3]\n  *&#GB<rshd.c>$options[4].arg:char const *=null [line 258, column 3]\n  *&#GB<rshd.c>$options[4].flags:int=0 [line 258, column 3]\n  *&#GB<rshd.c>$options[4].doc:char const *=null [line 258, column 3]\n  *&#GB<rshd.c>$options[4].group:int=0 [line 258, column 3]\n " shape="box"]
+	
+
+	 "__infer_globals_initializer_options#5029eba9b4a493f00fb141cf8109a963.9dd22db95af653a1b832c62b72af4e4d_3" -> "__infer_globals_initializer_options#5029eba9b4a493f00fb141cf8109a963.9dd22db95af653a1b832c62b72af4e4d_2" ;
+"__infer_globals_initializer_reverse_required.e22cc5d0405d79ca4f19e79301b3a029_1" [label="1: Start __infer_globals_initializer_reverse_required\nFormals: \nLocals:  \n   DECLARE_LOCALS(&return); [line 188, column 1]\n " color=yellow style=filled]
+	
+
+	 "__infer_globals_initializer_reverse_required.e22cc5d0405d79ca4f19e79301b3a029_1" -> "__infer_globals_initializer_reverse_required.e22cc5d0405d79ca4f19e79301b3a029_3" ;
+"__infer_globals_initializer_reverse_required.e22cc5d0405d79ca4f19e79301b3a029_2" [label="2: Exit __infer_globals_initializer_reverse_required \n  " color=yellow style=filled]
+	
+
+"__infer_globals_initializer_reverse_required.e22cc5d0405d79ca4f19e79301b3a029_3" [label="3:  DeclStmt \n   *&#GB<rshd.c>$reverse_required:int=0 [line 188, column 1]\n " shape="box"]
+	
+
+	 "__infer_globals_initializer_reverse_required.e22cc5d0405d79ca4f19e79301b3a029_3" -> "__infer_globals_initializer_reverse_required.e22cc5d0405d79ca4f19e79301b3a029_2" ;
+"__infer_globals_initializer_rhost.a14c2c5adc1668912c1e05e7b5479174_1" [label="1: Start __infer_globals_initializer_rhost\nFormals: \nLocals:  \n   DECLARE_LOCALS(&return); [line 417, column 1]\n " color=yellow style=filled]
+	
+
+	 "__infer_globals_initializer_rhost.a14c2c5adc1668912c1e05e7b5479174_1" -> "__infer_globals_initializer_rhost.a14c2c5adc1668912c1e05e7b5479174_3" ;
+"__infer_globals_initializer_rhost.a14c2c5adc1668912c1e05e7b5479174_2" [label="2: Exit __infer_globals_initializer_rhost \n  " color=yellow style=filled]
+	
+
+"__infer_globals_initializer_rhost.a14c2c5adc1668912c1e05e7b5479174_3" [label="3:  DeclStmt \n   *&#GB<rshd.c>$rhost:char[135*1](&)=\"RHOST=\" [line 417, column 1]\n " shape="box"]
+	
+
+	 "__infer_globals_initializer_rhost.a14c2c5adc1668912c1e05e7b5479174_3" -> "__infer_globals_initializer_rhost.a14c2c5adc1668912c1e05e7b5479174_2" ;
+"__infer_globals_initializer_shell.9c48b75ee418490601fc8469bbc03fbd_1" [label="1: Start __infer_globals_initializer_shell\nFormals: \nLocals:  \n   DECLARE_LOCALS(&return); [line 415, column 1]\n " color=yellow style=filled]
+	
+
+	 "__infer_globals_initializer_shell.9c48b75ee418490601fc8469bbc03fbd_1" -> "__infer_globals_initializer_shell.9c48b75ee418490601fc8469bbc03fbd_3" ;
+"__infer_globals_initializer_shell.9c48b75ee418490601fc8469bbc03fbd_2" [label="2: Exit __infer_globals_initializer_shell \n  " color=yellow style=filled]
+	
+
+"__infer_globals_initializer_shell.9c48b75ee418490601fc8469bbc03fbd_3" [label="3:  DeclStmt \n   *&#GB<rshd.c>$shell:char[71*1](&)=\"SHELL=\" [line 415, column 1]\n " shape="box"]
+	
+
+	 "__infer_globals_initializer_shell.9c48b75ee418490601fc8469bbc03fbd_3" -> "__infer_globals_initializer_shell.9c48b75ee418490601fc8469bbc03fbd_2" ;
+"__infer_globals_initializer_username.6868c425869846ef4242a5d646155c4b_1" [label="1: Start __infer_globals_initializer_username\nFormals: \nLocals:  \n   DECLARE_LOCALS(&return); [line 412, column 1]\n " color=yellow style=filled]
+	
+
+	 "__infer_globals_initializer_username.6868c425869846ef4242a5d646155c4b_1" -> "__infer_globals_initializer_username.6868c425869846ef4242a5d646155c4b_3" ;
+"__infer_globals_initializer_username.6868c425869846ef4242a5d646155c4b_2" [label="2: Exit __infer_globals_initializer_username \n  " color=yellow style=filled]
+	
+
+"__infer_globals_initializer_username.6868c425869846ef4242a5d646155c4b_3" [label="3:  DeclStmt \n   *&#GB<rshd.c>$username:char[38*1](&)=\"USER=\" [line 412, column 1]\n " shape="box"]
+	
+
+	 "__infer_globals_initializer_username.6868c425869846ef4242a5d646155c4b_3" -> "__infer_globals_initializer_username.6868c425869846ef4242a5d646155c4b_2" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_1" [label="1: Start getstr\nFormals:  err:char const *\nLocals:  end_offs:unsigned long rd:int end:char* buf:char* buf_len:unsigned long \n   DECLARE_LOCALS(&return,&end_offs,&rd,&end,&buf,&buf_len); [line 1993, column 1]\n " color=yellow style=filled]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_1" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_41" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_2" [label="2: Exit getstr \n  " color=yellow style=filled]
+	
+
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_3" [label="3:  Return Stmt \n   n$0=*&buf:char* [line 2036, column 10]\n  *&return:char*=n$0 [line 2036, column 3]\n " shape="box"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_3" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_2" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_4" [label="4: + \n  " ]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_4" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_33" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_5" [label="5:  UnaryOperator \n   n$1=*&end:char* [line 2034, column 12]\n " shape="box"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_5" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_6" ;
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_5" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_7" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_6" [label="6: Prune (true branch, do while) \n   n$2=*(n$1 - 1):char [line 2034, column 10]\n  PRUNE(n$2, true); [line 2034, column 10]\n " shape="invhouse"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_6" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_4" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_7" [label="7: Prune (false branch, do while) \n   n$2=*(n$1 - 1):char [line 2034, column 10]\n  PRUNE(!n$2, false); [line 2034, column 10]\n " shape="invhouse"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_7" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_3" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_8" [label="8: + \n  " ]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_8" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_5" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_9" [label="9:  BinaryOperatorStmt: LT \n   n$3=*&buf:char* [line 2020, column 12]\n  n$4=*&buf_len:unsigned long [line 2020, column 18]\n  n$5=*&end:char* [line 2020, column 28]\n  n$6=*&buf_len:unsigned long [line 2020, column 46]\n " shape="box"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_9" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_10" ;
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_9" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_11" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_10" [label="10: Prune (true branch, if) \n   PRUNE((((n$3 + n$4) - n$5) < (n$6 >> 3)), true); [line 2020, column 11]\n " shape="invhouse"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_10" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_20" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_11" [label="11: Prune (false branch, if) \n   PRUNE(!(((n$3 + n$4) - n$5) < (n$6 >> 3)), false); [line 2020, column 11]\n " shape="invhouse"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_11" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_8" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_12" [label="12:  BinaryOperatorStmt: Assign \n   n$7=*&buf:char* [line 2031, column 10]\n  n$8=*&end_offs:unsigned long [line 2031, column 16]\n  *&end:char*=(n$7 + n$8) [line 2031, column 4]\n " shape="box"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_12" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_8" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_13" [label="13: + \n  " ]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_13" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_12" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_14" [label="14: Prune (true branch, if) \n   n$9=*&buf:char* [line 2026, column 9]\n  PRUNE(!n$9, true); [line 2026, column 9]\n " shape="invhouse"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_14" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_17" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_15" [label="15: Prune (false branch, if) \n   n$9=*&buf:char* [line 2026, column 9]\n  PRUNE(n$9, false); [line 2026, column 9]\n " shape="invhouse"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_15" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_13" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_16" [label="16:  Call _fun_exit \n   n$10=_fun_exit(1:int) [line 2029, column 8]\n " shape="box"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_16" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_13" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_17" [label="17:  Call _fun_rshd_error \n   n$11=*&err:char const * [line 2028, column 49]\n  n$12=_fun_rshd_error(\"Out of space reading %s\\n\":char const *,n$11:char const *) [line 2028, column 8]\n " shape="box"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_17" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_16" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_18" [label="18:  BinaryOperatorStmt: Assign \n   n$15=*&buf:char* [line 2025, column 19]\n  n$16=*&buf_len:unsigned long [line 2025, column 24]\n  n$17=_fun_realloc(n$15:void*,n$16:unsigned long) [line 2025, column 10]\n  *&buf:char*=n$17 [line 2025, column 4]\n " shape="box"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_18" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_14" ;
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_18" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_15" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_19" [label="19:  BinaryOperatorStmt: AddAssign \n   n$18=*&buf_len:unsigned long [line 2024, column 15]\n  n$19=*&buf_len:unsigned long [line 2024, column 4]\n  *&buf_len:unsigned long=(n$19 + n$18) [line 2024, column 4]\n " shape="box"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_19" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_18" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_20" [label="20:  DeclStmt \n   n$20=*&end:char* [line 2023, column 22]\n  n$21=*&buf:char* [line 2023, column 28]\n  *&end_offs:unsigned long=(n$20 - n$21) [line 2023, column 4]\n " shape="box"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_20" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_19" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_21" [label="21:  BinaryOperatorStmt: AddAssign \n   n$24=*&rd:int [line 2019, column 14]\n  n$25=*&end:char* [line 2019, column 7]\n  *&end:char*=(n$25 + n$24) [line 2019, column 7]\n " shape="box"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_21" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_9" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_22" [label="22: + \n  " ]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_22" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_21" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_23" [label="23:  BinaryOperatorStmt: LE \n   n$26=*&rd:int [line 2010, column 11]\n " shape="box"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_23" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_24" ;
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_23" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_25" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_24" [label="24: Prune (true branch, if) \n   PRUNE((n$26 <= 0), true); [line 2010, column 11]\n " shape="invhouse"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_24" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_28" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_25" [label="25: Prune (false branch, if) \n   PRUNE(!(n$26 <= 0), false); [line 2010, column 11]\n " shape="invhouse"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_25" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_22" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_26" [label="26:  Call _fun_exit \n   n$27=_fun_exit(1:int) [line 2016, column 4]\n " shape="box"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_26" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_22" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_27" [label="27: + \n  " ]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_27" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_26" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_28" [label="28:  BinaryOperatorStmt: EQ \n   n$28=*&rd:int [line 2012, column 8]\n " shape="box"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_28" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_29" ;
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_28" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_30" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_29" [label="29: Prune (true branch, if) \n   PRUNE((n$28 == 0), true); [line 2012, column 8]\n " shape="invhouse"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_29" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_31" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_30" [label="30: Prune (false branch, if) \n   PRUNE(!(n$28 == 0), false); [line 2012, column 8]\n " shape="invhouse"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_30" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_32" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_31" [label="31:  Call _fun_rshd_error \n   n$29=*&err:char const * [line 2013, column 38]\n  n$30=_fun_rshd_error(\"EOF reading %s\\n\":char const *,n$29:char const *) [line 2013, column 6]\n " shape="box"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_31" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_27" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_32" [label="32:  Call _fun_perror \n   n$31=*&err:char const * [line 2015, column 14]\n  n$32=_fun_perror(n$31:char const *) [line 2015, column 6]\n " shape="box"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_32" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_27" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_33" [label="33:  DeclStmt \n   n$36=*&end:char* [line 2008, column 36]\n  n$37=_fun_read(0:int,n$36:void*,1:unsigned long) [line 2008, column 16]\n  *&rd:int=n$37 [line 2008, column 7]\n " shape="box"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_33" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_23" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_34" [label="34: + \n  " ]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_34" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_4" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_35" [label="35: Prune (true branch, if) \n   n$39=*&buf:char* [line 1999, column 8]\n  PRUNE(!n$39, true); [line 1999, column 8]\n " shape="invhouse"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_35" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_38" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_36" [label="36: Prune (false branch, if) \n   n$39=*&buf:char* [line 1999, column 8]\n  PRUNE(n$39, false); [line 1999, column 8]\n " shape="invhouse"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_36" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_34" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_37" [label="37:  Call _fun_exit \n   n$40=_fun_exit(1:int) [line 2002, column 7]\n " shape="box"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_37" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_34" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_38" [label="38:  Call _fun_rshd_error \n   n$41=*&err:char const * [line 2001, column 48]\n  n$42=_fun_rshd_error(\"Out of space reading %s\\n\":char const *,n$41:char const *) [line 2001, column 7]\n " shape="box"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_38" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_37" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_39" [label="39:  DeclStmt \n   n$45=*&buf:char* [line 1997, column 40]\n  *&end:char*=n$45 [line 1997, column 3]\n " shape="box"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_39" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_35" ;
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_39" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_36" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_40" [label="40:  DeclStmt \n   n$46=*&buf_len:unsigned long [line 1997, column 23]\n  n$47=_fun_malloc(n$46:unsigned long) [line 1997, column 15]\n  *&buf:char*=n$47 [line 1997, column 3]\n " shape="box"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_40" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_39" ;
+"getstr.6edc15ad9bd0f72885f48c3fcb46a550_41" [label="41:  DeclStmt \n   *&buf_len:unsigned long=100 [line 1996, column 3]\n " shape="box"]
+	
+
+	 "getstr.6edc15ad9bd0f72885f48c3fcb46a550_41" -> "getstr.6edc15ad9bd0f72885f48c3fcb46a550_40" ;
+"local_domain.af21e89e149d9d8cc98d5495e32e00c8_1" [label="1: Start local_domain\nFormals:  h:char const *\nLocals:  p2:char const * p1:char const * is_local:int hostname:char* \n   DECLARE_LOCALS(&return,&p2,&p1,&is_local,&hostname); [line 2047, column 1]\n " color=yellow style=filled]
+	
+
+	 "local_domain.af21e89e149d9d8cc98d5495e32e00c8_1" -> "local_domain.af21e89e149d9d8cc98d5495e32e00c8_24" ;
+"local_domain.af21e89e149d9d8cc98d5495e32e00c8_2" [label="2: Exit local_domain \n  " color=yellow style=filled]
+	
+
+"local_domain.af21e89e149d9d8cc98d5495e32e00c8_3" [label="3: + \n  " ]
+	
+
+	 "local_domain.af21e89e149d9d8cc98d5495e32e00c8_3" -> "local_domain.af21e89e149d9d8cc98d5495e32e00c8_4" ;
+"local_domain.af21e89e149d9d8cc98d5495e32e00c8_4" [label="4:  between_join_and_exit \n  " shape="box"]
+	
+
+	 "local_domain.af21e89e149d9d8cc98d5495e32e00c8_4" -> "local_domain.af21e89e149d9d8cc98d5495e32e00c8_2" ;
+"local_domain.af21e89e149d9d8cc98d5495e32e00c8_5" [label="5: Prune (true branch, if) \n   n$0=*&hostname:char* [line 2052, column 8]\n  PRUNE(!n$0, true); [line 2052, column 8]\n " shape="invhouse"]
+	
+
+	 "local_domain.af21e89e149d9d8cc98d5495e32e00c8_5" -> "local_domain.af21e89e149d9d8cc98d5495e32e00c8_7" ;
+"local_domain.af21e89e149d9d8cc98d5495e32e00c8_6" [label="6: Prune (false branch, if) \n   n$0=*&hostname:char* [line 2052, column 8]\n  PRUNE(n$0, false); [line 2052, column 8]\n " shape="invhouse"]
+	
+
+	 "local_domain.af21e89e149d9d8cc98d5495e32e00c8_6" -> "local_domain.af21e89e149d9d8cc98d5495e32e00c8_23" ;
+"local_domain.af21e89e149d9d8cc98d5495e32e00c8_7" [label="7:  Return Stmt \n   *&return:int=0 [line 2053, column 5]\n " shape="box"]
+	
+
+	 "local_domain.af21e89e149d9d8cc98d5495e32e00c8_7" -> "local_domain.af21e89e149d9d8cc98d5495e32e00c8_2" ;
+"local_domain.af21e89e149d9d8cc98d5495e32e00c8_8" [label="8:  Return Stmt \n   n$1=*&is_local:int [line 2065, column 14]\n  *&return:int=n$1 [line 2065, column 7]\n " shape="box"]
+	
+
+	 "local_domain.af21e89e149d9d8cc98d5495e32e00c8_8" -> "local_domain.af21e89e149d9d8cc98d5495e32e00c8_2" ;
+"local_domain.af21e89e149d9d8cc98d5495e32e00c8_9" [label="9:  Call _fun_free \n   n$2=*&hostname:char* [line 2063, column 13]\n  n$3=_fun_free(n$2:void*) [line 2063, column 7]\n " shape="box"]
+	
+
+	 "local_domain.af21e89e149d9d8cc98d5495e32e00c8_9" -> "local_domain.af21e89e149d9d8cc98d5495e32e00c8_8" ;
+"local_domain.af21e89e149d9d8cc98d5495e32e00c8_10" [label="10: + \n  " ]
+	
+
+	 "local_domain.af21e89e149d9d8cc98d5495e32e00c8_10" -> "local_domain.af21e89e149d9d8cc98d5495e32e00c8_9" ;
+"local_domain.af21e89e149d9d8cc98d5495e32e00c8_11" [label="11:  BinaryOperatorStmt: EQ \n   n$4=*&p1:char const * [line 2060, column 11]\n " shape="box"]
+	
+
+	 "local_domain.af21e89e149d9d8cc98d5495e32e00c8_11" -> "local_domain.af21e89e149d9d8cc98d5495e32e00c8_12" ;
+	 "local_domain.af21e89e149d9d8cc98d5495e32e00c8_11" -> "local_domain.af21e89e149d9d8cc98d5495e32e00c8_13" ;
+"local_domain.af21e89e149d9d8cc98d5495e32e00c8_12" [label="12: Prune (true branch, if) \n   PRUNE((n$4 == null), true); [line 2060, column 11]\n " shape="invhouse"]
+	
+
+	 "local_domain.af21e89e149d9d8cc98d5495e32e00c8_12" -> "local_domain.af21e89e149d9d8cc98d5495e32e00c8_20" ;
+"local_domain.af21e89e149d9d8cc98d5495e32e00c8_13" [label="13: Prune (false branch, if) \n   PRUNE(!(n$4 == null), false); [line 2060, column 11]\n " shape="invhouse"]
+	
+
+	 "local_domain.af21e89e149d9d8cc98d5495e32e00c8_13" -> "local_domain.af21e89e149d9d8cc98d5495e32e00c8_14" ;
+"local_domain.af21e89e149d9d8cc98d5495e32e00c8_14" [label="14:  BinaryOperatorStmt: EQ \n   n$5=*&p2:char const * [line 2060, column 25]\n " shape="box"]
+	
+
+	 "local_domain.af21e89e149d9d8cc98d5495e32e00c8_14" -> "local_domain.af21e89e149d9d8cc98d5495e32e00c8_15" ;
+	 "local_domain.af21e89e149d9d8cc98d5495e32e00c8_14" -> "local_domain.af21e89e149d9d8cc98d5495e32e00c8_16" ;
+"local_domain.af21e89e149d9d8cc98d5495e32e00c8_15" [label="15: Prune (true branch, if) \n   PRUNE((n$5 == null), true); [line 2060, column 25]\n " shape="invhouse"]
+	
+
+	 "local_domain.af21e89e149d9d8cc98d5495e32e00c8_15" -> "local_domain.af21e89e149d9d8cc98d5495e32e00c8_20" ;
+"local_domain.af21e89e149d9d8cc98d5495e32e00c8_16" [label="16: Prune (false branch, if) \n   PRUNE(!(n$5 == null), false); [line 2060, column 25]\n " shape="invhouse"]
+	
+
+	 "local_domain.af21e89e149d9d8cc98d5495e32e00c8_16" -> "local_domain.af21e89e149d9d8cc98d5495e32e00c8_17" ;
+"local_domain.af21e89e149d9d8cc98d5495e32e00c8_17" [label="17:  Call _fun_strcasecmp \n   n$6=*&p1:char const * [line 2060, column 52]\n  n$7=*&p2:char const * [line 2060, column 56]\n  n$8=_fun_strcasecmp(n$6:char const *,n$7:char const *) [line 2060, column 40]\n " shape="box"]
+	
+
+	 "local_domain.af21e89e149d9d8cc98d5495e32e00c8_17" -> "local_domain.af21e89e149d9d8cc98d5495e32e00c8_18" ;
+	 "local_domain.af21e89e149d9d8cc98d5495e32e00c8_17" -> "local_domain.af21e89e149d9d8cc98d5495e32e00c8_19" ;
+"local_domain.af21e89e149d9d8cc98d5495e32e00c8_18" [label="18: Prune (true branch, if) \n   PRUNE(!n$8, true); [line 2060, column 40]\n " shape="invhouse"]
+	
+
+	 "local_domain.af21e89e149d9d8cc98d5495e32e00c8_18" -> "local_domain.af21e89e149d9d8cc98d5495e32e00c8_20" ;
+"local_domain.af21e89e149d9d8cc98d5495e32e00c8_19" [label="19: Prune (false branch, if) \n   PRUNE(n$8, false); [line 2060, column 40]\n " shape="invhouse"]
+	
+
+	 "local_domain.af21e89e149d9d8cc98d5495e32e00c8_19" -> "local_domain.af21e89e149d9d8cc98d5495e32e00c8_10" ;
+"local_domain.af21e89e149d9d8cc98d5495e32e00c8_20" [label="20:  BinaryOperatorStmt: Assign \n   *&is_local:int=1 [line 2061, column 2]\n " shape="box"]
+	
+
+	 "local_domain.af21e89e149d9d8cc98d5495e32e00c8_20" -> "local_domain.af21e89e149d9d8cc98d5495e32e00c8_10" ;
+"local_domain.af21e89e149d9d8cc98d5495e32e00c8_21" [label="21:  DeclStmt \n   n$11=*&h:char const * [line 2058, column 35]\n  n$12=_fun_topdomain(n$11:char const *) [line 2058, column 24]\n  *&p2:char const *=n$12 [line 2058, column 7]\n " shape="box"]
+	
+
+	 "local_domain.af21e89e149d9d8cc98d5495e32e00c8_21" -> "local_domain.af21e89e149d9d8cc98d5495e32e00c8_11" ;
+"local_domain.af21e89e149d9d8cc98d5495e32e00c8_22" [label="22:  DeclStmt \n   n$13=*&hostname:char* [line 2057, column 35]\n  n$14=_fun_topdomain(n$13:char const *) [line 2057, column 24]\n  *&p1:char const *=n$14 [line 2057, column 7]\n " shape="box"]
+	
+
+	 "local_domain.af21e89e149d9d8cc98d5495e32e00c8_22" -> "local_domain.af21e89e149d9d8cc98d5495e32e00c8_21" ;
+"local_domain.af21e89e149d9d8cc98d5495e32e00c8_23" [label="23:  DeclStmt \n   *&is_local:int=0 [line 2056, column 7]\n " shape="box"]
+	
+
+	 "local_domain.af21e89e149d9d8cc98d5495e32e00c8_23" -> "local_domain.af21e89e149d9d8cc98d5495e32e00c8_22" ;
+"local_domain.af21e89e149d9d8cc98d5495e32e00c8_24" [label="24:  DeclStmt \n   n$16=_fun_localhost() [line 2050, column 20]\n  *&hostname:char*=n$16 [line 2050, column 3]\n " shape="box"]
+	
+
+	 "local_domain.af21e89e149d9d8cc98d5495e32e00c8_24" -> "local_domain.af21e89e149d9d8cc98d5495e32e00c8_5" ;
+	 "local_domain.af21e89e149d9d8cc98d5495e32e00c8_24" -> "local_domain.af21e89e149d9d8cc98d5495e32e00c8_6" ;
+"main.fad58de7366495db4650cfefac2fcd61_1" [label="1: Start main\nFormals:  argc:int argv:char**\nLocals:  sockfd:int from:sockaddr_storage fromlen:unsigned int on:int linger:linger index:int \n   DECLARE_LOCALS(&return,&sockfd,&from,&fromlen,&on,&linger,&index); [line 341, column 1]\n " color=yellow style=filled]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_1" -> "main.fad58de7366495db4650cfefac2fcd61_37" ;
+"main.fad58de7366495db4650cfefac2fcd61_2" [label="2: Exit main \n  " color=yellow style=filled]
+	
+
+"main.fad58de7366495db4650cfefac2fcd61_3" [label="3:  Return Stmt \n   *&return:int=0 [line 409, column 3]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_3" -> "main.fad58de7366495db4650cfefac2fcd61_2" ;
+"main.fad58de7366495db4650cfefac2fcd61_4" [label="4:  Call _fun_doit \n   n$0=*&sockfd:int [line 408, column 9]\n  n$1=*&fromlen:unsigned int [line 408, column 44]\n  n$2=_fun_doit(n$0:int,&from:sockaddr*,n$1:unsigned int) [line 408, column 3]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_4" -> "main.fad58de7366495db4650cfefac2fcd61_3" ;
+"main.fad58de7366495db4650cfefac2fcd61_5" [label="5: + \n  " ]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_5" -> "main.fad58de7366495db4650cfefac2fcd61_4" ;
+"main.fad58de7366495db4650cfefac2fcd61_6" [label="6:  BinaryOperatorStmt: LT \n   n$3=*&sockfd:int [line 405, column 19]\n  n$4=_fun_setsockopt(n$3:int,1:int,13:int,&linger:void const *,sizeof(t=linger;nbytes=8):unsigned int) [line 405, column 7]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_6" -> "main.fad58de7366495db4650cfefac2fcd61_7" ;
+	 "main.fad58de7366495db4650cfefac2fcd61_6" -> "main.fad58de7366495db4650cfefac2fcd61_8" ;
+"main.fad58de7366495db4650cfefac2fcd61_7" [label="7: Prune (true branch, if) \n   PRUNE((n$4 < 0), true); [line 405, column 7]\n " shape="invhouse"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_7" -> "main.fad58de7366495db4650cfefac2fcd61_9" ;
+"main.fad58de7366495db4650cfefac2fcd61_8" [label="8: Prune (false branch, if) \n   PRUNE(!(n$4 < 0), false); [line 405, column 7]\n " shape="invhouse"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_8" -> "main.fad58de7366495db4650cfefac2fcd61_5" ;
+"main.fad58de7366495db4650cfefac2fcd61_9" [label="9:  Call _fun_syslog \n   n$5=_fun_syslog(4:int,\"setsockopt (SO_LINGER): %m\":char const *) [line 407, column 5]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_9" -> "main.fad58de7366495db4650cfefac2fcd61_5" ;
+"main.fad58de7366495db4650cfefac2fcd61_10" [label="10:  BinaryOperatorStmt: Assign \n   *&linger.l_linger:int=60 [line 404, column 3]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_10" -> "main.fad58de7366495db4650cfefac2fcd61_6" ;
+"main.fad58de7366495db4650cfefac2fcd61_11" [label="11:  BinaryOperatorStmt: Assign \n   *&linger.l_onoff:int=1 [line 403, column 3]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_11" -> "main.fad58de7366495db4650cfefac2fcd61_10" ;
+"main.fad58de7366495db4650cfefac2fcd61_12" [label="12: + \n  " ]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_12" -> "main.fad58de7366495db4650cfefac2fcd61_11" ;
+"main.fad58de7366495db4650cfefac2fcd61_13" [label="13: Prune (true branch, if) \n   n$8=*&#GB<rshd.c>$keepalive:int [line 400, column 7]\n  PRUNE(n$8, true); [line 400, column 7]\n " shape="invhouse"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_13" -> "main.fad58de7366495db4650cfefac2fcd61_15" ;
+"main.fad58de7366495db4650cfefac2fcd61_14" [label="14: Prune (false branch, if) \n   n$8=*&#GB<rshd.c>$keepalive:int [line 400, column 7]\n  PRUNE(!n$8, false); [line 400, column 7]\n " shape="invhouse"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_14" -> "main.fad58de7366495db4650cfefac2fcd61_12" ;
+"main.fad58de7366495db4650cfefac2fcd61_15" [label="15:  BinaryOperatorStmt: LT \n   n$9=*&sockfd:int [line 400, column 32]\n  n$10=_fun_setsockopt(n$9:int,1:int,9:int,&on:void const *,sizeof(t=int;nbytes=4):unsigned int) [line 400, column 20]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_15" -> "main.fad58de7366495db4650cfefac2fcd61_16" ;
+	 "main.fad58de7366495db4650cfefac2fcd61_15" -> "main.fad58de7366495db4650cfefac2fcd61_17" ;
+"main.fad58de7366495db4650cfefac2fcd61_16" [label="16: Prune (true branch, if) \n   PRUNE((n$10 < 0), true); [line 400, column 20]\n " shape="invhouse"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_16" -> "main.fad58de7366495db4650cfefac2fcd61_18" ;
+"main.fad58de7366495db4650cfefac2fcd61_17" [label="17: Prune (false branch, if) \n   PRUNE(!(n$10 < 0), false); [line 400, column 20]\n " shape="invhouse"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_17" -> "main.fad58de7366495db4650cfefac2fcd61_12" ;
+"main.fad58de7366495db4650cfefac2fcd61_18" [label="18:  Call _fun_syslog \n   n$11=_fun_syslog(4:int,\"setsockopt (SO_KEEPALIVE): %m\":char const *) [line 402, column 5]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_18" -> "main.fad58de7366495db4650cfefac2fcd61_12" ;
+"main.fad58de7366495db4650cfefac2fcd61_19" [label="19: + \n  " ]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_19" -> "main.fad58de7366495db4650cfefac2fcd61_13" ;
+	 "main.fad58de7366495db4650cfefac2fcd61_19" -> "main.fad58de7366495db4650cfefac2fcd61_14" ;
+"main.fad58de7366495db4650cfefac2fcd61_20" [label="20:  BinaryOperatorStmt: LT \n   n$14=*&sockfd:int [line 393, column 20]\n  n$15=_fun_getpeername(n$14:int,&from:sockaddr*,&fromlen:unsigned int*) [line 393, column 7]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_20" -> "main.fad58de7366495db4650cfefac2fcd61_21" ;
+	 "main.fad58de7366495db4650cfefac2fcd61_20" -> "main.fad58de7366495db4650cfefac2fcd61_22" ;
+"main.fad58de7366495db4650cfefac2fcd61_21" [label="21: Prune (true branch, if) \n   PRUNE((n$15 < 0), true); [line 393, column 7]\n " shape="invhouse"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_21" -> "main.fad58de7366495db4650cfefac2fcd61_24" ;
+"main.fad58de7366495db4650cfefac2fcd61_22" [label="22: Prune (false branch, if) \n   PRUNE(!(n$15 < 0), false); [line 393, column 7]\n " shape="invhouse"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_22" -> "main.fad58de7366495db4650cfefac2fcd61_19" ;
+"main.fad58de7366495db4650cfefac2fcd61_23" [label="23:  Call _fun__exit \n   n$16=_fun__exit(1:int) [line 396, column 7]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_23" -> "main.fad58de7366495db4650cfefac2fcd61_19" ;
+"main.fad58de7366495db4650cfefac2fcd61_24" [label="24:  Call _fun_syslog \n   n$17=_fun_syslog(3:int,\"getpeername: %m\":char const *) [line 395, column 7]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_24" -> "main.fad58de7366495db4650cfefac2fcd61_23" ;
+"main.fad58de7366495db4650cfefac2fcd61_25" [label="25:  BinaryOperatorStmt: Assign \n   *&fromlen:unsigned int=sizeof(t=sockaddr_storage;nbytes=128) [line 392, column 3]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_25" -> "main.fad58de7366495db4650cfefac2fcd61_20" ;
+"main.fad58de7366495db4650cfefac2fcd61_26" [label="26:  BinaryOperatorStmt: Assign \n   *&sockfd:int=0 [line 385, column 3]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_26" -> "main.fad58de7366495db4650cfefac2fcd61_25" ;
+"main.fad58de7366495db4650cfefac2fcd61_27" [label="27: + \n  " ]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_27" -> "main.fad58de7366495db4650cfefac2fcd61_26" ;
+"main.fad58de7366495db4650cfefac2fcd61_28" [label="28:  BinaryOperatorStmt: GT \n   n$20=*&argc:int [line 358, column 7]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_28" -> "main.fad58de7366495db4650cfefac2fcd61_29" ;
+	 "main.fad58de7366495db4650cfefac2fcd61_28" -> "main.fad58de7366495db4650cfefac2fcd61_30" ;
+"main.fad58de7366495db4650cfefac2fcd61_29" [label="29: Prune (true branch, if) \n   PRUNE((n$20 > 0), true); [line 358, column 7]\n " shape="invhouse"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_29" -> "main.fad58de7366495db4650cfefac2fcd61_32" ;
+"main.fad58de7366495db4650cfefac2fcd61_30" [label="30: Prune (false branch, if) \n   PRUNE(!(n$20 > 0), false); [line 358, column 7]\n " shape="invhouse"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_30" -> "main.fad58de7366495db4650cfefac2fcd61_27" ;
+"main.fad58de7366495db4650cfefac2fcd61_31" [label="31:  Call _fun_exit \n   n$21=_fun_exit(1:int) [line 361, column 7]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_31" -> "main.fad58de7366495db4650cfefac2fcd61_27" ;
+"main.fad58de7366495db4650cfefac2fcd61_32" [label="32:  Call _fun_syslog \n   n$22=*&argc:int [line 360, column 46]\n  n$23=_fun_syslog(3:int,\"%d extra arguments\":char const *,n$22:int) [line 360, column 7]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_32" -> "main.fad58de7366495db4650cfefac2fcd61_31" ;
+"main.fad58de7366495db4650cfefac2fcd61_33" [label="33:  BinaryOperatorStmt: SubAssign \n   n$26=*&index:int [line 357, column 11]\n  n$27=*&argc:int [line 357, column 3]\n  *&argc:int=(n$27 - n$26) [line 357, column 3]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_33" -> "main.fad58de7366495db4650cfefac2fcd61_28" ;
+"main.fad58de7366495db4650cfefac2fcd61_34" [label="34:  Call _fun_openlog \n   n$28=_fun_openlog(\"rshd\":char const *,(1 | 4):int,(3 << 3):int) [line 355, column 3]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_34" -> "main.fad58de7366495db4650cfefac2fcd61_33" ;
+"main.fad58de7366495db4650cfefac2fcd61_35" [label="35:  Call _fun_argp_parse \n   n$29=*&argc:int [line 353, column 22]\n  n$30=*&argv:char** [line 353, column 28]\n  n$31=_fun_argp_parse(&#GB<rshd.c>$argp:argp const *,n$29:int,n$30:char**,0:unsigned int,&index:int*,null:void*) [line 353, column 3]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_35" -> "main.fad58de7366495db4650cfefac2fcd61_34" ;
+"main.fad58de7366495db4650cfefac2fcd61_36" [label="36:  Call _fun_set_program_name \n   n$32=*&argv:char** [line 351, column 21]\n  n$33=*n$32[0]:char* [line 351, column 21]\n  n$34=_fun_set_program_name(n$33:char*) [line 351, column 3]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_36" -> "main.fad58de7366495db4650cfefac2fcd61_35" ;
+"main.fad58de7366495db4650cfefac2fcd61_37" [label="37:  DeclStmt \n   *&on:int=1 [line 346, column 3]\n " shape="box"]
+	
+
+	 "main.fad58de7366495db4650cfefac2fcd61_37" -> "main.fad58de7366495db4650cfefac2fcd61_36" ;
+"parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_1" [label="1: Start parse_opt\nFormals:  key:int arg:char* state:argp_state*\nLocals:  \n   DECLARE_LOCALS(&return); [line 272, column 1]\n " color=yellow style=filled]
+	
+
+	 "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_1" -> "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_4" ;
+"parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_2" [label="2: Exit parse_opt \n  " color=yellow style=filled]
+	
+
+"parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_3" [label="3:  Return Stmt \n   *&return:int=0 [line 323, column 3]\n " shape="box"]
+	
+
+	 "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_3" -> "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_2" ;
+"parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_4" [label="4:  SwitchStmt \n   n$0=*&key:int [line 275, column 11]\n " shape="box"]
+	
+
+	 "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_4" -> "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_16" ;
+	 "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_4" -> "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_17" ;
+"parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_5" [label="5:  Return Stmt \n   *&return:int=7 [line 320, column 7]\n " shape="box"]
+	
+
+	 "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_5" -> "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_2" ;
+"parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_6" [label="6:  BinaryOperatorStmt: Assign \n   *&#GB<rshd.c>$log_success:int=1 [line 316, column 7]\n " shape="box"]
+	
+
+	 "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_6" -> "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_3" ;
+"parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_7" [label="7:  BinaryOperatorStmt: Assign \n   *&#GB<rshd.c>$reverse_required:int=1 [line 292, column 7]\n " shape="box"]
+	
+
+	 "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_7" -> "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_3" ;
+"parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_8" [label="8:  BinaryOperatorStmt: Assign \n   *&#GB<rshd.c>$keepalive:int=0 [line 288, column 7]\n " shape="box"]
+	
+
+	 "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_8" -> "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_3" ;
+"parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_9" [label="9:  BinaryOperatorStmt: Assign \n   *&#GB<rshd.c>$check_all:int=1 [line 278, column 7]\n " shape="box"]
+	
+
+	 "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_9" -> "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_3" ;
+"parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_10" [label="10: Prune (true branch, switch) \n   PRUNE((n$0 == 76), true); [line 315, column 5]\n " shape="invhouse"]
+	
+
+	 "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_10" -> "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_6" ;
+"parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_11" [label="11: Prune (false branch, switch) \n   PRUNE(!(n$0 == 76), false); [line 315, column 5]\n " shape="invhouse"]
+	
+
+	 "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_11" -> "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_5" ;
+"parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_12" [label="12: Prune (true branch, switch) \n   PRUNE((n$0 == 114), true); [line 291, column 5]\n " shape="invhouse"]
+	
+
+	 "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_12" -> "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_7" ;
+"parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_13" [label="13: Prune (false branch, switch) \n   PRUNE(!(n$0 == 114), false); [line 291, column 5]\n " shape="invhouse"]
+	
+
+	 "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_13" -> "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_10" ;
+	 "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_13" -> "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_11" ;
+"parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_14" [label="14: Prune (true branch, switch) \n   PRUNE((n$0 == 110), true); [line 287, column 5]\n " shape="invhouse"]
+	
+
+	 "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_14" -> "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_8" ;
+"parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_15" [label="15: Prune (false branch, switch) \n   PRUNE(!(n$0 == 110), false); [line 287, column 5]\n " shape="invhouse"]
+	
+
+	 "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_15" -> "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_12" ;
+	 "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_15" -> "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_13" ;
+"parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_16" [label="16: Prune (true branch, switch) \n   PRUNE((n$0 == 97), true); [line 277, column 5]\n " shape="invhouse"]
+	
+
+	 "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_16" -> "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_9" ;
+"parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_17" [label="17: Prune (false branch, switch) \n   PRUNE(!(n$0 == 97), false); [line 277, column 5]\n " shape="invhouse"]
+	
+
+	 "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_17" -> "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_14" ;
+	 "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_17" -> "parse_opt#5029eba9b4a493f00fb141cf8109a963.c70757c5b54c4be64d23d9d1435f5547_15" ;
+"rshd_error.f4ff1bd2b03000a7014326cd120f9654_1" [label="1: Start rshd_error\nFormals:  fmt:char const *\nLocals:  buf:char[8192*1] bp:char* len:int ap:void[1*24] \n   DECLARE_LOCALS(&return,&buf,&bp,&len,&ap); [line 1972, column 1]\n " color=yellow style=filled]
+	
+
+	 "rshd_error.f4ff1bd2b03000a7014326cd120f9654_1" -> "rshd_error.f4ff1bd2b03000a7014326cd120f9654_14" ;
+"rshd_error.f4ff1bd2b03000a7014326cd120f9654_2" [label="2: Exit rshd_error \n  " color=yellow style=filled]
+	
+
+"rshd_error.f4ff1bd2b03000a7014326cd120f9654_3" [label="3:  Call _fun_write \n   n$0=*&len:int [line 1990, column 30]\n  n$1=*&bp:char* [line 1990, column 44]\n  n$2=_fun_strlen(n$1:char const *) [line 1990, column 36]\n  n$3=_fun_write(2:int,&buf:void const *,(n$0 + n$2):unsigned long) [line 1990, column 3]\n " shape="box"]
+	
+
+	 "rshd_error.f4ff1bd2b03000a7014326cd120f9654_3" -> "rshd_error.f4ff1bd2b03000a7014326cd120f9654_2" ;
+"rshd_error.f4ff1bd2b03000a7014326cd120f9654_4" [label="4:  Call _fun___builtin_va_end \n   n$4=_fun___builtin_va_end(&ap:void*) [line 1989, column 3]\n " shape="box"]
+	
+
+	 "rshd_error.f4ff1bd2b03000a7014326cd120f9654_4" -> "rshd_error.f4ff1bd2b03000a7014326cd120f9654_3" ;
+"rshd_error.f4ff1bd2b03000a7014326cd120f9654_5" [label="5:  Call _fun_vsnprintf \n   n$5=*&bp:char* [line 1988, column 14]\n  n$6=*&fmt:char const * [line 1988, column 36]\n  n$7=_fun_vsnprintf(n$5:char*,(sizeof(t=char[8192*1];nbytes=8192) - 1):char[8192*1],n$6:char const *,&ap:void*) [line 1988, column 3]\n " shape="box"]
+	
+
+	 "rshd_error.f4ff1bd2b03000a7014326cd120f9654_5" -> "rshd_error.f4ff1bd2b03000a7014326cd120f9654_4" ;
+"rshd_error.f4ff1bd2b03000a7014326cd120f9654_6" [label="6: + \n  " ]
+	
+
+	 "rshd_error.f4ff1bd2b03000a7014326cd120f9654_6" -> "rshd_error.f4ff1bd2b03000a7014326cd120f9654_5" ;
+"rshd_error.f4ff1bd2b03000a7014326cd120f9654_7" [label="7:  BinaryOperatorStmt: EQ \n   n$8=*&#GB<rshd.c>$sent_null:int [line 1981, column 7]\n " shape="box"]
+	
+
+	 "rshd_error.f4ff1bd2b03000a7014326cd120f9654_7" -> "rshd_error.f4ff1bd2b03000a7014326cd120f9654_8" ;
+	 "rshd_error.f4ff1bd2b03000a7014326cd120f9654_7" -> "rshd_error.f4ff1bd2b03000a7014326cd120f9654_9" ;
+"rshd_error.f4ff1bd2b03000a7014326cd120f9654_8" [label="8: Prune (true branch, if) \n   PRUNE((n$8 == 0), true); [line 1981, column 7]\n " shape="invhouse"]
+	
+
+	 "rshd_error.f4ff1bd2b03000a7014326cd120f9654_8" -> "rshd_error.f4ff1bd2b03000a7014326cd120f9654_11" ;
+"rshd_error.f4ff1bd2b03000a7014326cd120f9654_9" [label="9: Prune (false branch, if) \n   PRUNE(!(n$8 == 0), false); [line 1981, column 7]\n " shape="invhouse"]
+	
+
+	 "rshd_error.f4ff1bd2b03000a7014326cd120f9654_9" -> "rshd_error.f4ff1bd2b03000a7014326cd120f9654_12" ;
+"rshd_error.f4ff1bd2b03000a7014326cd120f9654_10" [label="10:  BinaryOperatorStmt: Assign \n   *&len:int=1 [line 1984, column 7]\n " shape="box"]
+	
+
+	 "rshd_error.f4ff1bd2b03000a7014326cd120f9654_10" -> "rshd_error.f4ff1bd2b03000a7014326cd120f9654_6" ;
+"rshd_error.f4ff1bd2b03000a7014326cd120f9654_11" [label="11:  BinaryOperatorStmt: Assign \n   n$9=*&bp:char* [line 1983, column 8]\n  *&bp:char*=(n$9 + 1) [line 1983, column 8]\n  *n$9:char=1 [line 1983, column 7]\n " shape="box"]
+	
+
+	 "rshd_error.f4ff1bd2b03000a7014326cd120f9654_11" -> "rshd_error.f4ff1bd2b03000a7014326cd120f9654_10" ;
+"rshd_error.f4ff1bd2b03000a7014326cd120f9654_12" [label="12:  BinaryOperatorStmt: Assign \n   *&len:int=0 [line 1987, column 5]\n " shape="box"]
+	
+
+	 "rshd_error.f4ff1bd2b03000a7014326cd120f9654_12" -> "rshd_error.f4ff1bd2b03000a7014326cd120f9654_6" ;
+"rshd_error.f4ff1bd2b03000a7014326cd120f9654_13" [label="13:  BinaryOperatorStmt: Assign \n   *&bp:char*=&buf [line 1980, column 3]\n " shape="box"]
+	
+
+	 "rshd_error.f4ff1bd2b03000a7014326cd120f9654_13" -> "rshd_error.f4ff1bd2b03000a7014326cd120f9654_7" ;
+"rshd_error.f4ff1bd2b03000a7014326cd120f9654_14" [label="14:  Call _fun___builtin_va_start \n   n$11=_fun___builtin_va_start(&ap:void*,&fmt:char const *&) [line 1978, column 3]\n " shape="box"]
+	
+
+	 "rshd_error.f4ff1bd2b03000a7014326cd120f9654_14" -> "rshd_error.f4ff1bd2b03000a7014326cd120f9654_13" ;
+"topdomain.00d82d6e50d4b4a895ff49a09f504d13_1" [label="1: Start topdomain\nFormals:  h:char const *\nLocals:  dots:int maybe:char const * p:char const * \n   DECLARE_LOCALS(&return,&dots,&maybe,&p); [line 2069, column 1]\n " color=yellow style=filled]
+	
+
+	 "topdomain.00d82d6e50d4b4a895ff49a09f504d13_1" -> "topdomain.00d82d6e50d4b4a895ff49a09f504d13_21" ;
+"topdomain.00d82d6e50d4b4a895ff49a09f504d13_2" [label="2: Exit topdomain \n  " color=yellow style=filled]
+	
+
+"topdomain.00d82d6e50d4b4a895ff49a09f504d13_3" [label="3:  Return Stmt \n   n$0=*&maybe:char const * [line 2084, column 10]\n  *&return:char const *=n$0 [line 2084, column 3]\n " shape="box"]
+	
+
+	 "topdomain.00d82d6e50d4b4a895ff49a09f504d13_3" -> "topdomain.00d82d6e50d4b4a895ff49a09f504d13_2" ;
+"topdomain.00d82d6e50d4b4a895ff49a09f504d13_4" [label="4: + \n  " ]
+	
+
+	 "topdomain.00d82d6e50d4b4a895ff49a09f504d13_4" -> "topdomain.00d82d6e50d4b4a895ff49a09f504d13_7" ;
+"topdomain.00d82d6e50d4b4a895ff49a09f504d13_5" [label="5:  BinaryOperatorStmt: Assign \n   n$1=*&h:char const * [line 2075, column 12]\n  n$2=*&h:char const * [line 2075, column 24]\n  n$3=_fun_strlen(n$2:char const *) [line 2075, column 16]\n  *&p:char const *=(n$1 + n$3) [line 2075, column 8]\n " shape="box"]
+	
+
+	 "topdomain.00d82d6e50d4b4a895ff49a09f504d13_5" -> "topdomain.00d82d6e50d4b4a895ff49a09f504d13_4" ;
+"topdomain.00d82d6e50d4b4a895ff49a09f504d13_6" [label="6:  UnaryOperator \n   n$4=*&p:char const * [line 2075, column 36]\n  *&p:char const *=(n$4 - 1) [line 2075, column 36]\n " shape="box"]
+	
+
+	 "topdomain.00d82d6e50d4b4a895ff49a09f504d13_6" -> "topdomain.00d82d6e50d4b4a895ff49a09f504d13_4" ;
+"topdomain.00d82d6e50d4b4a895ff49a09f504d13_7" [label="7:  BinaryOperatorStmt: GE \n   n$5=*&p:char const * [line 2075, column 28]\n  n$6=*&h:char const * [line 2075, column 33]\n " shape="box"]
+	
+
+	 "topdomain.00d82d6e50d4b4a895ff49a09f504d13_7" -> "topdomain.00d82d6e50d4b4a895ff49a09f504d13_8" ;
+	 "topdomain.00d82d6e50d4b4a895ff49a09f504d13_7" -> "topdomain.00d82d6e50d4b4a895ff49a09f504d13_9" ;
+"topdomain.00d82d6e50d4b4a895ff49a09f504d13_8" [label="8: Prune (true branch, for loop) \n   PRUNE((n$5 >= n$6), true); [line 2075, column 28]\n " shape="invhouse"]
+	
+
+	 "topdomain.00d82d6e50d4b4a895ff49a09f504d13_8" -> "topdomain.00d82d6e50d4b4a895ff49a09f504d13_11" ;
+"topdomain.00d82d6e50d4b4a895ff49a09f504d13_9" [label="9: Prune (false branch, for loop) \n   PRUNE(!(n$5 >= n$6), false); [line 2075, column 28]\n " shape="invhouse"]
+	
+
+	 "topdomain.00d82d6e50d4b4a895ff49a09f504d13_9" -> "topdomain.00d82d6e50d4b4a895ff49a09f504d13_3" ;
+"topdomain.00d82d6e50d4b4a895ff49a09f504d13_10" [label="10: + \n  " ]
+	
+
+	 "topdomain.00d82d6e50d4b4a895ff49a09f504d13_10" -> "topdomain.00d82d6e50d4b4a895ff49a09f504d13_6" ;
+"topdomain.00d82d6e50d4b4a895ff49a09f504d13_11" [label="11:  BinaryOperatorStmt: EQ \n   n$7=*&p:char const * [line 2077, column 12]\n  n$8=*n$7:char [line 2077, column 11]\n " shape="box"]
+	
+
+	 "topdomain.00d82d6e50d4b4a895ff49a09f504d13_11" -> "topdomain.00d82d6e50d4b4a895ff49a09f504d13_12" ;
+	 "topdomain.00d82d6e50d4b4a895ff49a09f504d13_11" -> "topdomain.00d82d6e50d4b4a895ff49a09f504d13_13" ;
+"topdomain.00d82d6e50d4b4a895ff49a09f504d13_12" [label="12: Prune (true branch, if) \n   PRUNE((n$8 == 46), true); [line 2077, column 11]\n " shape="invhouse"]
+	
+
+	 "topdomain.00d82d6e50d4b4a895ff49a09f504d13_12" -> "topdomain.00d82d6e50d4b4a895ff49a09f504d13_16" ;
+"topdomain.00d82d6e50d4b4a895ff49a09f504d13_13" [label="13: Prune (false branch, if) \n   PRUNE(!(n$8 == 46), false); [line 2077, column 11]\n " shape="invhouse"]
+	
+
+	 "topdomain.00d82d6e50d4b4a895ff49a09f504d13_13" -> "topdomain.00d82d6e50d4b4a895ff49a09f504d13_10" ;
+"topdomain.00d82d6e50d4b4a895ff49a09f504d13_14" [label="14:  BinaryOperatorStmt: Assign \n   n$9=*&p:char const * [line 2081, column 12]\n  *&maybe:char const *=n$9 [line 2081, column 4]\n " shape="box"]
+	
+
+	 "topdomain.00d82d6e50d4b4a895ff49a09f504d13_14" -> "topdomain.00d82d6e50d4b4a895ff49a09f504d13_10" ;
+"topdomain.00d82d6e50d4b4a895ff49a09f504d13_15" [label="15: + \n  " ]
+	
+
+	 "topdomain.00d82d6e50d4b4a895ff49a09f504d13_15" -> "topdomain.00d82d6e50d4b4a895ff49a09f504d13_14" ;
+"topdomain.00d82d6e50d4b4a895ff49a09f504d13_16" [label="16:  BinaryOperatorStmt: EQ \n   n$10=*&dots:int [line 2079, column 8]\n  *&dots:int=(n$10 + 1) [line 2079, column 8]\n " shape="box"]
+	
+
+	 "topdomain.00d82d6e50d4b4a895ff49a09f504d13_16" -> "topdomain.00d82d6e50d4b4a895ff49a09f504d13_17" ;
+	 "topdomain.00d82d6e50d4b4a895ff49a09f504d13_16" -> "topdomain.00d82d6e50d4b4a895ff49a09f504d13_18" ;
+"topdomain.00d82d6e50d4b4a895ff49a09f504d13_17" [label="17: Prune (true branch, if) \n   PRUNE(((n$10 + 1) == 2), true); [line 2079, column 8]\n " shape="invhouse"]
+	
+
+	 "topdomain.00d82d6e50d4b4a895ff49a09f504d13_17" -> "topdomain.00d82d6e50d4b4a895ff49a09f504d13_19" ;
+"topdomain.00d82d6e50d4b4a895ff49a09f504d13_18" [label="18: Prune (false branch, if) \n   PRUNE(!((n$10 + 1) == 2), false); [line 2079, column 8]\n " shape="invhouse"]
+	
+
+	 "topdomain.00d82d6e50d4b4a895ff49a09f504d13_18" -> "topdomain.00d82d6e50d4b4a895ff49a09f504d13_15" ;
+"topdomain.00d82d6e50d4b4a895ff49a09f504d13_19" [label="19:  Return Stmt \n   n$11=*&p:char const * [line 2080, column 13]\n  *&return:char const *=n$11 [line 2080, column 6]\n " shape="box"]
+	
+
+	 "topdomain.00d82d6e50d4b4a895ff49a09f504d13_19" -> "topdomain.00d82d6e50d4b4a895ff49a09f504d13_2" ;
+"topdomain.00d82d6e50d4b4a895ff49a09f504d13_20" [label="20:  DeclStmt \n   *&dots:int=0 [line 2073, column 3]\n " shape="box"]
+	
+
+	 "topdomain.00d82d6e50d4b4a895ff49a09f504d13_20" -> "topdomain.00d82d6e50d4b4a895ff49a09f504d13_5" ;
+"topdomain.00d82d6e50d4b4a895ff49a09f504d13_21" [label="21:  DeclStmt \n   *&maybe:char const *=null [line 2072, column 3]\n " shape="box"]
+	
+
+	 "topdomain.00d82d6e50d4b4a895ff49a09f504d13_21" -> "topdomain.00d82d6e50d4b4a895ff49a09f504d13_20" ;
+}

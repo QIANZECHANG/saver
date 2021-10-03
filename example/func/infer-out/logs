@@ -1673,3 +1673,32 @@ Infer version v0.15.0-821a8db
 [24203][   progress] Analysis finished in 543mss
 [24203][      debug] Elapsed analysis time: main: 57.618ms
 [24203][      debug] 
+[25812][      phase] ============================================================
+[25812][      phase] = New infer execution begins
+[25812][      phase] ============================================================
+[25812][environment] CWD = /home/saver/saver/example/func
+[25812][environment] No .inferconfig file found
+[25812][environment] Project root = /home/saver/saver/example/func
+[25812][environment] INFER_ARGS =   @/tmp/args.tmp.021864
+[25812][environment]   ++Contents of '/tmp/args.tmp.021864':
+[25812][environment]     saver --error-report /home/saver/saver/example/func/report.json
+[25812][environment]   
+[25812][environment] command line arguments:   infer saver --error-report report.json
+[25812][environment] Analyzer: checkers
+[25812][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), ownership (C/C++/ObjC), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC)
+[25812][   progress] - Fetching source files ...
+[25812][   progress] --Fetching src.c ... [1 of 1]
+[25812][   progress] - Preanalysis begins ...
+[25812][   progress] -- Drawing call graph ... 
+[25812][   progress] -- # nodes_with_pointer_operations / # total nodes of global: 5 / 10
+[25812][   progress] === All procs === { main, malloc, new }
+[25812][   progress] ===========
+[25812][   progress] -- # of total locations : 1
+[25812][   progress] -- # of total locations : 4
+[25812][   progress] -- # of total locations : 5
+[25812][   progress] -- Drawing call graph ... 
+[25812][   progress] - Exit wrappers (0) : { }
+[25812][   progress] Size-of-analyzed-program: 10
+[25812][   progress] - Reading error report from /home/saver/saver/example/func/report.json!
+[25812][   progress] NO ERROR POINT FOUND
+[25812][environment] Infer log identifier is 
